@@ -1,0 +1,48 @@
+22:32:42.552 [main] INFO  orangehrm.project.tests.LoginPageTest - login success
+22:35:20.344 [main] INFO  orangehrm.project.tests.LoginPageTest - login success
+02:33:01.862 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+02:33:02.212 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+02:44:05.284 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+02:44:05.849 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+03:27:48.020 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+03:27:48.383 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+03:28:46.404 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+03:28:46.741 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+03:29:08.379 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+03:29:08.878 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+03:34:09.667 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+03:34:10.024 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+03:37:54.919 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+03:37:55.294 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+03:48:16.384 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+03:48:16.784 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+03:48:50.901 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+03:48:51.262 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+03:51:10.953 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+03:51:11.307 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+04:04:49.150 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+04:04:49.485 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+04:05:43.830 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+04:05:44.184 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+04:10:46.067 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+04:10:46.443 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+04:11:14.570 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+04:11:14.938 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+15:24:54.833 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+15:24:55.208 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+15:27:33.135 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+15:27:33.663 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+15:54:09.705 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+15:54:10.176 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+15:55:28.318 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+15:55:28.831 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+15:56:41.060 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+15:56:41.520 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+16:09:41.368 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+16:09:41.923 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+16:09:59.008 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+16:09:59.553 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+16:10:51.694 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+16:10:52.185 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+16:11:25.870 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+16:11:26.394 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username

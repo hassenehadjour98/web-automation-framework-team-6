@@ -42,6 +42,7 @@ public class CommonAPI {
     String implicitWait = Utility.getProperties().getProperty("implicit.wait", "10");
     String username = Utility.decode(Utility.getProperties().getProperty("browserstack.username"));
     String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password"));
+
     public WebDriver driver;
 
     //report setup from line 37 to 94
@@ -131,7 +132,7 @@ public class CommonAPI {
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName,
                       @Optional("windows") String os, @Optional("11") String osVersion,
                       @Optional("chrome") String browserName, @Optional("108") String browserVersion,
-                      @Optional("https://www.google.com") String url) throws InterruptedException, MalformedURLException {
+                      @Optional("https://www.google.com/") String url) throws InterruptedException, MalformedURLException {
         if (useCloudEnv){
             getCloudDriver(envName, os,osVersion,browserName,browserVersion, username, password);
         }else {

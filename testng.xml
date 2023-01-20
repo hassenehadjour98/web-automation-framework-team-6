@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/test/java/orangehrm/project/tests"><classes><class name="orangehrm.project.tests.HomePagetest"><methods><include name="changepasswordcheckbox"/></methods></class><class name="orangehrm.project.tests.LoginPageTest"><methods><include name="logintest"/><include name="resetpassword"/></methods></class></classes></test></suite>
