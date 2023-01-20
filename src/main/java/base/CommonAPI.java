@@ -35,9 +35,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class CommonAPI {
-
     Logger LOG = LogManager.getLogger(CommonAPI.class.getName());
-
 
     String takeScreenshot = Utility.getProperties().getProperty("take.screenshot", "false");
     String maximizeBrowser = Utility.getProperties().getProperty("browser.maximize", "true");
@@ -129,7 +127,7 @@ public class CommonAPI {
     }
 
     @Parameters({"useCloudEnv","envName","os","osVersion","browserName","browserVersion","url"})
-    @BeforeMethod
+    @BeforeMethod()
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName,
                       @Optional("windows") String os, @Optional("11") String osVersion,
                       @Optional("chrome") String browserName, @Optional("108") String browserVersion,
