@@ -1,0 +1,29 @@
+04:34:04.899 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:34:06.844 [main] INFO  orangehrm.project.pages.HomePage - Admin exist on the main menu and it is clickable --AdminFromMenu test-- Finished
+04:34:13.066 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:34:14.877 [main] INFO  orangehrm.project.pages.HomePage - PIM exist on the main menu and it is clickable --PIMFromMenu test-- Finished
+04:34:20.751 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:34:22.661 [main] INFO  orangehrm.project.pages.HomePage - Leave exist on the main menu and it is clickable --LeaveFromMenu test-- Finished
+04:34:28.538 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:34:30.175 [main] INFO  orangehrm.project.pages.HomePage - Time exist on the main menu and it is clickable --TimeFromMenu test-- Finished
+04:34:35.902 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:34:37.727 [main] INFO  orangehrm.project.pages.HomePage - Recruitment exist on the main menu and it is clickable --RecruitmentFromMenu test-- Finished
+04:34:43.706 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:34:45.642 [main] INFO  orangehrm.project.pages.HomePage - Performance exist on the main menu and it is clickable --PerformanceFromMenu test-- Finished
+04:34:51.266 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:34:53.044 [main] INFO  orangehrm.project.pages.HomePage - Dashboard exist on the main menu and it is clickable --DashboardFromMenu test-- Finish
+04:34:58.964 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:35:00.493 [main] INFO  orangehrm.project.pages.HomePage - Directory exist on the main menu and it is clickable
+04:35:06.220 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:35:08.085 [main] INFO  orangehrm.project.pages.HomePage - Buzz exist on the main menu and it is clickable --BuzzFromMenu test-- Finished
+04:35:13.802 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:35:15.280 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+04:35:27.013 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+04:35:28.415 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+04:35:28.814 [main] INFO  orangehrm.project.pages.AdminPage - text inserted to username
+04:35:28.898 [main] INFO  orangehrm.project.pages.AdminPage - Admin selected from dropdown
+04:35:28.977 [main] INFO  orangehrm.project.pages.AdminPage - Enable selected from dropdown
+04:35:29.033 [main] INFO  orangehrm.project.pages.AdminPage - search button clicked
+04:35:29.516 [main] INFO  orangehrm.project.pages.AdminPage - edit button clicked
+04:35:30.161 [main] INFO  orangehrm.project.pages.AdminPage - checkbox clicked, and it is displayed
+04:35:30.199 [main] INFO  orangehrm.project.pages.AdminPage - checkbox clicked, and it is displayed

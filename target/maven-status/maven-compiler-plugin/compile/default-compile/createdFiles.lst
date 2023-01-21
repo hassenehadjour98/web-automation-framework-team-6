@@ -1,0 +1,11 @@
+orangehrm/project/pages/HomePage.class
+orangehrm/project/pages/AdminPage.class
+base/CommonAPI.class
+utility/Utility.class
+reporting/ExtentManager.class
+reporting/ApplicationLog.class
+reporting/ExtentTestManager.class
+utility/ReadFromExcel.class
+reporting/TestLogger.class
+orangehrm/project/pages/LoginPage.class
+utility/ConnectDB.class
