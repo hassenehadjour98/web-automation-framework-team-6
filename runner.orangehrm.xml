@@ -9,13 +9,16 @@
     <parameter name="browserVersion" value="100"></parameter>
 
     <parameter name="browserName" value="chrome"></parameter>
-    <parameter name="url" value="https://www.amazon.com/"></parameter>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
 
     <test verbose="2" preserve-order="true" name="/Users/hassenehadjour/Desktop/web-automation-framework-team-6">
         <classes><class name="orangehrm.project.tests.LoginPageTest">
             <methods>
                 <include name="test"/>
             </methods>
-        </class></classes>
+        </class>
+            <class name="orangehrm.project.tests.LoginPageTest"></class>
+            <class name="orangehrm.project.tests.HomePagetest"></class>
+        </classes>
     </test>
 </suite>
