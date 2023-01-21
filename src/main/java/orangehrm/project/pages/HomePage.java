@@ -3,6 +3,7 @@ package orangehrm.project.pages;
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,17 +22,15 @@ public class HomePage extends CommonAPI {
     WebElement admin;
     @FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
     WebElement userNameTxt;
-    @FindBy(xpath = "//div[@class=\"oxd-grid-item oxd-grid-item--gutters\"]//div[text()='-- Select --']")
+    @FindBy(xpath = "(//div[@class=\"oxd-grid-item oxd-grid-item--gutters\"]//div[text()='-- Select --'])[1]")
     WebElement userRoleDropDown;
-    @FindBy(xpath = "(//div[@class='oxd-select-text-input'])[1]")
-    WebElement dropdownoptions;
-    @FindBy(xpath = "(//div[text()='-- Select --'])[2]")//
+    @FindBy(xpath = "//div[contains(text(),'-- Select --')]")//
     WebElement statusDropDown;
     @FindBy(xpath = "//button[@type='submit']")
     WebElement SearchBtn;
     @FindBy(xpath = "(//button[@type='button'])/i[contains(@class, 'oxd-icon bi-pencil-fill')]")
     WebElement editBtn;
-    @FindBy(xpath = "//input[@type='checkbox']")
+    @FindBy(css = ".oxd-icon.bi-check.oxd-checkbox-input-icon")
     WebElement passwordCheckBox;
 
     public void clickOnAdmin(){
@@ -44,13 +43,14 @@ public class HomePage extends CommonAPI {
     } // enter username
     public void userRoleDropDown(){
         clickOn(userRoleDropDown);
-        Select select = new Select(dropdownoptions);
-        select.selectByIndex(2);
-////////////////////////////////////////////////////////
+        userRoleDropDown.sendKeys(Keys.ARROW_DOWN, Keys.ENTER);
+        LOG.info("Admin selected from dropdown");
     } // select Admin drop down
     public void statusDropDown(){
-        selectOptionFromDropdown(statusDropDown, "Enable");
+        clickOn(statusDropDown);
+        statusDropDown.sendKeys(Keys.ARROW_DOWN, Keys.ESCAPE);
         LOG.info("Enable selected from dropdown");
+
     } // select enable from second drop down
     public void clickSearch(){
         clickOn(SearchBtn);
@@ -60,10 +60,14 @@ public class HomePage extends CommonAPI {
         clickOn(editBtn);
         LOG.info("edit button clicked");
     } // click edit button
-    public void clickonCheckBox(){
+    public boolean clickOnCheckBox(){
         clickOn(passwordCheckBox);
-        LOG.info("checkbox clicked");
+        boolean flag = passwordCheckBox.isEnabled();
+        LOG.info("checkbox clicked, and it is displayed");
+        return flag;
     } // check if change Password check box is available
 
+
 }
+
 

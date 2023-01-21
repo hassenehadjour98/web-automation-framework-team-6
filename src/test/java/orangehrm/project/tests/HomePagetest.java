@@ -20,12 +20,13 @@ public class HomePagetest extends CommonAPI {
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnAdmin();
         homepage.typeUserName();
-        Thread.sleep(3000);
         homepage.userRoleDropDown();
-        Thread.sleep(3000);
         homepage.statusDropDown();
+        homepage.clickSearch();
         homepage.clickOnEdit();
-        homepage.clickonCheckBox();
+        homepage.clickOnCheckBox();
+
+        Assert.assertTrue(homepage.clickOnCheckBox());
     }
 
 

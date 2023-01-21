@@ -1,48 +1,38 @@
-22:32:42.552 [main] INFO  orangehrm.project.tests.LoginPageTest - login success
-22:35:20.344 [main] INFO  orangehrm.project.tests.LoginPageTest - login success
-02:33:01.862 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-02:33:02.212 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-02:44:05.284 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-02:44:05.849 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-03:27:48.020 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-03:27:48.383 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-03:28:46.404 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-03:28:46.741 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-03:29:08.379 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-03:29:08.878 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-03:34:09.667 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-03:34:10.024 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-03:37:54.919 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-03:37:55.294 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-03:48:16.384 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-03:48:16.784 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-03:48:50.901 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-03:48:51.262 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-03:51:10.953 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-03:51:11.307 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-04:04:49.150 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-04:04:49.485 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-04:05:43.830 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-04:05:44.184 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-04:10:46.067 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-04:10:46.443 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-04:11:14.570 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-04:11:14.938 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-15:24:54.833 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-15:24:55.208 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-15:27:33.135 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-15:27:33.663 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-15:54:09.705 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-15:54:10.176 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-15:55:28.318 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-15:55:28.831 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-15:56:41.060 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-15:56:41.520 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-16:09:41.368 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-16:09:41.923 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-16:09:59.008 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-16:09:59.553 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-16:10:51.694 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-16:10:52.185 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
-16:11:25.870 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
-16:11:26.394 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+00:02:11.581 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+00:02:12.043 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+00:02:12.130 [main] INFO  orangehrm.project.pages.HomePage - Admin selected from dropdown
+00:02:12.208 [main] INFO  orangehrm.project.pages.HomePage - Enable selected from dropdown
+00:02:15.280 [main] INFO  orangehrm.project.pages.HomePage - search button clicked
+00:02:15.922 [main] INFO  orangehrm.project.pages.HomePage - edit button clicked
+00:02:18.969 [main] INFO  orangehrm.project.pages.HomePage - checkbox clicked
+00:04:19.402 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+00:04:19.766 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+00:04:19.851 [main] INFO  orangehrm.project.pages.HomePage - Admin selected from dropdown
+00:04:19.930 [main] INFO  orangehrm.project.pages.HomePage - Enable selected from dropdown
+00:04:19.968 [main] INFO  orangehrm.project.pages.HomePage - search button clicked
+00:04:20.536 [main] INFO  orangehrm.project.pages.HomePage - edit button clicked
+00:04:21.137 [main] INFO  orangehrm.project.pages.HomePage - checkbox clicked
+00:06:35.296 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+00:06:35.728 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+00:06:35.811 [main] INFO  orangehrm.project.pages.HomePage - Admin selected from dropdown
+00:06:35.889 [main] INFO  orangehrm.project.pages.HomePage - Enable selected from dropdown
+00:06:35.925 [main] INFO  orangehrm.project.pages.HomePage - search button clicked
+00:06:36.452 [main] INFO  orangehrm.project.pages.HomePage - edit button clicked
+00:06:37.098 [main] INFO  orangehrm.project.pages.HomePage - checkbox clicked, and it is displayed
+00:06:37.143 [main] INFO  orangehrm.project.pages.HomePage - checkbox clicked, and it is displayed
+00:18:22.205 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+00:18:22.782 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+00:18:22.866 [main] INFO  orangehrm.project.pages.HomePage - Admin selected from dropdown
+00:18:22.946 [main] INFO  orangehrm.project.pages.HomePage - Enable selected from dropdown
+00:18:22.984 [main] INFO  orangehrm.project.pages.HomePage - search button clicked
+00:18:23.585 [main] INFO  orangehrm.project.pages.HomePage - edit button clicked
+00:18:24.227 [main] INFO  orangehrm.project.pages.HomePage - checkbox clicked, and it is displayed
+00:18:24.298 [main] INFO  orangehrm.project.pages.HomePage - checkbox clicked, and it is displayed
+00:19:56.997 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+00:19:57.436 [main] INFO  orangehrm.project.pages.HomePage - text inserted to username
+00:19:57.525 [main] INFO  orangehrm.project.pages.HomePage - Admin selected from dropdown
+00:19:57.605 [main] INFO  orangehrm.project.pages.HomePage - Enable selected from dropdown
+00:19:57.664 [main] INFO  orangehrm.project.pages.HomePage - search button clicked
+00:19:58.192 [main] INFO  orangehrm.project.pages.HomePage - edit button clicked
+00:19:58.810 [main] INFO  orangehrm.project.pages.HomePage - checkbox clicked, and it is displayed
+00:19:58.847 [main] INFO  orangehrm.project.pages.HomePage - checkbox clicked, and it is displayed

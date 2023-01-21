@@ -38,17 +38,18 @@ public class LoginPage extends CommonAPI {
         type(UserNametxt, UsernameOH);
         type(passwordtxt, PasswordOH);
         clickOn(loginButton);
-
+        LOG.info("Login Successful");
     }
     public boolean DashboardTextDisplayed() {
         boolean flag = UserNameDisplayed.isDisplayed();
+        LOG.info("User Name is Displayed");
         return flag;
     }
     public String ResetPassword(){
         clickOn(forgotassord);
         type(resetpasswordusernametxt, UsernameOH);
         clickOn(ResetPasswordBtn);
-
+        LOG.info("Reset Password link sent successfully");
         String message = messagedisplay.getText();
         return message;
     }
