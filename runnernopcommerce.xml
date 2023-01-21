@@ -9,13 +9,11 @@
     <parameter name="browserVersion" value="100"></parameter>
 
     <parameter name="browserName" value="chrome"></parameter>
-    <parameter name="url" value="https://www.amazon.com/"></parameter>
-
-    <test verbose="2" preserve-order="true" name="/Users/hassenehadjour/Desktop/web-automation-framework-team-6">
-        <classes><class name="orangehrm.project.tests.LoginPageTest">
-            <methods>
-                <include name="test"/>
-            </methods>
-        </class></classes>
+    <parameter name="url" value="https://demo.nopcommerce.com/"></parameter>
+    <test verbose="2" preserve-order="true" name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/java/nopcommerce/tests/HomePageTest.java">
+        <classes>
+<!--            <class name="nopcommerce.tests.HomePageTest"></class>-->
+            <class name="nopcommerce.tests.SearchTest"></class>
+        </classes>
     </test>
 </suite>
