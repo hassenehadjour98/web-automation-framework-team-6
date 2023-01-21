@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import utility.Utility;
 
+import java.util.List;
+
 public class HomePage extends CommonAPI {
     public String UsernameOH = Utility.getProperties().getProperty("UsernameOH");
     Logger LOG = LogManager.getLogger(HomePage.class.getName());
@@ -20,53 +22,30 @@ public class HomePage extends CommonAPI {
     }
     @FindBy(xpath = "//span[text()='Admin']")
     WebElement admin;
-    @FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
-    WebElement userNameTxt;
-    @FindBy(xpath = "(//div[@class=\"oxd-grid-item oxd-grid-item--gutters\"]//div[text()='-- Select --'])[1]")
-    WebElement userRoleDropDown;
-    @FindBy(xpath = "//div[contains(text(),'-- Select --')]")//
-    WebElement statusDropDown;
-    @FindBy(xpath = "//button[@type='submit']")
-    WebElement SearchBtn;
-    @FindBy(xpath = "(//button[@type='button'])/i[contains(@class, 'oxd-icon bi-pencil-fill')]")
-    WebElement editBtn;
-    @FindBy(css = ".oxd-icon.bi-check.oxd-checkbox-input-icon")
-    WebElement passwordCheckBox;
+    @FindBy(xpath = "//li[@class='oxd-main-menu-item-wrapper']")
+    List<WebElement> optionsList;
+    @FindBy(css = ".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module")
+    WebElement FieldConfi;
+
 
     public void clickOnAdmin(){
         clickOn(admin);
         LOG.info("click Admin success");
     } // click on Admin
-    public void typeUserName(){
-        type(userNameTxt, UsernameOH);
-        LOG.info("text inserted to username");
-    } // enter username
-    public void userRoleDropDown(){
-        clickOn(userRoleDropDown);
-        userRoleDropDown.sendKeys(Keys.ARROW_DOWN, Keys.ENTER);
-        LOG.info("Admin selected from dropdown");
-    } // select Admin drop down
-    public void statusDropDown(){
-        clickOn(statusDropDown);
-        statusDropDown.sendKeys(Keys.ARROW_DOWN, Keys.ESCAPE);
-        LOG.info("Enable selected from dropdown");
-
-    } // select enable from second drop down
-    public void clickSearch(){
-        clickOn(SearchBtn);
-        LOG.info("search button clicked");
-    } // click search
-    public void clickOnEdit(){
-        clickOn(editBtn);
-        LOG.info("edit button clicked");
-    } // click edit button
-    public boolean clickOnCheckBox(){
-        clickOn(passwordCheckBox);
-        boolean flag = passwordCheckBox.isEnabled();
-        LOG.info("checkbox clicked, and it is displayed");
-        return flag;
-    } // check if change Password check box is available
-
+    public String FieldConfirmation(){
+        String txt = FieldConfi.getText();
+        return txt;
+    }
+    public void clickOnMenuField(String Field){
+        List<WebElement> list = optionsList;
+        for (WebElement element : optionsList) {
+            String FieldText = element.getText();
+            if (FieldText.equalsIgnoreCase(Field)) {
+                element.click();
+                break;
+            }
+        }
+    }
 
 }
 

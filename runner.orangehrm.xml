@@ -19,6 +19,7 @@
         </class>
             <class name="orangehrm.project.tests.LoginPageTest"></class>
             <class name="orangehrm.project.tests.HomePagetest"></class>
+            <class name="orangehrm.project.tests.AdminPageTest"></class>
         </classes>
     </test>
 </suite>
