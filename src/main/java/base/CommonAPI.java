@@ -42,6 +42,7 @@ public class CommonAPI {
     String implicitWait = Utility.getProperties().getProperty("implicit.wait", "10");
     String username = Utility.decode(Utility.getProperties().getProperty("browserstack.username"));
     String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password"));
+
     public WebDriver driver;
 
     //report setup from line 37 to 94
