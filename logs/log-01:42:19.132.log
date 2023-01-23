@@ -1,0 +1,121 @@
+19:07:02.204 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+19:07:02.915 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+19:07:03.239 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+19:07:03.297 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+19:07:03.352 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+19:07:03.511 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+00:57:45.179 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+00:57:46.550 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+00:57:47.494 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+00:57:48.221 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+00:57:48.588 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+00:57:48.670 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+00:57:48.738 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+00:57:48.787 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+00:58:54.131 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+00:58:55.690 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+00:58:56.558 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+00:58:57.290 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+00:58:57.658 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+00:58:57.736 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+00:58:57.801 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+00:58:57.904 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:00:19.409 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:00:21.351 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:00:22.107 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:00:22.839 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:00:23.204 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:00:23.267 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:00:23.321 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:00:23.422 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:07:39.940 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:07:41.240 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:07:42.206 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:07:42.925 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:07:43.285 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:07:43.346 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:07:43.435 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:07:43.541 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:10:25.633 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:10:26.958 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:10:27.943 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:10:28.615 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:10:28.982 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:10:29.039 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:10:29.092 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:10:29.255 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:12:27.311 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:12:29.049 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:12:29.867 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:12:30.612 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:12:30.989 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:12:31.048 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:12:31.102 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:12:31.259 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:12:35.209 [main] INFO  orangehrm.project.pages.AdminPage - New job title deleted success
+01:15:44.342 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:15:45.861 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:15:46.916 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:15:47.774 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:15:48.296 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:15:48.358 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:15:48.411 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:15:48.567 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:15:52.518 [main] INFO  orangehrm.project.pages.AdminPage - New job title deleted success
+01:23:13.997 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:23:15.582 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:23:16.562 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:23:17.290 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:23:17.671 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:23:17.734 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:23:17.792 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:23:17.952 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:24:58.756 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:25:00.025 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:25:01.004 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:25:01.751 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:25:02.145 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:25:02.202 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:25:02.259 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:25:02.361 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:26:23.233 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:26:24.764 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:26:25.768 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:26:26.438 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:26:26.775 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:26:26.834 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:26:26.892 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:26:27.048 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:26:30.843 [main] INFO  orangehrm.project.pages.AdminPage - New job title deleted success
+01:27:15.495 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:27:16.802 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:27:17.705 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:27:18.447 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:27:18.818 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:27:18.876 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:27:18.933 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:27:19.034 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:27:22.908 [main] INFO  orangehrm.project.pages.AdminPage - New job title deleted success
+01:28:23.150 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:28:24.532 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:28:25.447 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:28:26.122 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:28:26.462 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:28:26.525 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:28:26.600 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:28:26.702 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:28:30.500 [main] INFO  orangehrm.project.pages.AdminPage - New job title deleted success
+01:31:50.551 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:31:51.893 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:31:52.664 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:31:53.377 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:31:53.750 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+01:31:53.805 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+01:31:53.862 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+01:31:53.968 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+01:31:57.835 [main] INFO  orangehrm.project.pages.AdminPage - New job title deleted success
+01:42:15.858 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:42:17.241 [main] INFO  orangehrm.project.pages.HomePage - click Admin success
+01:42:17.966 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+01:42:18.686 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+01:42:19.063 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed

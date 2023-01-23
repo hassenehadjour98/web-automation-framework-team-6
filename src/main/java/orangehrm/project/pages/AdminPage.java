@@ -49,7 +49,10 @@ public class AdminPage extends CommonAPI {
     WebElement DeleteBtn;
     @FindBy(xpath = "//button[text()=' Yes, Delete ']")
     WebElement YesDeleteBtn;
-
+    @FindBy(xpath = "//p[text()='Success']")
+    WebElement typeOfToastMsg;
+    @FindBy(css = ".oxd-text.oxd-text--p.oxd-text--toast-message.oxd-toast-content-text")
+    WebElement ToastMsgText;
 
     public void typeUserName(){
         type(userNameTxt, UsernameOH);
@@ -59,17 +62,17 @@ public class AdminPage extends CommonAPI {
         clickOn(userRoleDropDown);
         userRoleDropDown.sendKeys(Keys.ARROW_DOWN, Keys.ENTER);
         LOG.info("Admin selected from dropdown");
-    } // select Admin drop down
+    } // select Admin from UsersRole drop down
     public void statusDropDown(){
         clickOn(statusDropDown);
         statusDropDown.sendKeys(Keys.ARROW_DOWN, Keys.ESCAPE);
         LOG.info("Enable selected from dropdown");
 
-    } // select enable from second drop down
+    } // select enable from Status drop down
     public void clickSearch(){
         clickOn(SearchBtn);
         LOG.info("search button clicked");
-    } // click search
+    } // click search button
     public void clickOnEdit(){
         clickOn(editBtn);
         LOG.info("edit button clicked");
@@ -83,24 +86,37 @@ public class AdminPage extends CommonAPI {
     public void jobTitleFromDropDown(){
         clickOn(JobTitleDropDown);
         clickOn(JobTitle);
+        LOG.info("Job Titles is selected from JobDropDown");
     }//handel Job dropdown //select JobTitles
     public void clickOnAddBtn(){
        clickOn(AddBtn);
+       LOG.info("Add button clicked");
     }//click on Add button
     public void typeJobTitle(String JobTitle){
         type(JobTitleTxt, JobTitle);
-    }//type job title to add
+        LOG.info("JobTitle text typed");
+    }//type job title
     public void addJobDescription(String Jobdescription){
         type(JobDescription, Jobdescription);
+        LOG.info("Job description text typed");
     }//type job description
     public void typeNote(String Note){
         type(Notetxt, Note);
+        LOG.info("Note text typed");
     }//type a note
     public void clickOnSave(){
         clickOn(SaveBtn);
+        LOG.info("Save button clicked");
     }//click on save
     public void deleteTheCreatedJobTitle(){
         clickOn(DeleteBtn);
         clickOn(YesDeleteBtn);
-    }
+        LOG.info("Delete button clicked");
+    } // delete the created job title
+    public String ToastMessage(){
+        String message=getTextFromElement(ToastMsgText);
+        LOG.info("Toast message captured");
+        return message;
+    }// step confirmation with toast message
+
 }

@@ -3,17 +3,6 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
-      <class name="orangehrm.project.tests.LoginPageTest">
-        <methods>
-          <include name="resetpassword"/>
-          <include name="setUp"/>
-          <include name="logintest"/>
-          <include name="afterEachTestMethod"/>
-          <include name="extentSetup"/>
-          <include name="generateReport"/>
-          <include name="startExtent"/>
-        </methods>
-      </class> <!-- orangehrm.project.tests.LoginPageTest -->
       <class name="orangehrm.project.tests.AdminPageTest">
         <methods>
           <include name="setUp"/>
@@ -25,6 +14,37 @@
           <include name="startExtent"/>
         </methods>
       </class> <!-- orangehrm.project.tests.AdminPageTest -->
+      <class name="nopcommerce.tests.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="clkOnLnkRegisterTest"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- nopcommerce.tests.HomePageTest -->
+      <class name="orangehrm.project.tests.LoginPageTest">
+        <methods>
+          <include name="resetpassword"/>
+          <include name="setUp"/>
+          <include name="logintest"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- orangehrm.project.tests.LoginPageTest -->
+      <class name="nopcommerce.tests.SearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="searchTest"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- nopcommerce.tests.SearchTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
