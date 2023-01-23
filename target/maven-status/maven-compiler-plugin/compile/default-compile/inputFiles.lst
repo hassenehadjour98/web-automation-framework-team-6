@@ -1,11 +1,13 @@
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/reporting/TestLogger.java
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/reporting/ExtentManager.java
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/orangehrm/project/pages/HomePage.java
-/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/reporting/ApplicationLog.java
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/base/CommonAPI.java
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/orangehrm/project/pages/LoginPage.java
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/utility/Utility.java
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/utility/ReadFromExcel.java
-/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/utility/ConnectDB.java
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/reporting/ExtentTestManager.java
+/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/nopcommerce/pages/HomePage.java
+/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/reporting/ApplicationLog.java
+/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/nopcommerce/pages/SearchPage.java
+/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/utility/ConnectDB.java
 /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/main/java/orangehrm/project/pages/AdminPage.java
