@@ -118,5 +118,4 @@ public class AdminPage extends CommonAPI {
         LOG.info("Toast message captured");
         return message;
     }// step confirmation with toast message
-
 }

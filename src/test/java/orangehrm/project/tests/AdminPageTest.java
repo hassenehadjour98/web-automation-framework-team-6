@@ -6,7 +6,6 @@ import orangehrm.project.pages.HomePage;
 import orangehrm.project.pages.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.devtools.v85.log.Log;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -57,6 +56,7 @@ public class AdminPageTest extends CommonAPI {
         String Actualresult2= adminpage.ToastMessage();
         Assert.assertEquals(Actualresult2, "Successfully Deleted");
         LOG.info("add Then Delete a Job Title test Finished");
+
     }
 
 }
