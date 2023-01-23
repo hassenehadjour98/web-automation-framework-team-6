@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c212e2ee-3df3-48aa-a451-8f6b20e34109" name="Changes" comment="" />
+    <list default="true" id="c212e2ee-3df3-48aa-a451-8f6b20e34109" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runnernopcommerce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/runnernopcommerce.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +34,17 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2KZWbWjEAnNViOIU0qfCiayUupx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,10 +63,31 @@
       <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\Data-nopcommerce" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\Extent-Report" />
       <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\Data\nopcommerce" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/runnernopcommerce.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/Master.xml">
+    <configuration name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team-6" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Master.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/runner.orangehrm.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team-6" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/runner.orangehrm.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/runnernopcommerce.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-automation-framework-team-6" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/runnernopcommerce.xml" />
@@ -91,10 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/Master.xml" />
         <item itemvalue="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/runnernopcommerce.xml" />
         <item itemvalue="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/testng.xml" />
-        <item itemvalue="TestNG.HomePageTest.clickOnLnkRegisterTest" />
-        <item itemvalue="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/testng.xml" />
+        <item itemvalue="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/runner.orangehrm.xml" />
         <item itemvalue="TestNG.HomePageTest.clickOnLnkRegisterTest" />
       </list>
     </recent_temporary>
@@ -132,17 +169,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/base/CommonAPI.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

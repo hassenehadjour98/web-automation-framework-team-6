@@ -8,9 +8,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class HomePage extends CommonAPI {
     Logger log = LogManager.getLogger(HomePage.class.getName());
-    public HomePage(WebDriver driver){PageFactory.initElements(driver, this);}
+
+    public HomePage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
+    }
 
     @FindBy(css = ".ico-register")
     WebElement lnkRegister;
@@ -32,58 +37,81 @@ public class HomePage extends CommonAPI {
     WebElement logoNopCommerce;
     @FindBy(css = "#customerCurrency")
     WebElement dropDownCurrency;
+
+    @FindBy(xpath = "//option[contains(text(),'US Dollar')]")
+    WebElement drpUsDollarOpt;
+    @FindBy(xpath = "//option[contains(text(),'Euro')]")
+    WebElement drpEuroOpt;
     @FindBy(css = ".ico-logout")
     WebElement lnkLogout;
 
-    public void clkOnLnkRegister(){
+    public void clkOnLnkRegister() {
         clickOn(lnkRegister);
         log.info("click on register success");
     }
-    public void clkOnLnkLogin (){
+
+    public void clkOnLnkLogin() {
         clickOn(lnkLogin);
-        log.info("click on signin success");}
-    public void clkOnLnkWishlist (){
+        log.info("click on signin success");
+    }
+
+    public void clkOnLnkWishlist() {
         clickOn(lnkWishlist);
         log.info("click on whishlist success");
     }
-    public String getWishlistQuantity (){
+
+    public String getWishlistQuantity() {
         log.info("Whishlist quantity success");
         return getTextFromElement(wishlistQuantity);
     }
-    public void clkOnShoppingCart () {
+
+    public void clkOnShoppingCart() {
         clickOn(lnkShoppingCart);
         log.info("click on shopping cart success");
     }
-    public String getShoppingCartQuantity(){
+
+    public String getShoppingCartQuantity() {
         log.info("Shopping cart quantity success");
         return getTextFromElement(shoppingCartQuantity);
     }
-    public void searchItem(String item){
+
+    public void searchItem(String item) {
         type(txtSearchItem, item);
         log.info("Item type success");
     }
-    public void clkSearchBtn(){
+
+    public void clkSearchBtn() {
         clickOn(btnSearch);
         log.info("click on search success");
     }
-    public Boolean logoNopCommerceIsDisplayed (){
+
+    public Boolean logoNopCommerceIsDisplayed() {
         log.info("logo verified");
-       return logoNopCommerce.isDisplayed();
+        return elementIsDisplayed(logoNopCommerce);
 
     }
-    public void clkLogoNopCommerce(){
-        logoNopCommerce.click();
+
+    public void clkLogoNopCommerce() {
+        clickOn(logoNopCommerce);
         log.info("click on nopcommerce logo success");
     }
-    public void selectCurrency (String option){
-        selectOptionFromDropdown(dropDownCurrency,option);
+
+    public void selectCurrency(String option) {
+        selectOptionFromDropdown(dropDownCurrency, option);
         log.info("select currency success");
     }
-
     public void clickOnLnkLogout(){
-        lnkLogout.click();
+        clickOn(lnkLogout);
         log.info("click on logout success");
     }
+    public boolean usDollarIsSelected (){
+        return elementIsSelected(drpUsDollarOpt);
+    }
+    public boolean euroIsSelected (){
+        return elementIsSelected(drpEuroOpt);
+    }
+
+
 
 
 
