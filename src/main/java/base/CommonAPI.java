@@ -212,4 +212,18 @@ public class CommonAPI {
             LOG.info("Exception while taking screenshot "+e.getMessage());
         }
     }
+
+    //Added Methods
+    public String getAttributeValue (WebElement element, String attributeName){
+        return element.getAttribute(attributeName);
+    }
+    public boolean elementIsDisplayed (WebElement element){
+        return element.isDisplayed();
+    }
+    public boolean elementIsSelected (WebElement element){
+        return element.isSelected();
+    }
+    public boolean elementIsEnabled (WebElement element){
+        return element.isEnabled();
+    }
 }
