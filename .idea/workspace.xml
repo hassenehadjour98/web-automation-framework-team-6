@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c212e2ee-3df3-48aa-a451-8f6b20e34109" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runnernopcommerce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/runnernopcommerce.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/LogInTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
