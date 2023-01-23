@@ -10,16 +10,17 @@ import org.testng.annotations.Test;
 
 public class SelectCurrencyTest extends CommonAPI {
     Logger log = LogManager.getLogger(HomePage.class.getName());
+    String mainCurrency = "US Dollar";
+    String currency2 = "Euro";
+    String item1 ="Nokia Lumia 1020";
 
     @Test
     public void selectCurrencyTest1() {
         log.info("***  Select currency Test 1 Started ***");
 
         HomePage hp = new HomePage(getDriver());
-        String currency = "Euro";
-        hp.selectCurrency(currency);
-        String item ="Nokia Lumia 1020";
-        hp.searchItem(item);
+        hp.selectCurrency(currency2);
+        hp.searchItem(item1);
         hp.clkSearchBtn();
         String actualTitle = getCurrentTitle();
         String expectedTitle = "nopCommerce demo store. Search";
@@ -28,7 +29,7 @@ public class SelectCurrencyTest extends CommonAPI {
 
         SearchPage sp = new SearchPage(getDriver());
         String actualItemName = sp.getItemName();
-        Assert.assertEquals(actualItemName,item,"Item not found");
+        Assert.assertEquals(actualItemName, item1,"Item not found");
         log.info("Item found successfully");
 
         String actualPrice = sp.getItemPrice();
@@ -43,8 +44,7 @@ public class SelectCurrencyTest extends CommonAPI {
         log.info("***  Select currency Test 2 Started ***");
 
         HomePage hp = new HomePage(getDriver());
-        String mainCurrency = "US Dollar";
-        String currency2 = "Euro";
+
         Assert.assertTrue(hp.usDollarIsSelected());
         Assert.assertFalse(hp.euroIsSelected());
 
@@ -61,8 +61,7 @@ public class SelectCurrencyTest extends CommonAPI {
 
         HomePage hp = new HomePage(getDriver());
 
-        String item ="Nokia Lumia 1020";
-        hp.searchItem(item);
+        hp.searchItem(item1);
         hp.clkSearchBtn();
         String actualTitle = getCurrentTitle();
         String expectedTitle = "nopCommerce demo store. Search";
@@ -71,7 +70,7 @@ public class SelectCurrencyTest extends CommonAPI {
 
         SearchPage sp = new SearchPage(getDriver());
         String actualItemName = sp.getItemName();
-        Assert.assertEquals(actualItemName,item,"Item not found");
+        Assert.assertEquals(actualItemName, item1,"Item not found");
         log.info("Item found successfully");
 
         String actualPrice = sp.getItemPrice();
@@ -79,8 +78,7 @@ public class SelectCurrencyTest extends CommonAPI {
         Assert.assertEquals(actualPrice,expectedPrice,"Price not as expected");
         log.info("Item price as expected");
 
-        String currency = "Euro";
-        hp.selectCurrency(currency);
+        hp.selectCurrency(currency2);
         Assert.assertTrue(hp.euroIsSelected());
         log.info("New currency selected successfully");
 

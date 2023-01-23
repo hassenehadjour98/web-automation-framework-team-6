@@ -11,11 +11,11 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class HomePage extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
 
     public HomePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+    Logger log = LogManager.getLogger(HomePage.class.getName());
 
     @FindBy(css = ".ico-register")
     WebElement lnkRegister;

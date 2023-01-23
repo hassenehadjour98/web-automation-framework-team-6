@@ -14,8 +14,8 @@
         <classes>
 <!--            <class name="nopcommerce.tests.HomePageTest"></class>-->
 <!--            <class name="nopcommerce.tests.SearchTest"></class>-->
-<!--            <class name="nopcommerce.tests.SelectCurrencyTest"></class>-->
-            <class name="nopcommerce.tests.RegistrationPageTest"></class>
+            <class name="nopcommerce.tests.SelectCurrencyTest"></class>
+<!--            <class name="nopcommerce.tests.RegistrationPageTest"></class>-->
         </classes>
     </test>
 </suite>

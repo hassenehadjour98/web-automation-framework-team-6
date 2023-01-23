@@ -1125,3 +1125,30 @@
 19:37:26.510 [main] INFO  nopcommerce.pages.HomePage - Landed on registration page successfully
 19:37:26.559 [main] INFO  nopcommerce.pages.HomePage - Click on register successful
 19:37:26.645 [main] INFO  nopcommerce.pages.HomePage - ***  Registration Test 3 finished ***
+22:11:20.381 [main] INFO  nopcommerce.pages.HomePage - ***  Select currency Test 1 Started ***
+22:11:20.897 [main] INFO  nopcommerce.pages.HomePage - select currency success
+22:11:20.982 [main] INFO  nopcommerce.pages.HomePage - Item type success
+22:11:21.334 [main] INFO  nopcommerce.pages.HomePage - click on search success
+22:11:21.343 [main] INFO  nopcommerce.pages.HomePage - Landed on search page successfully
+22:11:21.346 [main] INFO  nopcommerce.pages.HomePage - get item name success
+22:11:21.367 [main] INFO  nopcommerce.pages.HomePage - Item found successfully
+22:11:21.367 [main] INFO  nopcommerce.pages.HomePage - get item price success
+22:11:21.385 [main] INFO  nopcommerce.pages.HomePage - Item price as expected
+22:11:21.385 [main] INFO  nopcommerce.pages.HomePage - ***  Select currency Test 1 finished ***
+22:11:23.717 [main] INFO  nopcommerce.pages.HomePage - ***  Select currency Test 2 Started ***
+22:11:24.193 [main] INFO  nopcommerce.pages.HomePage - select currency success
+22:11:24.229 [main] INFO  nopcommerce.pages.HomePage - New currency selected successfully
+22:11:24.229 [main] INFO  nopcommerce.pages.HomePage - ***  Select currency Test 2 finished ***
+22:11:26.210 [main] INFO  nopcommerce.pages.HomePage - ***  Select currency Test 3 Started ***
+22:11:26.317 [main] INFO  nopcommerce.pages.HomePage - Item type success
+22:11:26.884 [main] INFO  nopcommerce.pages.HomePage - click on search success
+22:11:26.891 [main] INFO  nopcommerce.pages.HomePage - Landed on search page successfully
+22:11:26.894 [main] INFO  nopcommerce.pages.HomePage - get item name success
+22:11:26.916 [main] INFO  nopcommerce.pages.HomePage - Item found successfully
+22:11:26.917 [main] INFO  nopcommerce.pages.HomePage - get item price success
+22:11:26.933 [main] INFO  nopcommerce.pages.HomePage - Item price as expected
+22:11:27.401 [main] INFO  nopcommerce.pages.HomePage - select currency success
+22:11:27.422 [main] INFO  nopcommerce.pages.HomePage - New currency selected successfully
+22:11:27.422 [main] INFO  nopcommerce.pages.HomePage - get item price success
+22:11:27.437 [main] INFO  nopcommerce.pages.HomePage - Item price converted successfully
+22:11:27.437 [main] INFO  nopcommerce.pages.HomePage - ***  Select currency Test 3 finished ***
