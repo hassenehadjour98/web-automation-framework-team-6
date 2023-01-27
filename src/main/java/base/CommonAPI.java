@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -42,6 +43,7 @@ public class CommonAPI {
     String implicitWait = Utility.getProperties().getProperty("implicit.wait", "10");
     String username = Utility.decode(Utility.getProperties().getProperty("browserstack.username").trim());
     String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password").trim());
+    String headlessMode = Utility.getProperties().getProperty("headless.mode", "false");
 
     public WebDriver driver;
 
@@ -104,8 +106,9 @@ public class CommonAPI {
         return calendar.getTime();
     }
     public void getLocalDriver(String browserName){
+        ChromeOptions options = new ChromeOptions();
         if (browserName.equalsIgnoreCase("chrome")){
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options.setHeadless(Boolean.parseBoolean(headlessMode)));
         }else if (browserName.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
         } else if (browserName.equalsIgnoreCase("edge")) {
