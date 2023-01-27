@@ -40,8 +40,8 @@ public class CommonAPI {
     String takeScreenshot = Utility.getProperties().getProperty("take.screenshot", "false");
     String maximizeBrowser = Utility.getProperties().getProperty("browser.maximize", "true");
     String implicitWait = Utility.getProperties().getProperty("implicit.wait", "10");
-    String username = Utility.decode(Utility.getProperties().getProperty("browserstack.username"));
-    String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password"));
+    String username = Utility.decode(Utility.getProperties().getProperty("browserstack.username").trim());
+    String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password").trim());
 
     public WebDriver driver;
 
@@ -132,7 +132,7 @@ public class CommonAPI {
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName,
                       @Optional("windows") String os, @Optional("11") String osVersion,
                       @Optional("chrome") String browserName, @Optional("108") String browserVersion,
-                      @Optional("https://www.google.com/") String url) throws InterruptedException, MalformedURLException {
+                      @Optional("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login") String url) throws InterruptedException, MalformedURLException {
         if (useCloudEnv){
             getCloudDriver(envName, os,osVersion,browserName,browserVersion, username, password);
         }else {
@@ -214,6 +214,9 @@ public class CommonAPI {
     }
 
     //Added Methods
+    public String getCurrentURL(){
+            return driver.getCurrentUrl();
+        }
     public String getAttributeValue (WebElement element, String attributeName){
         return element.getAttribute(attributeName);
     }

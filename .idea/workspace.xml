@@ -6,40 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="b0a0ba49-6cc8-4795-8568-06bba38a2ee3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/test-logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runner.orangehrm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/runner.orangehrm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/AdminPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orangehrm/project/tests/AdminPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orangehrm/project/tests/AdminPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orangehrm/project/tests/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orangehrm/project/tests/LoginPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testdocumentation/OrangeHRM.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testdocumentation/OrangeHRM.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.AdminPageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.AdminPageTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.LoginPageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.LoginPageTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/MyInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/MyInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orangehrm/project/tests/MyInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orangehrm/project/tests/MyInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testdocumentation/OrangeHRM.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/orangehrm/OrangeHRM.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/CommonAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orangehrm/project/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orangehrm/project/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orangehrm/project/pages/MyInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orangehrm/project/pages/MyInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/AdminPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/AdminPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/LoginPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/LoginPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/MyInfoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/MyInfoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +65,8 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hassenehadjour/Desktop/web-automation-framework-team-6&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/hassenehadjour/Desktop/Final/web-automation-framework-team-6&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -93,11 +75,13 @@
       <recent name="$PROJECT_DIR$/src/test/java/testdocumentation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Data/orangehrm" />
+      <recent name="$PROJECT_DIR$/Data" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyInfoTest.selectBloodType">
+  <component name="RunManager" selected="TestNG./Users/hassenehadjour/Desktop/web-automation-framework-team-6/runner.orangehrm.xml">
     <configuration name="ReadFromExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utility.ReadFromExcel" />
       <module name="web-automation-framework-team-6" />
@@ -176,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/hassenehadjour/Desktop/web-automation-framework-team-6/runner.orangehrm.xml" />
+        <item itemvalue="TestNG.LoginPageTest.resetpassword" />
         <item itemvalue="TestNG.MyInfoTest.selectBloodType" />
         <item itemvalue="TestNG.MyInfoTest" />
-        <item itemvalue="TestNG.LoginPageTest.resetpassword" />
         <item itemvalue="Application.ReadFromExcel" />
-        <item itemvalue="TestNG./Users/hassenehadjour/Desktop/web-automation-framework-team-6/runner.orangehrm.xml" />
       </list>
     </recent_temporary>
   </component>

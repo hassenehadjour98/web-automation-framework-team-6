@@ -20,6 +20,7 @@
             <class name="orangehrm.project.tests.LoginPageTest"></class>
             <class name="orangehrm.project.tests.HomePagetest"></class>
             <class name="orangehrm.project.tests.AdminPageTest"></class>
+            <class name="orangehrm.project.tests.MyInfoTest"></class>
         </classes>
     </test>
 </suite>
