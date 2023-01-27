@@ -15,8 +15,8 @@ public class LoginPage extends CommonAPI {
         PageFactory.initElements(driver, this);
     }
 
-    public String UsernameOH = Utility.getProperties().getProperty("UsernameOH");
-    public String PasswordOH = Utility.getProperties().getProperty("PasswordOH");
+    public String UsernameOH = Utility.getProperties().getProperty("UsernameOH").trim();
+    public String PasswordOH = Utility.getProperties().getProperty("PasswordOH").trim();
 
     @FindBy(xpath = "//input[@name=\"username\"]")
     WebElement UserNametxt;
@@ -34,6 +34,7 @@ public class LoginPage extends CommonAPI {
     WebElement ResetPasswordBtn;
     @FindBy(xpath = "//h6[text()='Reset Password link sent successfully']")
     WebElement messagedisplay;
+
     public void logIn(){
         type(UserNametxt, UsernameOH);
         type(passwordtxt, PasswordOH);

@@ -19,7 +19,7 @@ public class AdminPage extends CommonAPI {
 
     @FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
     WebElement userNameTxt;
-    @FindBy(xpath = "(//div[@class=\"oxd-grid-item oxd-grid-item--gutters\"]//div[text()='-- Select --'])[1]")
+    @FindBy(xpath = "(//div[@class='oxd-grid-item oxd-grid-item--gutters']//div[text()='-- Select --'])[1]")
     WebElement userRoleDropDown;
     @FindBy(xpath = "//div[contains(text(),'-- Select --')]")//
     WebElement statusDropDown;

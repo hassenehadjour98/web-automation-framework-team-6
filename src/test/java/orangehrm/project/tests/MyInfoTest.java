@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 public class MyInfoTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(MyInfoTest.class.getName());
+
     @Test
     public void selectBloodType() throws InterruptedException {
         LoginPage loginpage = new LoginPage(getDriver());
@@ -18,11 +19,12 @@ public class MyInfoTest extends CommonAPI {
         MyInfo myinfo = new MyInfo(getDriver());
         myinfo.clickOnMyInfo();
         myinfo.selectBloodType();
-        Thread.sleep(3000);
+//        Thread.sleep(300000);
         myinfo.clickOnSave();
+//        Thread.sleep(300000);
 
-//        String Actualresult=myinfo.ToastMessage();
-//        String Expectedresult = "Success";
-//        Assert.assertEquals(Actualresult,Expectedresult);
+        String Actualresult=myinfo.ToastMessage();
+        String Expectedresult = "Success";
+        Assert.assertEquals(Actualresult,Expectedresult);
     }
 }

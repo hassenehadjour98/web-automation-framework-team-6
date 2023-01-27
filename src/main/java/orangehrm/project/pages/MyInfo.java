@@ -3,12 +3,13 @@ package orangehrm.project.pages;
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+import javax.swing.*;
 
 public class MyInfo extends CommonAPI {
     Logger LOG = LogManager.getLogger(MyInfo.class.getName());
@@ -21,13 +22,14 @@ public class MyInfo extends CommonAPI {
     @FindBy(xpath = "//span[text()='My Info']")
     WebElement MyInfo;
     // scroll down to element Blood Type
-    @FindBy(xpath = "//div[text()='-- Select --']")
+    @FindBy(xpath = "(//div[@class='oxd-select-text-input'])[3]")
     WebElement BloodType;
-    //select O+ from the dropdown
-    // click save
+    @FindBy(xpath = "//span[text()='O+']")
+    WebElement Opositivetype;
+
     @FindBy(xpath = "(//button[@type='submit'])[2]")
     WebElement SaveBtn;
-    @FindBy(css = ".oxd-text.oxd-text--p.oxd-text--toast-message.oxd-toast-content-text")
+    @FindBy(xpath = "//p[text()='Success']")
     WebElement ToastMsgText;
 
     // catch success message for confirmation
@@ -36,10 +38,11 @@ public class MyInfo extends CommonAPI {
         LOG.info("My Info Clicked");
     }
     public void selectBloodType(){
-//        scrollDownToElement(BloodType);
-//        clickOn(BloodType);
-        BloodType.sendKeys(Keys.ARROW_DOWN,Keys.ARROW_DOWN,
-                Keys.ARROW_DOWN,Keys.ARROW_DOWN, Keys.ENTER);
+        clickOn(BloodType);
+        clickOn(Opositivetype);
+
+//        clickWithJavascript(BloodType);
+
         LOG.info("blood type selected");
     }
     public void clickOnSave(){
@@ -47,7 +50,7 @@ public class MyInfo extends CommonAPI {
         LOG.info("Save button clicked");
     }
     public String ToastMessage(){
-        String message=getTextFromElement(ToastMsgText);
+        String message = getTextFromElement(ToastMsgText);
         LOG.info("Toast message captured");
         return message;
     }
