@@ -10,6 +10,12 @@
 
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://demo.nopcommerce.com/"></parameter>
+    <test verbose="2" preserve-order="true" name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/java/nopcommerce/tests/HomePageTest.java">
+        <classes>
+<!--            <class name="nopcommerce.tests.HomePageTest"></class>-->
+<!--            <class name="nopcommerce.tests.SearchTest"></class>-->
+<!--            <class name="nopcommerce.tests.SelectCurrencyTest"></class>-->
+            <class name="nopcommerce.tests.RegistrationPageTest"></class>
     <test verbose="10" preserve-order="true" name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/java/nopcommerce/tests/HomePageTest.java">
         <classes>
             <class name="nopcommerce.tests.HomePageTest"></class>

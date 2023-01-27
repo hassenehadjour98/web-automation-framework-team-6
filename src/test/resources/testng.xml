@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="useCloudEnv" value="false"></parameter>
+
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <parameter name="osVersion" value="10"></parameter>
+    <parameter name="browserVersion" value="100"></parameter>
+
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+
+    <test verbose="2" preserve-order="true" name="/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/test/java/orangehrm/project/tests">
+        <classes>
+            <class name="orangehrm.project.tests.AdminPageTest">
+                <methods>
+                    <include name="changePasswordCheckBox"/>
+                    <include name="addThenDeleteJobTitle"/>
+                </methods>
+            </class>
+            <class name="orangehrm.project.tests.HomePagetest">
+                <methods><include name="AdminFromMenu"/>
+                    <include name="LeaveFromMenu"/>
+                    <include name="TimeFromMenu"/>
+                    <include name="RecruitmentFromMenu"/>
+                    <include name="PerformanceFromMenu"/>
+                    <include name="DashboardFromMenu"/>
+                    <include name="DirectoryFromMenu"/>
+                    <include name="BuzzFromMenu"/>
+                </methods>
+            </class>
+            <class name="orangehrm.project.tests.LoginPageTest">
+                <methods>
+                    <include name="logintest"/>
+                    <include name="resetpassword"/>
+                </methods></class><class name="orangehrm.project.tests.MyInfoTest">
+            <methods>
+                <include name="selectBloodType"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>

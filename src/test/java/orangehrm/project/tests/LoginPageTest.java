@@ -24,9 +24,9 @@ public class LoginPageTest extends CommonAPI {
     }
     @Test
     public void resetpassword(){
-//        ReadFromExcel readfromexcel = new ReadFromExcel("/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/test/java/testdocumentation/OrangeHRM.xlsx","LoginPage");
-//        String data = readfromexcel.getDataFromCell(11,5);
-        String data= "Reset Password link sent successfully";
+        ReadFromExcel readfromexcel = new ReadFromExcel("/Users/hassenehadjour/Desktop/web-automation-framework-team-6/Data/orangehrm/OrangeHRM.xlsx","LoginPage");
+        String data = readfromexcel.getDataFromCell(11,5);
+//        String data= "Reset Password link sent successfully";
 
         LoginPage loginpage = new LoginPage(getDriver());
         String Actualresult = loginpage.ResetPassword();
