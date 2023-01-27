@@ -76,11 +76,11 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
-Extent-Report/ExtentReport.html
-logs/test-logs.log
+Extent-Report/ExtentReport.html/
+logs/test-logs.log/
 .idea/
 target/
-.gitignore
-pom.xml
-runner.orangehrm.xml
+.gitignore/
+pom.xml/
+runner.orangehrm.xml/
 
