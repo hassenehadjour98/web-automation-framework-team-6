@@ -9,15 +9,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SearchTest extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
+    Logger log = LogManager.getLogger(SearchTest.class.getName());
+    String item ="Nokia Lumia 1020";
 
 
     @Test
-    public void searchTest(){
+    public void searchAndValidatePrice(){
         log.info("***  Search Test Started ***");
 
         HomePage homePage = new HomePage(getDriver());
-        String item ="Nokia Lumia 1020";
         homePage.searchItem(item);
         homePage.clkSearchBtn();
         String actualTitle = getCurrentTitle();

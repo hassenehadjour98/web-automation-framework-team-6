@@ -7,6 +7,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utility.ReadFromExcel;
+import utility.Utility;
 
 public class LoginPageTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(LoginPageTest.class.getName());
@@ -22,9 +24,13 @@ public class LoginPageTest extends CommonAPI {
     }
     @Test
     public void resetpassword(){
+//        ReadFromExcel readfromexcel = new ReadFromExcel("/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/test/java/testdocumentation/OrangeHRM.xlsx","LoginPage");
+//        String data = readfromexcel.getDataFromCell(11,5);
+        String data= "Reset Password link sent successfully";
+
         LoginPage loginpage = new LoginPage(getDriver());
         String Actualresult = loginpage.ResetPassword();
-        String Expectedresult = "Reset Password link sent successfully";
+        String Expectedresult = data;
 
         Assert.assertEquals(Actualresult, Expectedresult);
     }
