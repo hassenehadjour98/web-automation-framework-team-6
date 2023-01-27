@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a0ba49-6cc8-4795-8568-06bba38a2ee3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/test-logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runner.orangehrm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/runner.orangehrm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/AdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/MyInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orangehrm/project/pages/MyInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/orangehrm/project/tests/MyInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orangehrm/project/tests/MyInfoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testdocumentation/OrangeHRM.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/orangehrm/OrangeHRM.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/CommonAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/orangehrm/project/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orangehrm/project/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/orangehrm/project/pages/MyInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orangehrm/project/pages/MyInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/AdminPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/AdminPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/MyInfoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/orangehrm/project/tests/MyInfoTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="b0a0ba49-6cc8-4795-8568-06bba38a2ee3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="final" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
