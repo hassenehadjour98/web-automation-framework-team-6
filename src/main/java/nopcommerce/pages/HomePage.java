@@ -11,11 +11,11 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class HomePage extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
 
     public HomePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+    Logger log = LogManager.getLogger(HomePage.class.getName());
 
     @FindBy(css = ".ico-register")
     WebElement lnkRegister;
@@ -47,17 +47,17 @@ public class HomePage extends CommonAPI {
 
     public void clkOnLnkRegister() {
         clickOn(lnkRegister);
-        log.info("click on register success");
+        log.info("click on register link success");
     }
 
     public void clkOnLnkLogin() {
         clickOn(lnkLogin);
-        log.info("click on signin success");
+        log.info("click on log in link success");
     }
 
     public void clkOnLnkWishlist() {
         clickOn(lnkWishlist);
-        log.info("click on whishlist success");
+        log.info("click on whishlist link success");
     }
 
     public String getWishlistQuantity() {
@@ -110,6 +110,7 @@ public class HomePage extends CommonAPI {
     public boolean euroIsSelected (){
         return elementIsSelected(drpEuroOpt);
     }
+
 
 
 

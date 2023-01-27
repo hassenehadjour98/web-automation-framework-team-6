@@ -232,4 +232,17 @@ public class CommonAPI {
     public boolean elementIsEnabled (WebElement element){
         return element.isEnabled();
     }
+    public void acceptAlert(){
+        driver.switchTo().alert().accept();
+    }
+    public void dismissAlert(){
+        driver.switchTo().alert().dismiss();
+    }
+    public String getTextFromAlert(){
+        return driver.switchTo().alert().getText();
+    }
+
+
+
+
 }

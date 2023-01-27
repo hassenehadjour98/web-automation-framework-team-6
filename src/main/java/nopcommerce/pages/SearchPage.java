@@ -9,10 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SearchPage extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
     public SearchPage (WebDriver driver){
         PageFactory.initElements(driver, this);
     }
+    Logger log = LogManager.getLogger(SearchPage.class.getName());
+
     @FindBy(xpath = "//h2[@class='product-title']/a")
     WebElement itemName;
     @FindBy(css = ".price.actual-price")
