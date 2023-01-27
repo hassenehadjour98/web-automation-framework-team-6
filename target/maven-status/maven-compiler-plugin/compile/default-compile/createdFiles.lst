@@ -1,6 +1,8 @@
+nopcommerce\pages\LogInPage.class
 reporting\ApplicationLog.class
 utility\ReadFromExcel.class
 utility\ConnectDB.class
+nopcommerce\pages\RegistrationPage.class
 nopcommerce\pages\HomePage.class
 orangehrm\project\pages\LoginPage.class
 base\CommonAPI.class

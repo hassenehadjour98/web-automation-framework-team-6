@@ -13,11 +13,35 @@
           <include name="startExtent"/>
         </methods>
       </class> <!-- nopcommerce.tests.HomePageTest -->
+      <class name="nopcommerce.tests.RegistrationPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="registrationTest1"/>
+          <include name="registrationTest2"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="registrationTest3"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- nopcommerce.tests.RegistrationPageTest -->
+      <class name="nopcommerce.tests.SearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="searchTest"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- nopcommerce.tests.SearchTest -->
       <class name="nopcommerce.tests.SelectCurrencyTest">
         <methods>
           <include name="setUp"/>
-          <include name="selectcurrencytest1"/>
+          <include name="selectCurrencyTest3"/>
+          <include name="selectCurrencyTest2"/>
           <include name="afterEachTestMethod"/>
+          <include name="selectCurrencyTest1"/>
           <include name="extentSetup"/>
           <include name="generateReport"/>
           <include name="startExtent"/>
@@ -28,8 +52,8 @@
           <include name="setUp"/>
           <include name="changepasswordcheckbox"/>
           <include name="afterEachTestMethod"/>
-          <include name="addThenDeleteJobTitle"/>
           <include name="extentSetup"/>
+          <include name="addThenDeleteJobTitle"/>
           <include name="generateReport"/>
           <include name="startExtent"/>
         </methods>
@@ -45,16 +69,6 @@
           <include name="startExtent"/>
         </methods>
       </class> <!-- orangehrm.project.tests.LoginPageTest -->
-      <class name="nopcommerce.tests.SearchTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterEachTestMethod"/>
-          <include name="searchTest"/>
-          <include name="extentSetup"/>
-          <include name="generateReport"/>
-          <include name="startExtent"/>
-        </methods>
-      </class> <!-- nopcommerce.tests.SearchTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

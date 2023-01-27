@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SelectCurrencyTest extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
+    Logger log = LogManager.getLogger(SelectCurrencyTest.class.getName());
     String mainCurrency = "US Dollar";
     String currency2 = "Euro";
     String item1 ="Nokia Lumia 1020";

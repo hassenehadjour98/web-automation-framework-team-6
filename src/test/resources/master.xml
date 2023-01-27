@@ -13,12 +13,14 @@
 
     <test verbose="2" preserve-order="true" name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/java/nopcommerce/tests/RegistrationPageTest.java">
         <classes>
-            <class name="nopcommerce.tests.RegistrationPageTest">
-                <methods>
-                    <include name="registrationTest1"/>
-                    <include name="registrationTest2"/>
-                    <include name="registrationTest3"/>
-                </methods></class>
+<!--            <class name="nopcommerce.tests.RegistrationPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="registrationTest1"/>-->
+<!--                    <include name="registrationTest2"/>-->
+<!--                    <include name="registrationTest3"/>-->
+<!--                </methods></class>-->
 <!--            <class name="nopcommerce.tests.SelectCurrencyTest"></class>-->
+            <class name="nopcommerce.tests.LogInTest"></class>
+
 
         </classes></test></suite>

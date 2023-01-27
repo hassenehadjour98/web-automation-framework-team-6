@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 12 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 7 failed,   </span>
+                    <span class="method-stats">12 methods, 12 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -123,6 +123,21 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="nopcommerce.tests.RegistrationPageTest" class="method navigator-link" hash-for-method="registrationTest1">registrationTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="nopcommerce.tests.RegistrationPageTest" class="method navigator-link" hash-for-method="registrationTest2">registrationTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="nopcommerce.tests.RegistrationPageTest" class="method navigator-link" hash-for-method="registrationTest3">registrationTest3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="orangehrm.project.tests.LoginPageTest" class="method navigator-link" hash-for-method="resetpassword">resetpassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -133,7 +148,17 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="nopcommerce.tests.SelectCurrencyTest" class="method navigator-link" hash-for-method="selectcurrencytest1">selectcurrencytest1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="nopcommerce.tests.SelectCurrencyTest" class="method navigator-link" hash-for-method="selectCurrencyTest1">selectCurrencyTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="nopcommerce.tests.SelectCurrencyTest" class="method navigator-link" hash-for-method="selectCurrencyTest2">selectCurrencyTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="nopcommerce.tests.SelectCurrencyTest" class="method navigator-link" hash-for-method="selectCurrencyTest3">selectCurrencyTest3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
@@ -159,15 +184,98 @@
                   <a name="clkOnLnkRegisterTest">
                   </a> <!-- clkOnLnkRegisterTest -->
                   <span class="method-name">clkOnLnkRegisterTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: .ico-register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy32.click(Unknown Source)
+	at base.CommonAPI.clickOn(CommonAPI.java:162)
+	at nopcommerce.pages.HomePage.clkOnLnkRegister(HomePage.java:49)
+	at nopcommerce.tests.HomePageTest.clkOnLnkRegisterTest(HomePageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">nopcommerce.tests.RegistrationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationTest1">
+                  </a> <!-- registrationTest1 -->
+                  <span class="method-name">registrationTest1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: .ico-register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy32.click(Unknown Source)
+	at base.CommonAPI.clickOn(CommonAPI.java:162)
+	at nopcommerce.pages.HomePage.clkOnLnkRegister(HomePage.java:49)
+	at nopcommerce.tests.RegistrationPageTest.registrationTest1(RegistrationPageTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationTest2">
+                  </a> <!-- registrationTest2 -->
+                  <span class="method-name">registrationTest2</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: .ico-register
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy32.click(Unknown Source)
+	at base.CommonAPI.clickOn(CommonAPI.java:162)
+	at nopcommerce.pages.HomePage.clkOnLnkRegister(HomePage.java:49)
+	at nopcommerce.tests.RegistrationPageTest.registrationTest2(RegistrationPageTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrationTest3">
+                  </a> <!-- registrationTest3 -->
+                  <span class="method-name">registrationTest3</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ico-register&quot;}
   (Session info: chrome=109.0.5414.75)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [55e78a61a6f3c4cedc2960a85b555844, findElement {using=css selector, value=.ico-register}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53470/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 55e78a61a6f3c4cedc2960a85b555844
+Command: [b6e251f3259d34d7195ca77df8bb198e, findElement {using=css selector, value=.ico-register}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52315/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6e251f3259d34d7195ca77df8bb198e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -183,8 +291,52 @@ Session ID: 55e78a61a6f3c4cedc2960a85b555844
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at com.sun.proxy.$Proxy32.click(Unknown Source)
 	at base.CommonAPI.clickOn(CommonAPI.java:162)
-	at nopcommerce.pages.HomePage.clkOnLnkRegister(HomePage.java:39)
-	at nopcommerce.tests.HomePageTest.clkOnLnkRegisterTest(HomePageTest.java:20)
+	at nopcommerce.pages.HomePage.clkOnLnkRegister(HomePage.java:49)
+	at nopcommerce.tests.RegistrationPageTest.registrationTest3(RegistrationPageTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">nopcommerce.tests.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTest">
+                  </a> <!-- searchTest -->
+                  <span class="method-name">searchTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#small-searchterms&quot;}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7dc018d9747f1dffa043510e01fff4b, findElement {using=css selector, value=input#small-searchterms}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52356}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52356/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c7dc018d9747f1dffa043510e01fff4b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy32.sendKeys(Unknown Source)
+	at base.CommonAPI.type(CommonAPI.java:165)
+	at nopcommerce.pages.HomePage.searchItem(HomePage.java:79)
+	at nopcommerce.tests.SearchTest.searchTest(SearchTest.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 41 stack frames
 </div> <!-- stack-trace -->
@@ -200,18 +352,18 @@ Session ID: 55e78a61a6f3c4cedc2960a85b555844
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectcurrencytest1">
-                  </a> <!-- selectcurrencytest1 -->
-                  <span class="method-name">selectcurrencytest1</span>
+                  <a name="selectCurrencyTest1">
+                  </a> <!-- selectCurrencyTest1 -->
+                  <span class="method-name">selectCurrencyTest1</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customerCurrency&quot;}
   (Session info: chrome=109.0.5414.75)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e76aba9b820aba90860aeaac2887a904, findElement {using=css selector, value=#customerCurrency}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53572}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53572/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e76aba9b820aba90860aeaac2887a904
+Command: [85ac4e9e2369b78332c9f69c1f5df783, findElement {using=css selector, value=#customerCurrency}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52399}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52399/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85ac4e9e2369b78332c9f69c1f5df783
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -228,10 +380,71 @@ Session ID: e76aba9b820aba90860aeaac2887a904
 	at com.sun.proxy.$Proxy32.getTagName(Unknown Source)
 	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
 	at base.CommonAPI.selectOptionFromDropdown(CommonAPI.java:171)
-	at nopcommerce.pages.HomePage.selectCurrency(HomePage.java:79)
-	at nopcommerce.tests.SelectCurrencyTest.selectcurrencytest1(SelectCurrencyTest.java:18)
+	at nopcommerce.pages.HomePage.selectCurrency(HomePage.java:100)
+	at nopcommerce.tests.SelectCurrencyTest.selectCurrencyTest1(SelectCurrencyTest.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectCurrencyTest2">
+                  </a> <!-- selectCurrencyTest2 -->
+                  <span class="method-name">selectCurrencyTest2</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9822bbf8b63dc4396e46db1508575c47, findElement {using=xpath, value=//option[contains(text(),&apos;US Dollar&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52446/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9822bbf8b63dc4396e46db1508575c47
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy32.isSelected(Unknown Source)
+	at base.CommonAPI.elementIsSelected(CommonAPI.java:224)
+	at nopcommerce.pages.HomePage.usDollarIsSelected(HomePage.java:108)
+	at nopcommerce.tests.SelectCurrencyTest.selectCurrencyTest2(SelectCurrencyTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 41 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectCurrencyTest3">
+                  </a> <!-- selectCurrencyTest3 -->
+                  <span class="method-name">selectCurrencyTest3</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: input#small-searchterms
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy32.sendKeys(Unknown Source)
+	at base.CommonAPI.type(CommonAPI.java:165)
+	at nopcommerce.pages.HomePage.searchItem(HomePage.java:79)
+	at nopcommerce.tests.SelectCurrencyTest.selectCurrencyTest3(SelectCurrencyTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -248,15 +461,40 @@ Session ID: e76aba9b820aba90860aeaac2887a904
                   <a name="addThenDeleteJobTitle">
                   </a> <!-- addThenDeleteJobTitle -->
                   <span class="method-name">addThenDeleteJobTitle</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&quot;username&quot;]&quot;}
-  (Session info: chrome=109.0.5414.75)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@name=&quot;username&quot;]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy32.sendKeys(Unknown Source)
+	at base.CommonAPI.type(CommonAPI.java:165)
+	at orangehrm.project.pages.LoginPage.logIn(LoginPage.java:38)
+	at orangehrm.project.tests.AdminPageTest.addThenDeleteJobTitle(AdminPageTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changepasswordcheckbox">
+                  </a> <!-- changepasswordcheckbox -->
+                  <span class="method-name">changepasswordcheckbox</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.75)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a1849935ecc57b5a9d50b88c0727e577, findElement {using=xpath, value=//input[@name=&quot;username&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53624/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a1849935ecc57b5a9d50b88c0727e577
+Command: [ace2843e33cd255f20f4c26c3c633acc, findElement {using=xpath, value=//input[@name=&quot;username&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52595/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ace2843e33cd255f20f4c26c3c633acc
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -273,34 +511,9 @@ Session ID: a1849935ecc57b5a9d50b88c0727e577
 	at com.sun.proxy.$Proxy32.sendKeys(Unknown Source)
 	at base.CommonAPI.type(CommonAPI.java:165)
 	at orangehrm.project.pages.LoginPage.logIn(LoginPage.java:38)
-	at orangehrm.project.tests.AdminPageTest.addThenDeleteJobTitle(AdminPageTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="changepasswordcheckbox">
-                  </a> <!-- changepasswordcheckbox -->
-                  <span class="method-name">changepasswordcheckbox</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@name=&quot;username&quot;]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy32.sendKeys(Unknown Source)
-	at base.CommonAPI.type(CommonAPI.java:165)
-	at orangehrm.project.pages.LoginPage.logIn(LoginPage.java:38)
 	at orangehrm.project.tests.AdminPageTest.changepasswordcheckbox(AdminPageTest.java:14)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames
+... Removed 41 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -323,9 +536,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81364f6202f7c5a9618446872f56de0d, findElement {using=xpath, value=//input[@name=&quot;username&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53711}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53711/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 81364f6202f7c5a9618446872f56de0d
+Command: [4654ce8798fd52e3302700498263b4e5, findElement {using=xpath, value=//input[@name=&quot;username&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52629}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52629/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4654ce8798fd52e3302700498263b4e5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -353,23 +566,12 @@ Session ID: 81364f6202f7c5a9618446872f56de0d
                   <a name="resetpassword">
                   </a> <!-- resetpassword -->
                   <span class="method-name">resetpassword</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Forgot your password? &apos;]&quot;}
-  (Session info: chrome=109.0.5414.75)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //p[text()=&apos;Forgot your password? &apos;]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0e96dc5aec18a4bbfdd7a989afc0343b, findElement {using=xpath, value=//p[text()=&apos;Forgot your password? &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53776/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0e96dc5aec18a4bbfdd7a989afc0343b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
@@ -380,51 +582,7 @@ Session ID: 0e96dc5aec18a4bbfdd7a989afc0343b
 	at orangehrm.project.pages.LoginPage.ResetPassword(LoginPage.java:49)
 	at orangehrm.project.tests.LoginPageTest.resetpassword(LoginPageTest.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">nopcommerce.tests.SearchTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchTest">
-                  </a> <!-- searchTest -->
-                  <span class="method-name">searchTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input#small-searchterms&quot;}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518e8b318fff70dd7cd47ffb8a0bae06, findElement {using=css selector, value=input#small-searchterms}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\nabam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53526}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53526/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 518e8b318fff70dd7cd47ffb8a0bae06
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy32.sendKeys(Unknown Source)
-	at base.CommonAPI.type(CommonAPI.java:165)
-	at nopcommerce.pages.HomePage.searchItem(HomePage.java:62)
-	at nopcommerce.tests.SearchTest.searchTest(SearchTest.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 41 stack frames
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -442,6 +600,8 @@ Session ID: 518e8b318fff70dd7cd47ffb8a0bae06
   &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;nopcommerce.tests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;nopcommerce.tests.LogInTest&quot;/&gt;
+      &lt;class name=&quot;nopcommerce.tests.RegistrationPageTest&quot;/&gt;
       &lt;class name=&quot;nopcommerce.tests.SearchTest&quot;/&gt;
       &lt;class name=&quot;nopcommerce.tests.SelectCurrencyTest&quot;/&gt;
       &lt;class name=&quot;orangehrm.project.tests.AdminPageTest&quot;/&gt;
@@ -459,7 +619,7 @@ Session ID: 518e8b318fff70dd7cd47ffb8a0bae06
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (5 classes)</span>
+                <span class="test-name">Command line test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -485,40 +645,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clkOnLnkRegisterTest')
-data.setCell(0, 2, 'nopcommerce.tests.HomePageTest')
-data.setCell(0, 3, 8112);
+data.setCell(0, 1, 'selectCurrencyTest2')
+data.setCell(0, 2, 'nopcommerce.tests.SelectCurrencyTest')
+data.setCell(0, 3, 19631);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addThenDeleteJobTitle')
-data.setCell(1, 2, 'orangehrm.project.tests.AdminPageTest')
-data.setCell(1, 3, 5060);
+data.setCell(1, 1, 'registrationTest3')
+data.setCell(1, 2, 'nopcommerce.tests.RegistrationPageTest')
+data.setCell(1, 3, 5062);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'searchTest')
 data.setCell(2, 2, 'nopcommerce.tests.SearchTest')
-data.setCell(2, 3, 5056);
+data.setCell(2, 3, 5059);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'selectcurrencytest1')
+data.setCell(3, 1, 'selectCurrencyTest1')
 data.setCell(3, 2, 'nopcommerce.tests.SelectCurrencyTest')
-data.setCell(3, 3, 5047);
+data.setCell(3, 3, 5051);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'logintest')
 data.setCell(4, 2, 'orangehrm.project.tests.LoginPageTest')
-data.setCell(4, 3, 5036);
+data.setCell(4, 3, 5024);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'resetpassword')
-data.setCell(5, 2, 'orangehrm.project.tests.LoginPageTest')
-data.setCell(5, 3, 5031);
+data.setCell(5, 1, 'selectCurrencyTest3')
+data.setCell(5, 2, 'nopcommerce.tests.SelectCurrencyTest')
+data.setCell(5, 3, 3435);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'changepasswordcheckbox')
-data.setCell(6, 2, 'orangehrm.project.tests.AdminPageTest')
-data.setCell(6, 3, 20);
+data.setCell(6, 1, 'clkOnLnkRegisterTest')
+data.setCell(6, 2, 'nopcommerce.tests.HomePageTest')
+data.setCell(6, 3, 3237);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'resetpassword')
+data.setCell(7, 2, 'orangehrm.project.tests.LoginPageTest')
+data.setCell(7, 3, 3040);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addThenDeleteJobTitle')
+data.setCell(8, 2, 'orangehrm.project.tests.AdminPageTest')
+data.setCell(8, 3, 769);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registrationTest1')
+data.setCell(9, 2, 'nopcommerce.tests.RegistrationPageTest')
+data.setCell(9, 3, 348);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'changepasswordcheckbox')
+data.setCell(10, 2, 'orangehrm.project.tests.AdminPageTest')
+data.setCell(10, 3, 19);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'registrationTest2')
+data.setCell(11, 2, 'nopcommerce.tests.RegistrationPageTest')
+data.setCell(11, 3, 17);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -533,15 +713,33 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">nopcommerce.tests.SelectCurrencyTest</span>
+              <span class="ignored-class-name">nopcommerce.tests.RegistrationPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">nopcommerce.tests.SearchTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">extentSetup</span>
                 <br/>
                 <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">nopcommerce.tests.SelectCurrencyTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -556,15 +754,6 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">orangehrm.project.tests.LoginPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">extentSetup</span>
-                <br/>
-                <span class="ignored-method-name">generateReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">nopcommerce.tests.SearchTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">generateReport</span>
                 <br/>
@@ -582,153 +771,246 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">nopcommerce.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">extentSetup(org.testng.TestRunner@1129829c)</span>
+                <span class="method-name">extentSetup(org.testng.TestRunner@4bcdd11)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
-                <span class="method-start">107 ms</span>
+                <span class="method-start">111 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">startExtent(public void nopcommerce.tests.HomePageTest.clkOnLnkRegisterTest() throws java.lang.InterruptedExcept...)</span>
-                <span class="method-start">4421 ms</span>
+                <span class="method-start">3079 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clkOnLnkRegisterTest</span>
-                <span class="method-start">4430 ms</span>
+                <span class="method-start">3085 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTestMethod([TestResult name=clkOnLnkRegisterTest status=FAILURE method=HomePageTest.clkOnLnkRegisterTest()[pri:...)</span>
-                <span class="method-start">12549 ms</span>
+                <span class="method-start">6328 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">nopcommerce.tests.RegistrationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
+                <span class="method-start">6824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void nopcommerce.tests.RegistrationPageTest.registrationTest1())</span>
+                <span class="method-start">8815 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registrationTest1</span>
+                <span class="method-start">8816 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=registrationTest1 status=FAILURE method=RegistrationPageTest.registrationTest1()[pr...)</span>
+                <span class="method-start">9165 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
+                <span class="method-start">9447 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registrationTest2</span>
+                <span class="method-start">11432 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void nopcommerce.tests.RegistrationPageTest.registrationTest2())</span>
+                <span class="method-start">11432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=registrationTest2 status=FAILURE method=RegistrationPageTest.registrationTest2()[pr...)</span>
+                <span class="method-start">11455 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
+                <span class="method-start">11882 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void nopcommerce.tests.RegistrationPageTest.registrationTest3())</span>
+                <span class="method-start">13858 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registrationTest3</span>
+                <span class="method-start">13858 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=registrationTest3 status=FAILURE method=RegistrationPageTest.registrationTest3()[pr...)</span>
+                <span class="method-start">18921 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">nopcommerce.tests.SearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
-                <span class="method-start">13025 ms</span>
+                <span class="method-start">19191 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">startExtent(public void nopcommerce.tests.SearchTest.searchTest())</span>
-                <span class="method-start">16074 ms</span>
+                <span class="method-start">20859 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searchTest</span>
-                <span class="method-start">16075 ms</span>
+                <span class="method-start">20859 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTestMethod([TestResult name=searchTest status=FAILURE method=SearchTest.searchTest()[pri:0, instance:nopcommerc...)</span>
-                <span class="method-start">21133 ms</span>
+                <span class="method-start">25920 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">nopcommerce.tests.SelectCurrencyTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
-                <span class="method-start">21531 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void nopcommerce.tests.SelectCurrencyTest.selectcurrencytest1())</span>
-                <span class="method-start">25310 ms</span>
+                <span class="method-start">26292 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">selectcurrencytest1</span>
-                <span class="method-start">25311 ms</span>
+                <span class="method-name">selectCurrencyTest1</span>
+                <span class="method-start">28240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void nopcommerce.tests.SelectCurrencyTest.selectCurrencyTest1())</span>
+                <span class="method-start">28240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=selectCurrencyTest1 status=FAILURE method=SelectCurrencyTest.selectCurrencyTest1()[...)</span>
+                <span class="method-start">33291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
+                <span class="method-start">33566 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void nopcommerce.tests.SelectCurrencyTest.selectCurrencyTest2())</span>
+                <span class="method-start">35357 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">selectCurrencyTest2</span>
+                <span class="method-start">35357 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=selectcurrencytest1 status=FAILURE method=SelectCurrencyTest.selectcurrencytest1()[...)</span>
-                <span class="method-start">30359 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=selectCurrencyTest2 status=FAILURE method=SelectCurrencyTest.selectCurrencyTest2()[...)</span>
+                <span class="method-start">54989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
+                <span class="method-start">55189 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void nopcommerce.tests.SelectCurrencyTest.selectCurrencyTest3())</span>
+                <span class="method-start">57344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">selectCurrencyTest3</span>
+                <span class="method-start">57345 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=selectCurrencyTest3 status=FAILURE method=SelectCurrencyTest.selectCurrencyTest3()[...)</span>
+                <span class="method-start">60781 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">orangehrm.project.tests.AdminPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
-                <span class="method-start">30696 ms</span>
+                <span class="method-start">61051 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void orangehrm.project.tests.AdminPageTest.addThenDeleteJobTitle() throws java.lang.Interrupt...)</span>
+                <span class="method-start">62887 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addThenDeleteJobTitle</span>
-                <span class="method-start">34494 ms</span>
+                <span class="method-start">62887 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void orangehrm.project.tests.AdminPageTest.addThenDeleteJobTitle() throws java.lang.Interrupt...)</span>
-                <span class="method-start">34494 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTestMethod([TestResult name=addThenDeleteJobTitle status=FAILURE method=AdminPageTest.addThenDeleteJobTitle()[p...)</span>
-                <span class="method-start">39555 ms</span>
+                <span class="method-start">63657 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
-                <span class="method-start">39924 ms</span>
+                <span class="method-start">63926 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void orangehrm.project.tests.AdminPageTest.changepasswordcheckbox() throws java.lang.Interrup...)</span>
+                <span class="method-start">66083 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">changepasswordcheckbox</span>
-                <span class="method-start">43619 ms</span>
+                <span class="method-start">66085 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void orangehrm.project.tests.AdminPageTest.changepasswordcheckbox() throws java.lang.Interrup...)</span>
-                <span class="method-start">43619 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTestMethod([TestResult name=changepasswordcheckbox status=FAILURE method=AdminPageTest.changepasswordcheckbox()...)</span>
-                <span class="method-start">43643 ms</span>
+                <span class="method-start">66106 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">orangehrm.project.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
-                <span class="method-start">44103 ms</span>
+                <span class="method-start">66409 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">startExtent(public void orangehrm.project.tests.LoginPageTest.logintest())</span>
-                <span class="method-start">54289 ms</span>
+                <span class="method-start">68043 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">logintest</span>
-                <span class="method-start">54290 ms</span>
+                <span class="method-start">68044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTestMethod([TestResult name=logintest status=FAILURE method=LoginPageTest.logintest()[pri:0, instance:orangehrm...)</span>
-                <span class="method-start">59327 ms</span>
+                <span class="method-start">73070 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, windows, 11, chrome, 108, https://www.google.com)</span>
-                <span class="method-start">59632 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void orangehrm.project.tests.LoginPageTest.resetpassword())</span>
-                <span class="method-start">63118 ms</span>
+                <span class="method-start">73509 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">resetpassword</span>
-                <span class="method-start">63119 ms</span>
+                <span class="method-start">75198 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void orangehrm.project.tests.LoginPageTest.resetpassword())</span>
+                <span class="method-start">75198 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTestMethod([TestResult name=resetpassword status=FAILURE method=LoginPageTest.resetpassword()[pri:0, instance:o...)</span>
-                <span class="method-start">68152 ms</span>
+                <span class="method-start">78240 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">nopcommerce.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">generateReport</span>
-                <span class="method-start">68776 ms</span>
+                <span class="method-start">78593 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

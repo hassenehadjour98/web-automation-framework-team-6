@@ -12,7 +12,7 @@ public class SearchPage extends CommonAPI {
     public SearchPage (WebDriver driver){
         PageFactory.initElements(driver, this);
     }
-    Logger log = LogManager.getLogger(HomePage.class.getName());
+    Logger log = LogManager.getLogger(SearchPage.class.getName());
 
     @FindBy(xpath = "//h2[@class='product-title']/a")
     WebElement itemName;

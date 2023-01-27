@@ -5,19 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c212e2ee-3df3-48aa-a451-8f6b20e34109" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/LogInPageNop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web-automation-framework-team-6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-automation-framework-team-6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/test-logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runnernopcommerce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/runnernopcommerce.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/test-logs.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runnernopcommerce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runnernopcommerce.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/LogInPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/RegistrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/RegistrationPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/SelectCurrencyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/SelectCurrencyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testdocumentation/OrangeHRM.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testdocumentation/nopcommerce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testdocumentation/orangehrm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testdocumentation/thirdproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/CommonAPI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nopcommerce/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/LogInPage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nopcommerce/pages/RegistrationPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nopcommerce/pages/SearchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nopcommerce/pages/ToBeAddedToCommonAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Command line suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-nopcommerce.tests.HomePageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-nopcommerce.tests.HomePageTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-nopcommerce.tests.SearchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-nopcommerce.tests.SearchTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-nopcommerce.tests.SelectCurrencyTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-nopcommerce.tests.SelectCurrencyTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.AdminPageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.AdminPageTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.LoginPageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.LoginPageTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-not-run.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire/surefirebooter1128539081903425067.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/HomePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/LogInTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/LogInTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/RegistrationPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/RegistrationPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/SearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/SearchTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/SelectCurrencyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nopcommerce/tests/SelectCurrencyTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +105,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nabam/IdeaProjects/Framework-test-pavan&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nabam/IdeaProjects/midterm-coding-exam&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
@@ -72,6 +114,7 @@
       <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\Data-nopcommerce" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\src\test\resources" />
       <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\Extent-Report" />
       <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\Data\nopcommerce" />
     </key>

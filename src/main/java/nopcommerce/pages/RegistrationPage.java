@@ -12,7 +12,7 @@ public class RegistrationPage extends CommonAPI {
     public RegistrationPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
-    Logger log = LogManager.getLogger(HomePage.class.getName());
+    Logger log = LogManager.getLogger(RegistrationPage.class.getName());
 
     @FindBy(css = "#gender-male")
     WebElement btnMale;

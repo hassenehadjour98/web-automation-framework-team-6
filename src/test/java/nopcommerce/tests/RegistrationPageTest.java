@@ -1,55 +1,60 @@
 package nopcommerce.tests;
 
 import base.CommonAPI;
+import com.github.javafaker.Faker;
 import nopcommerce.pages.HomePage;
 import nopcommerce.pages.RegistrationPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class RegistrationPageTest extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
-
-    @Test
-    public void registrationTest1 () {
-        log.info("***  Registration Test 1 Started ***");
+    Faker faker = new Faker();
+    Logger log = LogManager.getLogger(RegistrationPageTest.class.getName());
+    String firstName = "Tom" ,lastName = "Cruise", dayOfBirth = "3", monthOfBirth = "July", yearOfBirth = "1962";
+    String email = faker.internet().emailAddress(), companyName = "C/W Productions", password="07031962";
+    String msgRegistrationSuccess ="Your registration completed";
+    String msgEmailExists ="The specified email already exists";
+    @BeforeMethod
+    public void navigateToRegisterPage(){
         HomePage homePage = new HomePage(getDriver());
         homePage.clkOnLnkRegister();
         String actualTitle = getCurrentTitle();
         String expectedTitle = "nopCommerce demo store. Register";
         Assert.assertEquals(actualTitle, expectedTitle,"Did not land on registration page");
         log.info("Landed on registration page successfully");
+    }
+    RegistrationPage registrationPage;
+    @Test
+    public void registrationTest1 () {
+        log.info("***  Registration Test 1 Started ***");
 
-        RegistrationPage rp = new RegistrationPage(getDriver());
-        rp.clkOnMale();
-        String firstName = "Tom" ,lastName = "Cruise", dayOfBirth = "3", monthOfBirth = "July", yearOfBirth = "1962";
-        String email = "tomcruise1@gmail.com", companyName = "C/W Productions", password="07031962";
+        registrationPage = new RegistrationPage(getDriver());
+        registrationPage.clkOnMale();
 
+        registrationPage.setFirstName(firstName);
+        registrationPage.setLastName(lastName);
+        registrationPage.selectDayOfBirth(dayOfBirth);
+        registrationPage.selectMonthOfBirth(monthOfBirth);
+        registrationPage.selectYearOfBirth(yearOfBirth);
+        registrationPage.setEmail(email);
+        registrationPage.setCompanyName(companyName);
+        registrationPage.selectNewsletter();
+        registrationPage.setPassword(password);
+        registrationPage.setConfirmPassword(password);
+        registrationPage.clkOnRegister();
 
-        rp.setFirstName(firstName);
-        rp.setLastName(lastName);
-        rp.selectDayOfBirth(dayOfBirth);
-        rp.selectMonthOfBirth(monthOfBirth);
-        rp.selectYearOfBirth(yearOfBirth);
-        rp.setEmail(email);
-        rp.setCompanyName(companyName);
-        rp.selectNewsletter();
-        rp.setPassword(password);
-        rp.setConfirmPassword(password);
-        rp.clkOnRegister();
-        String msgRegistrationSuccess ="Your registration completed";
-        String msgEmailExists ="The specified email already exists";
-
-        String returnedMessage = rp.readReturnedMessage();
+        String returnedMessage = registrationPage.readReturnedMessage();
         if (returnedMessage.equals(msgRegistrationSuccess)){
             Assert.assertEquals(returnedMessage,msgRegistrationSuccess);
             log.info("Registration success message returned");
         }
 
         else if (returnedMessage.equals(msgEmailExists)){
-            String returnedEmail = rp.registeredEmail();
+            String returnedEmail = registrationPage.registeredEmail();
             Assert.assertEquals(returnedEmail,email);
             log.info("Email exists message returned");
             log.info("Email matches registered user");
@@ -60,34 +65,25 @@ public class RegistrationPageTest extends CommonAPI {
     @Test
     public void registrationTest2 () {
         log.info("***  Registration Test 2 Started ***");
-        HomePage homePage = new HomePage(getDriver());
-        homePage.clkOnLnkRegister();
-        String actualTitle = getCurrentTitle();
-        String expectedTitle = "nopCommerce demo store. Register";
-        Assert.assertEquals(actualTitle, expectedTitle,"Did not land on registration page");
-        log.info("Landed on registration page successfully");
 
-        RegistrationPage rp = new RegistrationPage(getDriver());
-        String firstName = "Tom" ,lastName = "Cruise", email = "tomcruise2@gmail.com", password="07031962";
+        registrationPage = new RegistrationPage(getDriver());
+        String email = "tomcruise2@gmail.com";
 
+        registrationPage.setFirstName(firstName);
+        registrationPage.setLastName(lastName);
+        registrationPage.setEmail(email);
+        registrationPage.setPassword(password);
+        registrationPage.setConfirmPassword(password);
+        registrationPage.clkOnRegister();
 
-        rp.setFirstName(firstName);
-        rp.setLastName(lastName);
-        rp.setEmail(email);
-        rp.setPassword(password);
-        rp.setConfirmPassword(password);
-        rp.clkOnRegister();
-        String msgRegistrationSuccess ="Your registration completed";
-        String msgEmailExists ="The specified email already exists";
-
-        String returnedMessage = rp.readReturnedMessage();
+        String returnedMessage = registrationPage.readReturnedMessage();
         if (returnedMessage.equals(msgRegistrationSuccess)){
             Assert.assertEquals(returnedMessage,msgRegistrationSuccess);
             log.info("Registration success message returned");
         }
 
         else if (returnedMessage.equals(msgEmailExists)){
-            String returnedEmail = rp.registeredEmail();
+            String returnedEmail = registrationPage.registeredEmail();
             Assert.assertEquals(returnedEmail,email);
             log.info("Email exists message returned");
             log.info("Email matches registered user");
@@ -98,22 +94,16 @@ public class RegistrationPageTest extends CommonAPI {
     @Test
     public void registrationTest3 () {
         log.info("***  Registration Test 3 Started ***");
-        HomePage homePage = new HomePage(getDriver());
-        homePage.clkOnLnkRegister();
-        String actualTitle = getCurrentTitle();
-        String expectedTitle = "nopCommerce demo store. Register";
-        Assert.assertEquals(actualTitle, expectedTitle,"Did not land on registration page");
-        log.info("Landed on registration page successfully");
 
-        RegistrationPage rp = new RegistrationPage(getDriver());
+        registrationPage = new RegistrationPage(getDriver());
 
-        rp.clkOnRegister();
+        registrationPage.clkOnRegister();
 
-        String actFNameMsg = rp.getFNameReqMsg();
-        String actLNameMsg = rp.getLNameReqMsg();
-        String actEmailMsg = rp.getEmailReqMsg();
-        String actPasswordMsg = rp.getPasswordReqMsg();
-        String actPasswordConfMsg = rp.getPasswordConfReqMsg();
+        String actFNameMsg = registrationPage.getFNameReqMsg();
+        String actLNameMsg = registrationPage.getLNameReqMsg();
+        String actEmailMsg = registrationPage.getEmailReqMsg();
+        String actPasswordMsg = registrationPage.getPasswordReqMsg();
+        String actPasswordConfMsg = registrationPage.getPasswordConfReqMsg();
 
         String expFNameMsg = "First name is required.";
         String expLNameMsg = "Last name is required.";
