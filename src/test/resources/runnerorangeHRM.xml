@@ -10,17 +10,23 @@
 
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
-
     <test verbose="2" preserve-order="true" name="/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/test/java/orangehrm/project/tests">
         <classes>
             <class name="orangehrm.project.tests.AdminPageTest">
                 <methods>
-                    <include name="changePasswordCheckBox"/>
-                    <include name="addThenDeleteJobTitle"/>
+                    <include name="ChangePasswordCheckBox"/>
+                    <include name="AddJobTitle"/>
+                </methods>
+            </class>
+            <class name="orangehrm.project.tests.BuzzPageTest">
+                <methods>
+                    <include name="PostAnImage"/>
+                    <include name="addCommentToMostRecentPost"/>
                 </methods>
             </class>
             <class name="orangehrm.project.tests.HomePagetest">
-                <methods><include name="AdminFromMenu"/>
+                <methods>
+                    <include name="AdminFromMenu"/>
                     <include name="LeaveFromMenu"/>
                     <include name="TimeFromMenu"/>
                     <include name="RecruitmentFromMenu"/>
@@ -32,13 +38,21 @@
             </class>
             <class name="orangehrm.project.tests.LoginPageTest">
                 <methods>
-                    <include name="logintest"/>
-                    <include name="resetpassword"/>
-                </methods></class><class name="orangehrm.project.tests.MyInfoTest">
-            <methods>
-                <include name="selectBloodType"/>
-            </methods>
-        </class>
+                    <include name="LoginTest"/>
+                    <include name="ResetPassword"/>
+                    <include name="LoginTestWithInvalidCredentials"/>
+                    <include name="LinkedinIconLink"/>
+                    <include name="FacebookIconLink"/>
+                    <include name="TweeterIconLink"/>
+                    <include name="YouTubeIconLink"/>
+                    <include name="OrangeHrmIncLink"/>
+                </methods>
+            </class>
+            <class name="orangehrm.project.tests.MyInfoTest">
+                <methods>
+                    <include name="selectBloodType"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

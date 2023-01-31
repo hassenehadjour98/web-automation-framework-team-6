@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import utility.Utility;
@@ -32,8 +33,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 
 public class CommonAPI {
     Logger LOG = LogManager.getLogger(CommonAPI.class.getName());
@@ -115,7 +115,8 @@ public class CommonAPI {
             driver = new EdgeDriver();
         }
     }
-    public void getCloudDriver(String envName, String os, String osVersion, String browser, String browserVersion, String username, String password) throws MalformedURLException {
+    public void getCloudDriver(String envName, String os, String osVersion, String browser,
+                               String browserVersion, String username, String password) throws MalformedURLException {
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability("os", os);
         cap.setCapability("os_version", osVersion);
@@ -123,9 +124,11 @@ public class CommonAPI {
         cap.setCapability("browser_version", browserVersion);
         if (envName.equalsIgnoreCase("browserstack")){
             cap.setCapability("resolution", "1024x768");
-            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+"@hub-cloud.browserstack.com:80/wd/hub"),cap);
+            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+
+                    "@hub-cloud.browserstack.com:80/wd/hub"),cap);
         } else if (envName.equalsIgnoreCase("saucelabs")) {
-            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+"@ondemand.saucelabs.com:80/wd.hub"),cap);
+            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+
+                    "@ondemand.saucelabs.com:80/wd.hub"),cap);
         }
 
     }
@@ -185,6 +188,11 @@ public class CommonAPI {
     public void waitForElementToBeVisible(WebDriver driver, int duration, WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
         wait.until(ExpectedConditions.visibilityOf(element));
+
+    }
+    public WebElement waitForElementToBeVisible(By locator, int timeOut, long intervalTime) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut), Duration.ofMillis(intervalTime));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
     public void clickWithActions(WebDriver driver, WebElement element){
         Actions actions = new Actions(driver);
@@ -215,7 +223,6 @@ public class CommonAPI {
             LOG.info("Exception while taking screenshot "+e.getMessage());
         }
     }
-
     //Added Methods
     public String getCurrentURL(){
             return driver.getCurrentUrl();
@@ -232,4 +239,17 @@ public class CommonAPI {
     public boolean elementIsEnabled (WebElement element){
         return element.isEnabled();
     }
+    public void switchToChildWindow(WebDriver driver, String Title){
+        Set<String> allWindowHandles = driver.getWindowHandles();
+        List<String> hList = new ArrayList<String>(allWindowHandles);
+        for(String window : hList){
+            String url = driver.switchTo().window(window).getCurrentUrl();
+            String windowHandle=driver.switchTo().window(window).getWindowHandle();
+            if(url.contains(Title)){
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+    }
+
 }
