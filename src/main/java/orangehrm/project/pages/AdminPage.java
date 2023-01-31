@@ -56,7 +56,7 @@ public class AdminPage extends CommonAPI {
 
     public void typeUserName(){
         type(userNameTxt, UsernameOH);
-        LOG.info("text inserted to username");
+        LOG.info("text set to username");
     } // enter username
     public void userRoleDropDown(){
         clickOn(userRoleDropDown);
@@ -108,7 +108,7 @@ public class AdminPage extends CommonAPI {
         clickOn(SaveBtn);
         LOG.info("Save button clicked");
     }//click on save
-    public void deleteTheCreatedJobTitle(){
+    public void deleteTheCreatedJobTitle(String JobTitle){
         clickOn(DeleteBtn);
         clickOn(YesDeleteBtn);
         LOG.info("Delete button clicked");

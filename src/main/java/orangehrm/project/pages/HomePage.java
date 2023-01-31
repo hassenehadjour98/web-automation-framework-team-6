@@ -27,13 +27,12 @@ public class HomePage extends CommonAPI {
     @FindBy(css = ".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module")
     WebElement FieldConfi;
 
-
     public void clickOnAdmin(){
         clickOn(admin);
         LOG.info("click Admin success");
     } // click on Admin
     public String FieldConfirmation(){
-        String txt = FieldConfi.getText();
+        String txt = FieldConfi.getText().toLowerCase();
         return txt;
     }
     public void clickOnMenuField(String Field){
@@ -42,11 +41,12 @@ public class HomePage extends CommonAPI {
             String FieldText = element.getText();
             if (FieldText.equalsIgnoreCase(Field)) {
                 element.click();
+                LOG.info("Click on "+Field+" successful");
                 break;
+
             }
         }
     }
-
 }
 
 

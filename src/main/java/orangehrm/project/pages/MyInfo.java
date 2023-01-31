@@ -17,45 +17,36 @@ public class MyInfo extends CommonAPI {
         PageFactory.initElements(driver, this);
     }
 
-    // Login
-    //click on My Info
     @FindBy(xpath = "//span[text()='My Info']")
     WebElement MyInfo;
-    // scroll down to element Blood Type
     @FindBy(xpath = "(//div[@class='oxd-select-text-input'])[3]")
     WebElement BloodType;
     @FindBy(xpath = "//span[text()='O+']")
     WebElement Opositivetype;
-
     @FindBy(xpath = "(//button[@type='submit'])[2]")
     WebElement SaveBtn;
     @FindBy(xpath = "//p[text()='Success']")
     WebElement ToastMsgText;
 
-    // catch success message for confirmation
-    public void clickOnMyInfo(){
-        clickOn(MyInfo);
-        LOG.info("My Info Clicked");
-    }
+
     public void selectBloodType(){
-        clickOn(BloodType);
-        clickOn(Opositivetype);
+        if(BloodType.getText().equalsIgnoreCase("O+")){
+            clickOn(SaveBtn);
+            LOG.info("blood type already selected as O+");
+        }else {
+            clickOn(BloodType);
+            clickOn(Opositivetype);
+            clickOn(SaveBtn);
+            LOG.info("blood type successfully selected and saved");
+        }
+    } //select O+ from blood type drop down and click on save
 
-//        clickWithJavascript(BloodType);
 
-        LOG.info("blood type selected");
-    }
-    public void clickOnSave(){
-        clickOn(SaveBtn);
-        LOG.info("Save button clicked");
-    }
     public String ToastMessage(){
         String message = getTextFromElement(ToastMsgText);
         LOG.info("Toast message captured");
         return message;
-    }
-
-
+    }// catch success message for confirmation
 
 
 
