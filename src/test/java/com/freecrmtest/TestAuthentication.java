@@ -3,6 +3,7 @@ package com.freecrmtest;
 import base.CommonAPI;
 
 import com.freecrm.HomePage;
+import com.freecrm.MyAccountPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -14,6 +15,7 @@ import java.io.File;
 public class TestAuthentication extends CommonAPI {
     Logger LOG = LogManager.getLogger(HomePage.class.getName());
     HomePage homePage;
+    MyAccountPage myAccountPage;
     String path = System.getProperty("user.dir") + File.separator + "Data" + File.separator + "freecrm" + File.separator + "testdata.xlsx";
     ReadFromExcel read = new ReadFromExcel(path, "dorina");
 
@@ -22,6 +24,17 @@ public class TestAuthentication extends CommonAPI {
 
     String invalidEmail = "dorina.cungu@yahoo.com";
     String invalidPassword = "abcd1235";
+    /*
+    1 _ open application with chrome
+    2  type email
+    3  type password
+    4  click on log in
+    5 validate that the title is Cogmento CRM
+
+
+
+
+    */
 
     @Test
     public void testValidLogin()  {
@@ -40,6 +53,8 @@ public class TestAuthentication extends CommonAPI {
 
     }
 
+
+
     @Test
     public void testInvalidLogin() throws InterruptedException {
         String expectedError = "Something went wrong...";
@@ -53,6 +68,34 @@ public class TestAuthentication extends CommonAPI {
         homePage.clickOnLoginBtn();
         LOG.info("set login successful");
         Assert.assertEquals(homePage.getErrorLogin(), expectedError);
+
+    }
+    //1 open the app with the chrome
+    //2 type email
+    //3 type password
+    //4  click on log in
+    //5 click on setting menu
+    //6 click on log out link
+    //7 validate the logout tittle
+
+    @Test
+    public void testLogout() throws InterruptedException {
+        // first we need to login
+
+        homePage = new HomePage(getDriver());
+        myAccountPage = new MyAccountPage(getDriver());
+
+
+        homePage.setInputEmail(validEmail);
+        LOG.info("set email success");
+        homePage.setInputPassword(validPassword);
+        LOG.info("set password successful");
+        homePage.clickOnLoginBtn();
+        LOG.info("set login successful");
+        myAccountPage.clickOnSettingButton();
+        Thread.sleep(1000);
+        myAccountPage.clickSettingLinks("Log Out");
+       Assert.assertEquals(getCurrentTitle(),"Cogmento CRM");
 
     }
 

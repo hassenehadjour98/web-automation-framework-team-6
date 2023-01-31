@@ -34,3 +34,104 @@
 12:42:53.410 [main] INFO  com.freecrm.HomePage - set invalid email success
 12:42:53.488 [main] INFO  com.freecrm.HomePage - set invalid password successful
 12:42:53.532 [main] INFO  com.freecrm.HomePage - set login successful
+14:44:25.824 [main] INFO  com.freecrm.HomePage - set invalid email success
+14:44:25.898 [main] INFO  com.freecrm.HomePage - set invalid password successful
+14:44:25.945 [main] INFO  com.freecrm.HomePage - set login successful
+14:44:29.838 [main] INFO  com.freecrm.HomePage - set email success
+14:44:29.954 [main] INFO  com.freecrm.HomePage - set password successful
+14:44:29.997 [main] INFO  com.freecrm.HomePage - set login successful
+14:44:32.588 [main] INFO  com.freecrm.HomePage - set email success
+14:44:32.648 [main] INFO  com.freecrm.HomePage - set password successful
+14:44:32.692 [main] INFO  com.freecrm.HomePage - set login successful
+14:46:12.585 [main] INFO  com.freecrm.HomePage - set invalid email success
+14:46:12.651 [main] INFO  com.freecrm.HomePage - set invalid password successful
+14:46:12.693 [main] INFO  com.freecrm.HomePage - set login successful
+14:46:15.981 [main] INFO  com.freecrm.HomePage - set email success
+14:46:16.056 [main] INFO  com.freecrm.HomePage - set password successful
+14:46:16.105 [main] INFO  com.freecrm.HomePage - set login successful
+14:46:22.446 [main] INFO  com.freecrm.HomePage - set email success
+14:46:22.504 [main] INFO  com.freecrm.HomePage - set password successful
+14:46:22.547 [main] INFO  com.freecrm.HomePage - set login successful
+14:58:06.734 [main] INFO  com.freecrm.HomePage - set email success
+14:58:06.815 [main] INFO  com.freecrm.HomePage - set password successful
+14:58:06.862 [main] INFO  com.freecrm.HomePage - set login successful
+14:58:44.741 [main] INFO  com.freecrm.HomePage - set email success
+14:58:44.812 [main] INFO  com.freecrm.HomePage - set password successful
+14:58:44.855 [main] INFO  com.freecrm.HomePage - set login successful
+15:00:11.037 [main] INFO  com.freecrm.HomePage - set email success
+15:00:11.122 [main] INFO  com.freecrm.HomePage - set password successful
+15:00:11.166 [main] INFO  com.freecrm.HomePage - set login successful
+15:03:22.672 [main] INFO  com.freecrm.HomePage - set invalid email success
+15:03:22.759 [main] INFO  com.freecrm.HomePage - set invalid password successful
+15:03:22.802 [main] INFO  com.freecrm.HomePage - set login successful
+15:03:26.282 [main] INFO  com.freecrm.HomePage - set email success
+15:03:26.349 [main] INFO  com.freecrm.HomePage - set password successful
+15:03:26.394 [main] INFO  com.freecrm.HomePage - set login successful
+15:03:34.118 [main] INFO  com.freecrm.HomePage - set email success
+15:03:34.185 [main] INFO  com.freecrm.HomePage - set password successful
+15:03:34.236 [main] INFO  com.freecrm.HomePage - set login successful
+15:07:51.179 [main] INFO  com.freecrm.HomePage - set invalid email success
+15:07:51.267 [main] INFO  com.freecrm.HomePage - set invalid password successful
+15:07:51.306 [main] INFO  com.freecrm.HomePage - set login successful
+15:07:54.839 [main] INFO  com.freecrm.HomePage - set email success
+15:07:54.923 [main] INFO  com.freecrm.HomePage - set password successful
+15:07:54.974 [main] INFO  com.freecrm.HomePage - set login successful
+15:08:01.554 [main] INFO  com.freecrm.HomePage - set email success
+15:08:01.602 [main] INFO  com.freecrm.HomePage - set password successful
+15:08:01.643 [main] INFO  com.freecrm.HomePage - set login successful
+15:50:31.454 [main] INFO  com.freecrm.HomePage - set email success
+15:50:31.531 [main] INFO  com.freecrm.HomePage - set password successful
+15:50:31.568 [main] INFO  com.freecrm.HomePage - set login successful
+15:50:32.253 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+15:51:02.257 [main] INFO  com.freecrm.HomePage - set email success
+15:51:02.325 [main] INFO  com.freecrm.HomePage - set password successful
+15:51:02.366 [main] INFO  com.freecrm.HomePage - set login successful
+15:51:03.127 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+15:51:40.583 [main] INFO  com.freecrm.HomePage - set email success
+15:51:40.658 [main] INFO  com.freecrm.HomePage - set password successful
+15:51:40.701 [main] INFO  com.freecrm.HomePage - set login successful
+15:51:41.773 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+15:55:18.939 [main] INFO  com.freecrm.HomePage - set email success
+15:55:19.012 [main] INFO  com.freecrm.HomePage - set password successful
+15:55:19.046 [main] INFO  com.freecrm.HomePage - set login successful
+15:55:20.102 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+15:59:09.396 [main] INFO  com.freecrm.HomePage - set email success
+15:59:09.482 [main] INFO  com.freecrm.HomePage - set password successful
+15:59:09.530 [main] INFO  com.freecrm.HomePage - set login successful
+15:59:10.612 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+16:23:19.977 [main] INFO  com.freecrm.HomePage - set email success
+16:23:20.081 [main] INFO  com.freecrm.HomePage - set password successful
+16:23:20.118 [main] INFO  com.freecrm.HomePage - set login successful
+16:23:21.222 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+16:23:52.354 [main] INFO  com.freecrm.HomePage - set email success
+16:23:52.434 [main] INFO  com.freecrm.HomePage - set password successful
+16:23:52.480 [main] INFO  com.freecrm.HomePage - set login successful
+16:23:53.549 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+16:26:06.851 [main] INFO  com.freecrm.HomePage - set email success
+16:26:06.926 [main] INFO  com.freecrm.HomePage - set password successful
+16:26:06.970 [main] INFO  com.freecrm.HomePage - set login successful
+16:26:08.031 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+16:26:24.076 [main] INFO  com.freecrm.HomePage - set email success
+16:26:24.143 [main] INFO  com.freecrm.HomePage - set password successful
+16:26:24.181 [main] INFO  com.freecrm.HomePage - set login successful
+16:26:25.262 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+16:27:49.054 [main] INFO  com.freecrm.HomePage - set email success
+16:27:49.134 [main] INFO  com.freecrm.HomePage - set password successful
+16:27:49.206 [main] INFO  com.freecrm.HomePage - set login successful
+16:27:50.266 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+16:28:13.934 [main] INFO  com.freecrm.HomePage - set email success
+16:28:14.001 [main] INFO  com.freecrm.HomePage - set password successful
+16:28:14.039 [main] INFO  com.freecrm.HomePage - set login successful
+16:28:15.097 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+16:54:26.080 [main] INFO  com.freecrm.HomePage - set email success
+16:54:26.155 [main] INFO  com.freecrm.HomePage - set password successful
+16:54:26.202 [main] INFO  com.freecrm.HomePage - set login successful
+16:54:27.263 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+17:05:21.695 [main] INFO  com.freecrm.HomePage - set email success
+17:05:21.789 [main] INFO  com.freecrm.HomePage - set password successful
+17:05:21.835 [main] INFO  com.freecrm.HomePage - set login successful
+17:05:22.904 [main] INFO  com.freecrm.HomePage -  successful click on drop down
+17:06:48.215 [main] INFO  com.freecrm.HomePage - set email success
+17:06:48.297 [main] INFO  com.freecrm.HomePage - set password successful
+17:06:48.340 [main] INFO  com.freecrm.HomePage - set login successful
+17:06:49.414 [main] INFO  com.freecrm.HomePage -  successful click on drop down
