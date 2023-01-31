@@ -239,6 +239,23 @@ public class CommonAPI {
     public boolean elementIsEnabled (WebElement element){
         return element.isEnabled();
     }
+
+    public void acceptAlert(){
+        driver.switchTo().alert().accept();
+    }
+    public void dismissAlert(){
+        driver.switchTo().alert().dismiss();
+    }
+    public String getTextFromAlert(){
+        return driver.switchTo().alert().getText();
+    }
+
+    public void clearTextFromTextBox (WebElement element){
+        element.clear();
+    }
+    public void typeNumber(WebElement element, int number){
+        element.sendKeys(""+number+"");
+    }
     public void switchToChildWindow(WebDriver driver, String Title){
         Set<String> allWindowHandles = driver.getWindowHandles();
         List<String> hList = new ArrayList<String>(allWindowHandles);

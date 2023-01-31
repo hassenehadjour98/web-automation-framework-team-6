@@ -9,87 +9,101 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SelectCurrencyTest extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
+    Logger log = LogManager.getLogger(SelectCurrencyTest.class.getName());
+    String defaultCurrency = "US Dollar";
+    String currency2 = "Euro";
+    String itemName ="Nokia Lumia 1020";
+    HomePage homePage;
+    SearchPage searchPage;
 
+
+    //Verify Currency Displayed By Default is US Dollar
     @Test
-    public void selectCurrencyTest1() {
-        log.info("***  Select currency Test 1 Started ***");
+    public void verifyDefaultDisplayedCurrency() {
+        log.info("***  Select currency Test verifyDefaultDisplayedCurrency Started ***");
 
-        HomePage hp = new HomePage(getDriver());
-        String currency = "Euro";
-        hp.selectCurrency(currency);
-        String item ="Nokia Lumia 1020";
-        hp.searchItem(item);
-        hp.clkSearchBtn();
+        homePage = new HomePage(getDriver());
+        Assert.assertTrue(homePage.usDollarIsSelected());
+        Assert.assertFalse(homePage.euroIsSelected());
+        log.info("Default Currency Displayed successfully");
+
+        log.info("***  Select currency Test verifyDefaultDisplayedCurrency finished ***");
+    }
+    //Switch to New Currency and verify currency name is displayed
+    @Test
+    public void verifySelectedCurrencyIsDisplayed() {
+        log.info("***  Select currency Test verifySelectedCurrencyIsDisplayed Started ***");
+
+        homePage = new HomePage(getDriver());
+
+        homePage.selectCurrency(currency2);
+        Assert.assertTrue(homePage.euroIsSelected());
+        Assert.assertFalse(homePage.usDollarIsSelected());
+        log.info("New selected currency displayed successfully");
+
+        log.info("***  Select currency Test verifySelectedCurrencyIsDisplayed finished ***");
+    }
+    //Select different Currency Then Search And Validate Item Name and Price
+    @Test
+    public void selectCurrencyThenSearchAndValidateItemPrice() {
+        log.info("***  Select currency Test selectCurrencyThenSearchAndValidateItemPrice Started ***");
+        //Switch Currency
+        homePage = new HomePage(getDriver());
+        homePage.selectCurrency(currency2);
+        homePage.typeItemAndClickSearch(itemName);
         String actualTitle = getCurrentTitle();
         String expectedTitle = "nopCommerce demo store. Search";
         Assert.assertEquals(actualTitle, expectedTitle,"Did not land on search page");
         log.info("Landed on search page successfully");
 
-        SearchPage sp = new SearchPage(getDriver());
-        String actualItemName = sp.getItemName();
-        Assert.assertEquals(actualItemName,item,"Item not found");
+        //Validate Found Item Name
+        searchPage = new SearchPage(getDriver());
+        String actualItemName = searchPage.getItemName();
+        Assert.assertEquals(actualItemName, itemName,"Item not found");
         log.info("Item found successfully");
 
-        String actualPrice = sp.getItemPrice();
+        //Validate Item Price Is Displayed In New Currency
+        String actualPrice = searchPage.getItemPrice();
         String expectedPrice = "€300.14";
         Assert.assertEquals(actualPrice,expectedPrice,"Price not as expected");
         log.info("Item price as expected");
 
-        log.info("***  Select currency Test 1 finished ***");
+        log.info("***  Select currency Test selectCurrencyThenSearchAndValidateItemPrice finished ***");
     }
+
+    //Search Item Then Switch Currency and validate price is converted
     @Test
-    public void selectCurrencyTest2() {
-        log.info("***  Select currency Test 2 Started ***");
+    public void confirmItemPriceConversion() {
+        log.info("***  Select currency Test confirmItemPriceConversion Started ***");
 
-        HomePage hp = new HomePage(getDriver());
-        String mainCurrency = "US Dollar";
-        String currency2 = "Euro";
-        Assert.assertTrue(hp.usDollarIsSelected());
-        Assert.assertFalse(hp.euroIsSelected());
+        homePage = new HomePage(getDriver());
 
-        hp.selectCurrency(currency2);
-        Assert.assertTrue(hp.euroIsSelected());
-        Assert.assertFalse(hp.usDollarIsSelected());
-        log.info("New currency selected successfully");
-
-        log.info("***  Select currency Test 2 finished ***");
-    }
-    @Test
-    public void selectCurrencyTest3() {
-        log.info("***  Select currency Test 3 Started ***");
-
-        HomePage hp = new HomePage(getDriver());
-
-        String item ="Nokia Lumia 1020";
-        hp.searchItem(item);
-        hp.clkSearchBtn();
+        homePage.typeItemAndClickSearch(itemName);
         String actualTitle = getCurrentTitle();
         String expectedTitle = "nopCommerce demo store. Search";
         Assert.assertEquals(actualTitle, expectedTitle,"Did not land on search page");
         log.info("Landed on search page successfully");
 
-        SearchPage sp = new SearchPage(getDriver());
-        String actualItemName = sp.getItemName();
-        Assert.assertEquals(actualItemName,item,"Item not found");
+        searchPage = new SearchPage(getDriver());
+        String actualItemName = searchPage.getItemName();
+        Assert.assertEquals(actualItemName, itemName,"Item not found");
         log.info("Item found successfully");
 
-        String actualPrice = sp.getItemPrice();
+        String actualPrice = searchPage.getItemPrice();
         String expectedPrice = "$349.00";
         Assert.assertEquals(actualPrice,expectedPrice,"Price not as expected");
         log.info("Item price as expected");
 
-        String currency = "Euro";
-        hp.selectCurrency(currency);
-        Assert.assertTrue(hp.euroIsSelected());
+        homePage.selectCurrency(currency2);
+        Assert.assertTrue(homePage.euroIsSelected());
         log.info("New currency selected successfully");
 
-        String actConvertedPrice = sp.getItemPrice();
+        String actConvertedPrice = searchPage.getItemPrice();
         String expConvertedPrice = "€300.14";
         Assert.assertEquals(actConvertedPrice,expConvertedPrice,"Price not as expected");
         log.info("Item price converted successfully");
 
 
-        log.info("***  Select currency Test 3 finished ***");
+        log.info("***  Select currency Test confirmItemPriceConversion finished ***");
     }
 }

@@ -9,11 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class RegistrationPage extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
-
     public RegistrationPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+    Logger log = LogManager.getLogger(RegistrationPage.class.getName());
 
     @FindBy(css = "#gender-male")
     WebElement btnMale;
