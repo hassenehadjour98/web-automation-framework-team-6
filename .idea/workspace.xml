@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c212e2ee-3df3-48aa-a451-8f6b20e34109" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/LogInPageNop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/LogInPageNop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nopcommerce/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/RegistrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/RegistrationPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/SelectCurrencyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nopcommerce/tests/SelectCurrencyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runnernopcommerce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runnernopcommerce.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2KZWbWjEAnNViOIU0qfCiayUupx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nabam/IdeaProjects/Framework-test-pavan&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\Data-nopcommerce" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nabam\IdeaProjects\web-automation-framework-team-6\Data\nopcommerce" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/resources/runnernopcommerce.xml">
+    <configuration name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/resources/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team6" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Master.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/resources/runnernopcommerce.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team6" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runnernopcommerce.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationPageTest.registerWithoutProvidingAnyData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nopcommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nopcommerce.tests" />
+      <option name="MAIN_CLASS_NAME" value="nopcommerce.tests.RegistrationPageTest" />
+      <option name="METHOD_NAME" value="registerWithoutProvidingAnyData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nopcommerce.tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nopcommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nopcommerce.tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="orangehrm.project.tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="orangehrm.project.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="orangehrm.project.tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/resources/runnernopcommerce.xml" />
+        <item itemvalue="TestNG.C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/resources/Master.xml" />
+        <item itemvalue="TestNG.RegistrationPageTest.registerWithoutProvidingAnyData" />
+        <item itemvalue="TestNG.orangehrm.project.tests" />
+        <item itemvalue="TestNG.nopcommerce.tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c212e2ee-3df3-48aa-a451-8f6b20e34109" name="Changes" comment="" />
+      <created>1674182657018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674182657018</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="alternate" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

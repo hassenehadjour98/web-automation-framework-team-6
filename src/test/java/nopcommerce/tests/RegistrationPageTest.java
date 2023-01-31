@@ -14,27 +14,24 @@ import org.testng.asserts.SoftAssert;
 public class RegistrationPageTest extends CommonAPI {
     Faker faker = new Faker();
     Logger log = LogManager.getLogger(RegistrationPageTest.class.getName());
-    String firstName = "Tom" ,lastName = "Cruise", dayOfBirth = "3", monthOfBirth = "July", yearOfBirth = "1962";
-    String email = faker.internet().emailAddress(), companyName = "C/W Productions", password="07031962";
+    String firstName = "qa" ,lastName = "qa", dayOfBirth = "3", monthOfBirth = "July", yearOfBirth = "1962";
+    String email = faker.internet().emailAddress(), companyName = "C/W Productions", password=faker.internet().password();
     String msgRegistrationSuccess ="Your registration completed";
     String msgEmailExists ="The specified email already exists";
-    @BeforeMethod
-    public void navigateToRegisterPage(){
-        HomePage homePage = new HomePage(getDriver());
-        homePage.clkOnLnkRegister();
-        String actualTitle = getCurrentTitle();
-        String expectedTitle = "nopCommerce demo store. Register";
-        Assert.assertEquals(actualTitle, expectedTitle,"Did not land on registration page");
-        log.info("Landed on registration page successfully");
-    }
+    String expectedHomePageTitle = "nopCommerce demo store. Register";
+    HomePage homePage;
     RegistrationPage registrationPage;
     @Test
-    public void registrationTest1 () {
-        log.info("***  Registration Test 1 Started ***");
+    public void registerProvidingAllFieldsTest () {
+        log.info("***  Registration Test registerProvidingAllFieldsTest Started ***");
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLnkRegister();
+        String actualTitle = getCurrentTitle();
+        Assert.assertEquals(actualTitle, expectedHomePageTitle,"Did not land on registration page");
+        log.info("Landed on registration page successfully");
 
         registrationPage = new RegistrationPage(getDriver());
         registrationPage.clkOnMale();
-
         registrationPage.setFirstName(firstName);
         registrationPage.setLastName(lastName);
         registrationPage.selectDayOfBirth(dayOfBirth);
@@ -48,26 +45,57 @@ public class RegistrationPageTest extends CommonAPI {
         registrationPage.clkOnRegister();
 
         String returnedMessage = registrationPage.readReturnedMessage();
-        if (returnedMessage.equals(msgRegistrationSuccess)){
             Assert.assertEquals(returnedMessage,msgRegistrationSuccess);
             log.info("Registration success message returned");
-        }
-
-        else if (returnedMessage.equals(msgEmailExists)){
-            String returnedEmail = registrationPage.registeredEmail();
-            Assert.assertEquals(returnedEmail,email);
-            log.info("Email exists message returned");
-            log.info("Email matches registered user");
-        }
-        log.info("***  Registration Test 1 finished ***");
+        log.info("Provided email: "+email);
+        log.info("***  Registration Test registerProvidingAllFieldsTest finished ***");
 
     }
     @Test
-    public void registrationTest2 () {
-        log.info("***  Registration Test 2 Started ***");
+    public void registerWithRegisteredEmailTest () {
+        log.info("***  Registration Test registerWithRegisteredEmailTest Started ***");
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLnkRegister();
+        String actualTitle = getCurrentTitle();
+        Assert.assertEquals(actualTitle, expectedHomePageTitle,"Did not land on registration page");
+        log.info("Landed on registration page successfully");
 
         registrationPage = new RegistrationPage(getDriver());
-        String email = "tomcruise2@gmail.com";
+        registrationPage.clkOnMale();
+        registrationPage.setFirstName(firstName);
+        registrationPage.setLastName(lastName);
+        registrationPage.selectDayOfBirth(dayOfBirth);
+        registrationPage.selectMonthOfBirth(monthOfBirth);
+        registrationPage.selectYearOfBirth(yearOfBirth);
+        registrationPage.setEmail(email);
+        registrationPage.setCompanyName(companyName);
+        registrationPage.selectNewsletter();
+        registrationPage.setPassword(password);
+        registrationPage.setConfirmPassword(password);
+        registrationPage.clkOnRegister();
+
+        String returnedMessage = registrationPage.readReturnedMessage();
+        Assert.assertEquals(returnedMessage,msgEmailExists);
+        log.info("Email exists message returned");
+            String returnedEmail = registrationPage.registeredEmail();
+            Assert.assertEquals(returnedEmail,email);
+            log.info("Email matches registered user");
+        log.info("Provided email: "+email);
+
+        log.info("***  Registration Test registerWithRegisteredEmailTest finished ***");
+
+    }
+    @Test
+    public void registerProvidingOnlyMandatoryFields () {
+        log.info("***  Registration Test registerProvidingOnlyMandatoryFields Started ***");
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLnkRegister();
+        String actualTitle = getCurrentTitle();
+        Assert.assertEquals(actualTitle, expectedHomePageTitle,"Did not land on registration page");
+        log.info("Landed on registration page successfully");
+
+        registrationPage = new RegistrationPage(getDriver());
+        String email = faker.internet().emailAddress();
 
         registrationPage.setFirstName(firstName);
         registrationPage.setLastName(lastName);
@@ -77,23 +105,22 @@ public class RegistrationPageTest extends CommonAPI {
         registrationPage.clkOnRegister();
 
         String returnedMessage = registrationPage.readReturnedMessage();
-        if (returnedMessage.equals(msgRegistrationSuccess)){
+
             Assert.assertEquals(returnedMessage,msgRegistrationSuccess);
             log.info("Registration success message returned");
-        }
+            log.info("Provided email: "+email);
 
-        else if (returnedMessage.equals(msgEmailExists)){
-            String returnedEmail = registrationPage.registeredEmail();
-            Assert.assertEquals(returnedEmail,email);
-            log.info("Email exists message returned");
-            log.info("Email matches registered user");
-        }
-        log.info("***  Registration Test 2 finished ***");
+        log.info("***  Registration Test registerProvidingOnlyMandatoryFields finished ***");
 
     }
     @Test
-    public void registrationTest3 () {
-        log.info("***  Registration Test 3 Started ***");
+    public void registerWithoutProvidingAnyData () {
+        log.info("***  Registration Test registerWithoutProvidingAnyData Started ***");
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLnkRegister();
+        String actualTitle = getCurrentTitle();
+        Assert.assertEquals(actualTitle, expectedHomePageTitle,"Did not land on registration page");
+        log.info("Landed on registration page successfully");
 
         registrationPage = new RegistrationPage(getDriver());
 
@@ -114,12 +141,17 @@ public class RegistrationPageTest extends CommonAPI {
         SoftAssert softAssert = new SoftAssert();
 
         softAssert.assertEquals(actFNameMsg,expFNameMsg);
+        log.info("First name is required. msg displayed success");
         softAssert.assertEquals(actLNameMsg,expLNameMsg);
+        log.info("Last name is required. msg displayed success");
         softAssert.assertEquals(actEmailMsg,expEmailMsg);
+        log.info("Email is required. msg displayed success");
         softAssert.assertEquals(actPasswordMsg,expPasswordMsg);
+        log.info("Password is required. msg displayed success");
         softAssert.assertEquals(actPasswordConfMsg,expPasswordConfMsg);
+        log.info("Password is required. msg displayed success");
         softAssert.assertAll();
-        log.info("***  Registration Test 3 finished ***");
+        log.info("***  Registration Test registerWithoutProvidingAnyData finished ***");
 
     }
 

@@ -18,13 +18,29 @@ public class SearchPage extends CommonAPI {
     WebElement itemName;
     @FindBy(css = ".price.actual-price")
     WebElement itemPrice;
+    @FindBy(css = ".button-2.add-to-wishlist-button")
+    WebElement btnAddToWishlist;
+    @FindBy(css = ".button-2.product-box-add-to-cart-button")
+    WebElement btnAddToCart;
 
     public String getItemName(){
         log.info("get item name success");
         return itemName.getText();
     }
+    public void clickOnItemName (){
+        clickOn(itemName);
+        log.info("clicked on item successfully");
+    }
     public String getItemPrice(){
         log.info("get item price success");
         return itemPrice.getText();
+    }
+    public void addToWishlist() {
+        clickOn(btnAddToWishlist);
+        log.info("added item to wishlist successfully");
+    }
+        public void addToCart(){
+            clickOn(btnAddToCart);
+            log.info("added item to cart successfully");
     }
 }

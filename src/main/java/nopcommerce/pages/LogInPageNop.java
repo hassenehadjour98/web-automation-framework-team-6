@@ -25,14 +25,17 @@ public class LogInPageNop extends CommonAPI {
     WebElement lnkForgotPassword;
     @FindBy (xpath = "//div[contains(text(),'unsuccessful')]")
     WebElement msgLogInError;
-    @FindBy (css = "")
-    WebElement e;
+
+
 
     public void logIn (String email, String password){
         type(txtEmail,email);
         type(txtPassword,password);
         clickOn(btnLogIn);
         log.info("Email and Password set, successfully clicked on log in");
+    }
+    public String getMessageLogInError (){
+        return getTextFromElement(msgLogInError);
     }
 
 
