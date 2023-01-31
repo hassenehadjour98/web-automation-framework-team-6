@@ -27,3 +27,10 @@
 04:35:29.516 [main] INFO  orangehrm.project.pages.AdminPage - edit button clicked
 04:35:30.161 [main] INFO  orangehrm.project.pages.AdminPage - checkbox clicked, and it is displayed
 04:35:30.199 [main] INFO  orangehrm.project.pages.AdminPage - checkbox clicked, and it is displayed
+10:43:36.023 [main] INFO  com.freecrm.HomePage - click on My Account button success
+12:19:08.616 [main] INFO  com.freecrm.HomePage - set email success
+12:19:08.700 [main] INFO  com.freecrm.HomePage - set password successful
+12:19:08.742 [main] INFO  com.freecrm.HomePage - set login successful
+12:42:53.410 [main] INFO  com.freecrm.HomePage - set invalid email success
+12:42:53.488 [main] INFO  com.freecrm.HomePage - set invalid password successful
+12:42:53.532 [main] INFO  com.freecrm.HomePage - set login successful

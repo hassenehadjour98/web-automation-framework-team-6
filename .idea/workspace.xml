@@ -4,7 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a0ba49-6cc8-4795-8568-06bba38a2ee3" name="Changes" comment="" />
+    <list default="true" id="b0a0ba49-6cc8-4795-8568-06bba38a2ee3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_5_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_5_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_lite_5_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_5_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web-automation-framework-team-6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-automation-framework-team-6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/test-logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test-logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/CommonAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.AdminPageTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-orangehrm.project.tests.LoginPageTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/Command line test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,71 +95,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/hassenehadjour/Desktop/web-automation-framework-team-6"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/13474/Desktop/nacerFramework/Nov2022-web-automation-framework&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\13474\IdeaProjects\web-automation-framework-team-6\src\test\resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java/testdocumentation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\13474\IdeaProjects\web-automation-framework-team-6\Data\freecrm" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/hassenehadjour/Desktop/web-automation-framework-team-6/runner.orangehrm.xml">
-    <configuration name="AdminPageTest.addQAtoJobCatigories" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestAuthentication.test">
+    <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-automation-framework-team-6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="orangehrm.project.tests.*" />
+          <option name="PATTERN" value="opencart.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="orangehrm.project.tests" />
-      <option name="MAIN_CLASS_NAME" value="orangehrm.project.tests.AdminPageTest" />
-      <option name="METHOD_NAME" value="addQAtoJobCatigories" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminPageTest.addThenDeleteJobTitle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="web-automation-framework-team-6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="orangehrm.project.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="orangehrm.project.tests" />
-      <option name="MAIN_CLASS_NAME" value="orangehrm.project.tests.AdminPageTest" />
-      <option name="METHOD_NAME" value="addThenDeleteJobTitle" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePagetest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="web-automation-framework-team-6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="orangehrm.project.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="orangehrm.project.tests" />
-      <option name="MAIN_CLASS_NAME" value="orangehrm.project.tests.HomePagetest" />
+      <option name="PACKAGE_NAME" value="opencart.test" />
+      <option name="MAIN_CLASS_NAME" value="opencart.test.HomePageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -115,17 +134,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePagetest.changepasswordcheckbox" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAuthentication.clkOnLnkRegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-automation-framework-team-6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="orangehrm.project.tests.*" />
+          <option name="PATTERN" value="com.freecrmtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="orangehrm.project.tests" />
-      <option name="MAIN_CLASS_NAME" value="orangehrm.project.tests.HomePagetest" />
-      <option name="METHOD_NAME" value="changepasswordcheckbox" />
+      <option name="PACKAGE_NAME" value="com.freecrmtest" />
+      <option name="MAIN_CLASS_NAME" value="com.freecrmtest.TestAuthentication" />
+      <option name="METHOD_NAME" value="clkOnLnkRegisterTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAuthentication.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team-6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.freecrmtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.freecrmtest" />
+      <option name="MAIN_CLASS_NAME" value="com.freecrmtest.TestAuthentication" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAuthentication.testInvalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-team-6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.freecrmtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.freecrmtest" />
+      <option name="MAIN_CLASS_NAME" value="com.freecrmtest.TestAuthentication" />
+      <option name="METHOD_NAME" value="testInvalidLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -145,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestAuthentication.test" />
+        <item itemvalue="TestNG.TestAuthentication.testInvalidLogin" />
+        <item itemvalue="TestNG.TestAuthentication.clkOnLnkRegisterTest" />
+        <item itemvalue="TestNG.HomePageTest" />
         <item itemvalue="TestNG./Users/hassenehadjour/Desktop/web-automation-framework-team-6/runner.orangehrm.xml" />
-        <item itemvalue="TestNG.AdminPageTest.addThenDeleteJobTitle" />
-        <item itemvalue="TestNG.AdminPageTest.addQAtoJobCatigories" />
-        <item itemvalue="TestNG.HomePagetest.changepasswordcheckbox" />
-        <item itemvalue="TestNG.HomePagetest" />
       </list>
     </recent_temporary>
   </component>
