@@ -99,7 +99,6 @@ public class CommonAPI {
     public void generateReport() {
         extent.close();
     }
-
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
@@ -132,7 +131,6 @@ public class CommonAPI {
         }
 
     }
-
     @Parameters({"useCloudEnv","envName","os","osVersion","browserName","browserVersion","url"})
     @BeforeMethod()
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName,
@@ -239,7 +237,6 @@ public class CommonAPI {
     public boolean elementIsEnabled (WebElement element){
         return element.isEnabled();
     }
-
     public void acceptAlert(){
         driver.switchTo().alert().accept();
     }
@@ -249,7 +246,6 @@ public class CommonAPI {
     public String getTextFromAlert(){
         return driver.switchTo().alert().getText();
     }
-
     public void clearTextFromTextBox (WebElement element){
         element.clear();
     }
