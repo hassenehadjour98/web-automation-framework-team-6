@@ -242,6 +242,12 @@ public class CommonAPI {
         return driver.switchTo().alert().getText();
     }
 
+    public void clearTextFromTextBox (WebElement element){
+        element.clear();
+    }
+    public void typeNumber(WebElement element, int number){
+        element.sendKeys(""+number+"");
+    }
 
 
 

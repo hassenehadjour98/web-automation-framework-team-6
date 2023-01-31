@@ -10,16 +10,15 @@ import org.testng.annotations.Test;
 
 public class SearchTest extends CommonAPI {
     Logger log = LogManager.getLogger(SearchTest.class.getName());
-    String item ="Nokia Lumia 1020";
+    String itemName ="Nokia Lumia 1020";
 
 
     @Test
-    public void searchAndValidatePrice(){
+    public void searchAndValidateItemNameAndPrice(){
         log.info("***  Search Test Started ***");
 
         HomePage homePage = new HomePage(getDriver());
-        homePage.searchItem(item);
-        homePage.clkSearchBtn();
+        homePage.typeItemAndClickSearch(itemName);
         String actualTitle = getCurrentTitle();
         String expectedTitle = "nopCommerce demo store. Search";
         Assert.assertEquals(actualTitle, expectedTitle,"Did not land on search page");
@@ -27,7 +26,7 @@ public class SearchTest extends CommonAPI {
 
         SearchPage searchPage = new SearchPage(getDriver());
         String actualItemName = searchPage.getItemName();
-        Assert.assertEquals(actualItemName,item,"Item not found");
+        Assert.assertEquals(actualItemName, itemName,"Item not found");
         log.info("Item found successfully");
 
         String actualPrice = searchPage.getItemPrice();

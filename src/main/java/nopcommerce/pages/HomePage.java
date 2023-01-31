@@ -8,8 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
 public class HomePage extends CommonAPI {
 
     public HomePage(WebDriver driver) {
@@ -44,13 +42,19 @@ public class HomePage extends CommonAPI {
     WebElement drpEuroOpt;
     @FindBy(css = ".ico-logout")
     WebElement lnkLogout;
+    @FindBy(xpath = "//div[@class='topic-block']//h2")
+    WebElement msgWelcome;
+
 
     public void clkOnLnkRegister() {
         clickOn(lnkRegister);
         log.info("click on register link success");
     }
+    public String getLogInLinkText (){
+        return getTextFromElement(lnkLogin);
+    }
 
-    public void clkOnLnkLogin() {
+    public void clkOnLinkLogin() {
         clickOn(lnkLogin);
         log.info("click on log in link success");
     }
@@ -65,7 +69,7 @@ public class HomePage extends CommonAPI {
         return getTextFromElement(wishlistQuantity);
     }
 
-    public void clkOnShoppingCart() {
+    public void clkOnLinkShoppingCart() {
         clickOn(lnkShoppingCart);
         log.info("click on shopping cart success");
     }
@@ -75,13 +79,10 @@ public class HomePage extends CommonAPI {
         return getTextFromElement(shoppingCartQuantity);
     }
 
-    public void searchItem(String item) {
+    public void typeItemAndClickSearch(String item) {
         type(txtSearchItem, item);
-        log.info("Item type success");
-    }
-
-    public void clkSearchBtn() {
         clickOn(btnSearch);
+        log.info("Item type success");
         log.info("click on search success");
     }
 
@@ -109,6 +110,9 @@ public class HomePage extends CommonAPI {
     }
     public boolean euroIsSelected (){
         return elementIsSelected(drpEuroOpt);
+    }
+    public String welcomeMessage(){
+        return getTextFromElement(msgWelcome);
     }
 
 

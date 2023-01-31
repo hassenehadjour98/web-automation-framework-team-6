@@ -2,78 +2,118 @@ package nopcommerce.tests;
 
 
 import base.CommonAPI;
+import com.github.javafaker.Faker;
+import nopcommerce.pages.MyAccountPage;
 import nopcommerce.pages.HomePage;
 import nopcommerce.pages.LogInPageNop;
 import nopcommerce.pages.RegistrationPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LogInTest extends CommonAPI {
     Logger log = LogManager.getLogger(LogInTest.class.getName());
-    String expLogInPageTitle="nopCommerce demo store. Login";
     String expRegisterPageTitle = "nopCommerce demo store. Register";
-    String firstName = "qa" ,lastName = "qa", email = "test@gmail.com", password = "123abc";
+    String msgRegistrationSuccess = "Your registration completed";
+    String expectedMyAccountLinkText = "My account";
+    String expectedLogInLinkText = "Log in";
+    String expectedCredentialsIncorrectMessage = "Login was unsuccessful. Please correct the errors and try again.\n" +
+            "The credentials provided are incorrect";
+    String expectedNoAccountFoundMessage = "Login was unsuccessful. Please correct the errors and try again.\n" +
+            "No customer account found";
+    Faker faker = new Faker();
+    String firstName = faker.name().firstName() ,lastName = faker.name().lastName();
+    String validEmail = faker.internet().emailAddress(), validPassword = faker.internet().password();
+    String invalidEmail = faker.internet().emailAddress(), invalidPassword =faker.internet().password();
     RegistrationPage registrationPage;
-    LogInPageNop lp;
-    HomePage hp;
-    @BeforeMethod
-    public void navigateToLogInPage(){
-        hp= new HomePage(getDriver());
-        hp.clkOnLnkLogin();
-        log.info("Landed on login page success");
-    }
+    LogInPageNop logInPageNop;
+    HomePage homePage;
+    MyAccountPage myAccountPage;
 
     //Demo website requires to create an account before testing.
-    @Test (priority = 0)
+    @Test
     public void createAccount () {
-        hp = new HomePage(getDriver());
-        hp.clkOnLnkRegister();
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLnkRegister();
         String actualTitle = getCurrentTitle();
         Assert.assertEquals(actualTitle, expRegisterPageTitle, "Did not land on registration page");
         log.info("Landed on registration page successfully");
+
+        //Entering Credentials
         registrationPage = new RegistrationPage(getDriver());
         registrationPage.setFirstName(firstName);
         registrationPage.setLastName(lastName);
-        registrationPage.setEmail(email);
-        registrationPage.setPassword(password);
-        registrationPage.setConfirmPassword(password);
+        registrationPage.setEmail(validEmail);
+        registrationPage.setPassword(validPassword);
+        registrationPage.setConfirmPassword(validPassword);
+
         registrationPage.clkOnRegister();
-        String msgRegistrationSuccess = "Your registration completed";
-        String msgEmailExists = "The specified email already exists";
 
         String returnedMessage = registrationPage.readReturnedMessage();
-        if (returnedMessage.equals(msgRegistrationSuccess)) {
             Assert.assertEquals(returnedMessage, msgRegistrationSuccess);
             log.info("Registration success message returned");
-        } else if (returnedMessage.equals(msgEmailExists)) {
-            String returnedEmail = registrationPage.registeredEmail();
-            Assert.assertEquals(returnedEmail, email);
-            log.info("Email exists message returned");
-            log.info("Email matches registered user");
-        }
     }
 
 
-    //Login with valid email and password
-    @Test(priority = 1, dependsOnMethods = {"createAccount"})
-    public void logIn () {
-        log.info("***  Log in Test 1 started ***");
-        lp= new LogInPageNop(getDriver());
-        lp.logIn(email,password);
+    //Test Validate logging with valid credentials
+    @Test(priority = 0, dependsOnMethods = {"createAccount"})
+    public void logInWithValidCredentials () {
+        log.info("***  Log in Test logInWithValidCredentials started ***");
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLinkLogin();
+        log.info("Landed on login page success");
 
+        logInPageNop = new LogInPageNop(getDriver());
+        logInPageNop.logIn(validEmail,validPassword);
 
-        log.info("***  Log in Test 1 finished ***");
+        myAccountPage = new MyAccountPage(getDriver());
+        String actualMyAccountLinkText = myAccountPage.getMyAccountLinkText();
+        Assert.assertEquals(actualMyAccountLinkText,expectedMyAccountLinkText);
+        log.info("Logged in successfully");
+        log.info("***  Log in Test logInWithValidCredentials finished ***");
     }
-    //Login with valid email and invalid password
+    //Test Login with valid email and invalid password
+    @Test (priority = 1, dependsOnMethods = {"createAccount"})
+    public void logInWithValidEmailAndInvalidPassword() {
+        log.info("***  Log in Test logInWithValidEmailAndInvalidPassword started ***");
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLinkLogin();
+        log.info("Landed on login page success");
+        logInPageNop = new LogInPageNop(getDriver());
+        logInPageNop.logIn(validEmail, invalidPassword);
+        String actualMessageLogInError = logInPageNop.getMessageLogInError();
+        Assert.assertEquals(actualMessageLogInError,expectedCredentialsIncorrectMessage);
+        log.info("'The credentials provided are incorrect' Message Returned");
+        log.info("***  Log in Test logInWithValidEmailAndInvalidPassword finished ***");
+    }
+    //Test Login with invalid email and valid password
     @Test (priority = 2, dependsOnMethods = {"createAccount"})
-    public void logInTest2 () {
-        log.info("***  Log in Test 2 started ***");
-        hp= new HomePage(getDriver());
-        hp.clkOnLnkLogin();
-        lp = new LogInPageNop(getDriver());
-        lp.logIn(email, password);
+    public void logInWithInvalidEmailAndValidPassword () {
+        log.info("***  Log in Test logInWithInvalidEmailAndValidPassword started ***");
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLinkLogin();
+        log.info("Landed on login page success");
+        logInPageNop = new LogInPageNop(getDriver());
+        logInPageNop.logIn(invalidEmail, validPassword);
+        String actualMessageLogInError = logInPageNop.getMessageLogInError();
+        Assert.assertEquals(actualMessageLogInError, expectedNoAccountFoundMessage);
+        log.info("'No customer account found' message Returned");
+        log.info("***  Log in Test logInWithInvalidEmailAndValidPassword finished ***");
     }
+    //Test Login with invalid email and invalid password
+    @Test (priority = 3, dependsOnMethods = {"createAccount"})
+    public void logInWithInvalidEmailAndInvalidPassword() {
+        log.info("***  Log in Test logInWithInvalidEmailAndInvalidPassword started ***");
+        homePage = new HomePage(getDriver());
+        homePage.clkOnLinkLogin();
+        log.info("Landed on login page success");
+        logInPageNop = new LogInPageNop(getDriver());
+        logInPageNop.logIn(invalidEmail, invalidPassword);
+        String actualMessageLogInError = logInPageNop.getMessageLogInError();
+        Assert.assertEquals(actualMessageLogInError, expectedNoAccountFoundMessage);
+        log.info("'No customer account found' message Returned");
+        log.info("***  Log in Test logInWithInvalidEmailAndInvalidPassword finished ***");
+    }
+
 }
