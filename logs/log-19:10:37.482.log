@@ -1,0 +1,112 @@
+00:54:41.902 [main] INFO  orangehrm.project.pages.LoginPage - User Name is Displayed
+00:54:48.557 [main] INFO  orangehrm.project.pages.LoginPage - Reset Password link sent successfully
+00:54:53.318 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+00:54:56.701 [main] INFO  orangehrm.project.pages.MyInfo - blood type selected
+00:54:56.740 [main] INFO  orangehrm.project.pages.MyInfo - Save button clicked
+00:54:57.092 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+01:03:27.449 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:03:30.018 [main] INFO  orangehrm.project.pages.MyInfo - blood type selected
+01:03:30.067 [main] INFO  orangehrm.project.pages.MyInfo - Save button clicked
+01:03:30.655 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+01:04:15.057 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:04:17.401 [main] INFO  orangehrm.project.pages.MyInfo - blood type selected
+01:04:17.452 [main] INFO  orangehrm.project.pages.MyInfo - Save button clicked
+01:04:20.813 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+01:05:13.235 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:05:16.207 [main] INFO  orangehrm.project.pages.MyInfo - blood type selected
+01:05:16.262 [main] INFO  orangehrm.project.pages.MyInfo - Save button clicked
+01:05:16.620 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+01:05:53.914 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:05:56.363 [main] INFO  orangehrm.project.pages.MyInfo - blood type selected
+01:05:56.410 [main] INFO  orangehrm.project.pages.MyInfo - Save button clicked
+01:05:56.826 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+01:14:39.398 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:14:42.342 [main] INFO  orangehrm.project.pages.MyInfo - blood type already selected as O+
+01:14:42.754 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+01:15:11.961 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:16:12.484 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:16:15.438 [main] INFO  orangehrm.project.pages.MyInfo - blood type successfully selected and saved
+01:16:15.743 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+01:17:42.364 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:17:44.937 [main] INFO  orangehrm.project.pages.MyInfo - blood type successfully selected and saved
+01:26:48.474 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:26:51.112 [main] INFO  orangehrm.project.pages.MyInfo - blood type already selected as O+
+01:26:51.746 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+01:27:23.523 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+01:27:26.176 [main] INFO  orangehrm.project.pages.MyInfo - blood type successfully selected and saved
+01:27:26.592 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+02:30:25.929 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+02:30:29.067 [main] INFO  orangehrm.project.pages.HomePage - Admin exist on the main menu and it is clickable --AdminFromMenu test-- Finished
+02:30:36.157 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+02:30:38.909 [main] INFO  orangehrm.project.pages.HomePage - Leave exist on the main menu and it is clickable --LeaveFromMenu test-- Finished
+02:30:45.449 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+02:30:47.243 [main] INFO  orangehrm.project.pages.HomePage - Time exist on the main menu and it is clickable --TimeFromMenu test-- Finished
+02:31:25.267 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+02:31:27.169 [main] INFO  orangehrm.project.pages.HomePage - Admin exist on the main menu and it is clickable --AdminFromMenu test-- Finished
+16:27:28.358 [main] INFO  orangehrm.project.pages.LoginPage - Login successfully
+16:31:36.451 [main] INFO  orangehrm.project.pages.LoginPage - Login successfully
+16:32:00.704 [main] INFO  orangehrm.project.pages.LoginPage - Login successfully
+16:41:46.054 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+16:41:47.895 [main] INFO  orangehrm.project.pages.AdminPage - text inserted to username
+16:41:47.972 [main] INFO  orangehrm.project.pages.AdminPage - Admin selected from dropdown
+16:41:48.045 [main] INFO  orangehrm.project.pages.AdminPage - Enable selected from dropdown
+16:41:48.085 [main] INFO  orangehrm.project.pages.AdminPage - search button clicked
+16:41:48.659 [main] INFO  orangehrm.project.pages.AdminPage - edit button clicked
+16:41:49.237 [main] INFO  orangehrm.project.pages.AdminPage - checkbox clicked, and it is displayed
+16:41:49.274 [main] INFO  orangehrm.project.pages.AdminPage - checkbox clicked, and it is displayed
+16:41:49.276 [main] INFO  orangehrm.project.tests.AdminPageTest - change password check box test finished
+18:44:56.640 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:44:59.420 [main] INFO  orangehrm.project.pages.HomePage - Admin exist on the main menu and it is clickable --AdminFromMenu test-- Finished
+18:45:05.064 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:45:06.934 [main] INFO  orangehrm.project.pages.HomePage - Leave exist on the main menu and it is clickable --LeaveFromMenu test-- Finished
+18:45:13.669 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:45:15.533 [main] INFO  orangehrm.project.pages.HomePage - Time exist on the main menu and it is clickable --TimeFromMenu test-- Finished
+18:45:20.921 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:45:22.789 [main] INFO  orangehrm.project.pages.HomePage - Recruitment exist on the main menu and it is clickable --RecruitmentFromMenu test-- Finished
+18:45:27.979 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:45:29.804 [main] INFO  orangehrm.project.pages.HomePage - Performance exist on the main menu and it is clickable --PerformanceFromMenu test-- Finished
+18:45:35.128 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:45:36.570 [main] INFO  orangehrm.project.pages.HomePage - Dashboard exist on the main menu and it is clickable --DashboardFromMenu test-- Finish
+18:45:41.709 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:45:43.184 [main] INFO  orangehrm.project.pages.HomePage - Directory exist on the main menu and it is clickable
+18:45:48.356 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:45:49.793 [main] INFO  orangehrm.project.pages.HomePage - Buzz exist on the main menu and it is clickable --BuzzFromMenu test-- Finished
+18:45:55.033 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:45:57.995 [main] INFO  orangehrm.project.pages.MyInfo - blood type successfully selected and saved
+18:45:58.291 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+18:48:15.297 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:48:17.734 [main] INFO  orangehrm.project.pages.MyInfo - blood type already selected as O+
+18:48:18.036 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+18:53:03.686 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:53:06.483 [main] INFO  orangehrm.project.pages.MyInfo - blood type successfully selected and saved
+18:53:06.841 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+18:53:39.208 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+18:53:41.819 [main] INFO  orangehrm.project.pages.MyInfo - blood type already selected as O+
+18:53:42.292 [main] INFO  orangehrm.project.pages.MyInfo - Toast message captured
+19:09:51.166 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+19:09:53.449 [main] INFO  orangehrm.project.pages.AdminPage - Job Titles is selected from JobDropDown
+19:09:54.213 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+19:09:54.566 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+19:09:54.623 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+19:09:54.674 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+19:09:54.773 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+19:09:55.077 [main] INFO  orangehrm.project.pages.AdminPage - Toast message captured
+19:09:58.560 [main] INFO  orangehrm.project.pages.AdminPage - Delete button clicked
+19:09:58.849 [main] INFO  orangehrm.project.pages.AdminPage - Toast message captured
+19:09:58.849 [main] INFO  orangehrm.project.tests.AdminPageTest - add Then Delete a Job Title test Finished
+19:10:05.795 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+19:10:07.607 [main] INFO  orangehrm.project.pages.AdminPage - text inserted to username
+19:10:07.685 [main] INFO  orangehrm.project.pages.AdminPage - Admin selected from dropdown
+19:10:07.752 [main] INFO  orangehrm.project.pages.AdminPage - Enable selected from dropdown
+19:10:07.793 [main] INFO  orangehrm.project.pages.AdminPage - search button clicked
+19:10:08.347 [main] INFO  orangehrm.project.pages.AdminPage - edit button clicked
+19:10:09.104 [main] INFO  orangehrm.project.pages.AdminPage - checkbox clicked, and it is displayed
+19:10:09.105 [main] INFO  orangehrm.project.tests.AdminPageTest - change password check box test finished
+19:10:14.653 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+19:10:16.063 [main] INFO  orangehrm.project.pages.BuzzPage - Most recent post button clicked
+19:10:16.810 [main] INFO  orangehrm.project.pages.BuzzPage - Comment icon clicked
+19:10:17.565 [main] INFO  orangehrm.project.pages.BuzzPage - Toast message successfully captured
+19:10:23.024 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+19:10:24.833 [main] INFO  orangehrm.project.pages.HomePage - Admin exist on the main menu and it is clickable --AdminFromMenu test-- Finished
+19:10:30.286 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+19:10:32.163 [main] INFO  orangehrm.project.pages.HomePage - Leave exist on the main menu and it is clickable --LeaveFromMenu test-- Finished

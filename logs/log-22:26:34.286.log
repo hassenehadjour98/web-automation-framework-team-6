@@ -1,0 +1,111 @@
+22:24:14.405 [main] INFO  orangehrm.project.pages.AdminPage - Add button clicked
+22:24:14.784 [main] INFO  orangehrm.project.pages.AdminPage - JobTitle text typed
+22:24:14.837 [main] INFO  orangehrm.project.pages.AdminPage - Job description text typed
+22:24:14.900 [main] INFO  orangehrm.project.pages.AdminPage - Note text typed
+22:24:15.001 [main] INFO  orangehrm.project.pages.AdminPage - Save button clicked
+22:24:15.296 [main] INFO  orangehrm.project.pages.AdminPage - Toast message captured
+22:24:15.298 [main] INFO  orangehrm.project.tests.AdminPageTest - Job Title successfully Added
+22:24:15.298 [main] INFO  orangehrm.project.tests.AdminPageTest - Add Job Title test Finished
+22:24:20.772 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:24:20.852 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:24:21.904 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:24:21.904 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:24:23.285 [main] INFO  orangehrm.project.pages.HomePage - Click on Admin successful
+22:24:23.749 [main] INFO  orangehrm.project.pages.AdminPage - text set to username
+22:24:23.833 [main] INFO  orangehrm.project.pages.AdminPage - Admin selected from dropdown
+22:24:23.915 [main] INFO  orangehrm.project.pages.AdminPage - Enable selected from dropdown
+22:24:23.975 [main] INFO  orangehrm.project.pages.AdminPage - search button clicked
+22:24:24.516 [main] INFO  orangehrm.project.pages.AdminPage - edit button clicked
+22:24:25.138 [main] INFO  orangehrm.project.pages.AdminPage - checkbox clicked, and it is displayed
+22:24:25.138 [main] INFO  orangehrm.project.tests.AdminPageTest - change password check box test finished
+22:24:30.063 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:24:30.136 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:24:31.228 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:24:31.229 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:24:32.169 [main] INFO  orangehrm.project.pages.HomePage - Click on Buzz successful
+22:24:32.686 [main] INFO  orangehrm.project.pages.BuzzPage - Most recent post button clicked
+22:24:33.453 [main] INFO  orangehrm.project.pages.BuzzPage - Comment icon clicked
+22:24:34.127 [main] INFO  orangehrm.project.pages.BuzzPage - Toast message successfully captured
+22:24:38.963 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:24:39.038 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:24:40.032 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:24:40.033 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:24:41.500 [main] INFO  orangehrm.project.pages.HomePage - Click on admin successful
+22:24:41.955 [main] INFO  orangehrm.project.pages.HomePage - Admin exist on the main menu and it is clickable --AdminFromMenu test--successfully finished
+22:24:47.333 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:24:47.409 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:24:48.412 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:24:48.412 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:24:49.718 [main] INFO  orangehrm.project.pages.HomePage - Click on Leave successful
+22:24:50.261 [main] INFO  orangehrm.project.pages.HomePage - Leave exist on the main menu and it is clickable --LeaveFromMenu test-- successfully finished
+22:24:55.083 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:24:55.159 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:24:56.195 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:24:56.195 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:24:57.629 [main] INFO  orangehrm.project.pages.HomePage - Click on Time successful
+22:24:58.083 [main] INFO  orangehrm.project.pages.HomePage - Time exist on the main menu and it is clickable --TimeFromMenu test-- successfully finished
+22:25:02.935 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:25:03.007 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:25:04.076 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:25:04.076 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:25:05.521 [main] INFO  orangehrm.project.pages.HomePage - Click on Recruitment successful
+22:25:05.867 [main] INFO  orangehrm.project.pages.HomePage - Recruitment exist on the main menu and it is clickable --RecruitmentFromMenu test-- successfully finished
+22:25:10.883 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:25:10.957 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:25:11.986 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:25:11.986 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:25:13.418 [main] INFO  orangehrm.project.pages.HomePage - Click on Performance successful
+22:25:13.852 [main] INFO  orangehrm.project.pages.HomePage - Performance exist on the main menu and it is clickable --PerformanceFromMenu test--successfully finished
+22:25:18.685 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:25:18.759 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:25:19.745 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:25:19.746 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:25:20.620 [main] INFO  orangehrm.project.pages.HomePage - Click on Dashboard successful
+22:25:21.310 [main] INFO  orangehrm.project.pages.HomePage - Dashboard exist on the main menu and it is clickable --DashboardFromMenu test-- successfully finished
+22:25:26.054 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:25:26.123 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:25:27.128 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:25:27.129 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:25:28.039 [main] INFO  orangehrm.project.pages.HomePage - Click on Directory successful
+22:25:28.597 [main] INFO  orangehrm.project.pages.HomePage - Directory exist on the main menu and it is clickable, test DirectoryFromMenu successfully finished
+22:25:33.222 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:25:33.295 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:25:34.282 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:25:34.282 [main] INFO  orangehrm.project.pages.LoginPage - Login Successful
+22:25:35.221 [main] INFO  orangehrm.project.pages.HomePage - Click on Buzz successful
+22:25:35.707 [main] INFO  orangehrm.project.pages.HomePage - Buzz exist on the main menu and it is clickable --BuzzFromMenu test-- Finished
+22:25:40.559 [main] INFO  orangehrm.project.pages.LoginPage - Social media Facebook icon clicked successfully
+22:25:41.112 [main] INFO  orangehrm.project.pages.LoginPage$FacebookPage - Focus successfully switched to Facebook
+22:25:41.161 [main] INFO  orangehrm.project.pages.LoginPage$FacebookPage - Facebook title successfully captured
+22:25:46.117 [main] INFO  orangehrm.project.pages.LoginPage - Social media Linkedin icon clicked successfully
+22:25:47.305 [main] INFO  orangehrm.project.pages.LoginPage$LinkedinPage - Focus successfully switched to Linkedin
+22:25:47.433 [main] INFO  orangehrm.project.pages.LoginPage$LinkedinPage - Linkedin title successfully captured
+22:25:52.032 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:25:52.114 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:25:53.200 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:25:53.200 [main] INFO  orangehrm.project.tests.LoginPageTest - login success
+22:25:53.523 [main] INFO  orangehrm.project.pages.LoginPage - User Name is Displayed
+22:25:53.523 [main] INFO  orangehrm.project.tests.LoginPageTest - Test LoginTest finished successfully finished
+22:25:58.739 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:25:58.800 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:25:59.422 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:25:59.689 [main] INFO  orangehrm.project.pages.LoginPage - Error message captured
+22:25:59.689 [main] INFO  orangehrm.project.tests.LoginPageTest - Test LoginTestWithWrongCredentials successfully finished
+22:26:04.443 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:26:04.519 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:26:05.125 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:26:05.389 [main] INFO  orangehrm.project.pages.LoginPage - Error message captured
+22:26:05.389 [main] INFO  orangehrm.project.tests.LoginPageTest - Test LoginTestWithWrongCredentials successfully finished
+22:26:10.176 [main] INFO  orangehrm.project.pages.LoginPage - Username set
+22:26:10.253 [main] INFO  orangehrm.project.pages.LoginPage - Password set
+22:26:11.228 [main] INFO  orangehrm.project.pages.LoginPage - Login button clicked
+22:26:11.496 [main] INFO  orangehrm.project.pages.LoginPage - Error message captured
+22:26:11.496 [main] INFO  orangehrm.project.tests.LoginPageTest - Test LoginTestWithWrongCredentials successfully finished
+22:26:16.432 [main] INFO  orangehrm.project.pages.LoginPage - Social media http://www.orangehrm.com icon clicked successfully
+22:26:17.965 [main] INFO  orangehrm.project.pages.LoginPage$LinkedinPage - Focus successfully switched to http://www.orangehrm.com
+22:26:17.968 [main] INFO  orangehrm.project.pages.LoginPage$LinkedinPage - http://www.orangehrm.com title successfully captured
+22:26:23.170 [main] INFO  orangehrm.project.pages.LoginPage - ForgotPassword link clicked
+22:26:24.591 [main] INFO  orangehrm.project.pages.LoginPage - Reset Password link sent successfully
+22:26:24.862 [main] INFO  orangehrm.project.tests.LoginPageTest - Test LoginTest ResetPassword successfully finished
+22:26:29.564 [main] INFO  orangehrm.project.pages.LoginPage$TweeterPage - Focus successfully switched to Tweeter
+22:26:29.569 [main] INFO  orangehrm.project.pages.LoginPage$TweeterPage - Tweeter title successfully captured
