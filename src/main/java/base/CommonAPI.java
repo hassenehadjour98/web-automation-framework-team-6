@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -17,6 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import utility.Utility;
@@ -30,8 +32,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 
 public class CommonAPI {
     Logger LOG = LogManager.getLogger(CommonAPI.class.getName());
@@ -39,8 +40,9 @@ public class CommonAPI {
     String takeScreenshot = Utility.getProperties().getProperty("take.screenshot", "false");
     String maximizeBrowser = Utility.getProperties().getProperty("browser.maximize", "true");
     String implicitWait = Utility.getProperties().getProperty("implicit.wait", "10");
-    String username = Utility.decode(Utility.getProperties().getProperty("browserstack.username"));
-    String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password"));
+    String username = Utility.decode(Utility.getProperties().getProperty("browserstack.username").trim());
+    String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password").trim());
+    String headlessMode = Utility.getProperties().getProperty("headless.mode", "false");
 
     public WebDriver driver;
 
@@ -96,22 +98,23 @@ public class CommonAPI {
     public void generateReport() {
         extent.close();
     }
-
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
     public void getLocalDriver(String browserName){
+        ChromeOptions options = new ChromeOptions();
         if (browserName.equalsIgnoreCase("chrome")){
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options.setHeadless(Boolean.parseBoolean(headlessMode)));
         }else if (browserName.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
         } else if (browserName.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
         }
     }
-    public void getCloudDriver(String envName, String os, String osVersion, String browser, String browserVersion, String username, String password) throws MalformedURLException {
+    public void getCloudDriver(String envName, String os, String osVersion, String browser,
+                               String browserVersion, String username, String password) throws MalformedURLException {
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability("os", os);
         cap.setCapability("os_version", osVersion);
@@ -119,19 +122,20 @@ public class CommonAPI {
         cap.setCapability("browser_version", browserVersion);
         if (envName.equalsIgnoreCase("browserstack")){
             cap.setCapability("resolution", "1024x768");
-            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+"@hub-cloud.browserstack.com:80/wd/hub"),cap);
+            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+
+                    "@hub-cloud.browserstack.com:80/wd/hub"),cap);
         } else if (envName.equalsIgnoreCase("saucelabs")) {
-            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+"@ondemand.saucelabs.com:80/wd.hub"),cap);
+            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+
+                    "@ondemand.saucelabs.com:80/wd.hub"),cap);
         }
 
     }
-
-    @Parameters({"useCloudEnv","envName","os","osVersion","browserName","browserVersion","url"})
-    @BeforeMethod()
+  @Parameters({"useCloudEnv","envName","os","osVersion","browserName","browserVersion","url"})
+    @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName,
                       @Optional("windows") String os, @Optional("11") String osVersion,
                       @Optional("chrome") String browserName, @Optional("108") String browserVersion,
-                      @Optional("https://ui.freecrm.com/") String url) throws InterruptedException, MalformedURLException {
+                      @Optional("https://www.google.com") String url) throws InterruptedException, MalformedURLException {
         if (useCloudEnv){
             getCloudDriver(envName, os,osVersion,browserName,browserVersion, username, password);
         }else {
@@ -181,6 +185,11 @@ public class CommonAPI {
     public void waitForElementToBeVisible(WebDriver driver, int duration, WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
         wait.until(ExpectedConditions.visibilityOf(element));
+
+    }
+    public WebElement waitForElementToBeVisible(By locator, int timeOut, long intervalTime) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut), Duration.ofMillis(intervalTime));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
     public void clickWithActions(WebDriver driver, WebElement element){
         Actions actions = new Actions(driver);
@@ -211,4 +220,48 @@ public class CommonAPI {
             LOG.info("Exception while taking screenshot "+e.getMessage());
         }
     }
+    //Added Methods
+    public String getCurrentURL(){
+            return driver.getCurrentUrl();
+        }
+    public String getAttributeValue (WebElement element, String attributeName){
+        return element.getAttribute(attributeName);
+    }
+    public boolean elementIsDisplayed (WebElement element){
+        return element.isDisplayed();
+    }
+    public boolean elementIsSelected (WebElement element){
+        return element.isSelected();
+    }
+    public boolean elementIsEnabled (WebElement element){
+        return element.isEnabled();
+    }
+    public void acceptAlert(){
+        driver.switchTo().alert().accept();
+    }
+    public void dismissAlert(){
+        driver.switchTo().alert().dismiss();
+    }
+    public String getTextFromAlert(){
+        return driver.switchTo().alert().getText();
+    }
+    public void clearTextFromTextBox (WebElement element){
+        element.clear();
+    }
+    public void typeNumber(WebElement element, int number){
+        element.sendKeys(""+number+"");
+    }
+    public void switchToChildWindow(WebDriver driver, String Title){
+        Set<String> allWindowHandles = driver.getWindowHandles();
+        List<String> hList = new ArrayList<String>(allWindowHandles);
+        for(String window : hList){
+            String url = driver.switchTo().window(window).getCurrentUrl();
+            String windowHandle=driver.switchTo().window(window).getWindowHandle();
+            if(url.contains(Title)){
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+    }
+
 }

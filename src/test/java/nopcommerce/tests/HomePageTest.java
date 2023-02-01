@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.io.File;
 
 public class HomePageTest extends CommonAPI {
-    Logger log = LogManager.getLogger(HomePage.class.getName());
+    Logger log = LogManager.getLogger(HomePageTest.class.getName());
 
    @Test
     public void clkOnLnkRegisterTest () throws InterruptedException {
