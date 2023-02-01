@@ -22,7 +22,6 @@ import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import utility.Utility;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -131,12 +130,12 @@ public class CommonAPI {
         }
 
     }
-    @Parameters({"useCloudEnv","envName","os","osVersion","browserName","browserVersion","url"})
-    @BeforeMethod()
+  @Parameters({"useCloudEnv","envName","os","osVersion","browserName","browserVersion","url"})
+    @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName,
                       @Optional("windows") String os, @Optional("11") String osVersion,
                       @Optional("chrome") String browserName, @Optional("108") String browserVersion,
-                      @Optional("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login") String url) throws InterruptedException, MalformedURLException {
+                      @Optional("https://www.google.com") String url) throws InterruptedException, MalformedURLException {
         if (useCloudEnv){
             getCloudDriver(envName, os,osVersion,browserName,browserVersion, username, password);
         }else {
