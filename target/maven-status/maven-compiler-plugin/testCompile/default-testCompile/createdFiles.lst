@@ -1,0 +1,14 @@
+orangehrm/project/tests/MyInfoTest.class
+orangehrm/project/tests/BuzzPageTest.class
+orangehrm/project/tests/HomePagetest.class
+nopcommerce/tests/HomePageTest.class
+nopcommerce/tests/WishListTest.class
+nopcommerce/tests/checkoutTest.class
+nopcommerce/tests/LogOutTest.class
+orangehrm/project/tests/AdminPageTest.class
+nopcommerce/tests/RegistrationPageTest.class
+nopcommerce/tests/SearchTest.class
+orangehrm/project/tests/LoginPageTest.class
+nopcommerce/tests/LogInTest.class
+nopcommerce/tests/SelectCurrencyTest.class
+nopcommerce/tests/ShoppingCartTest.class
