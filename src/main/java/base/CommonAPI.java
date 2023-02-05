@@ -154,6 +154,10 @@ public class CommonAPI {
     public String getCurrentTitle(){
         return driver.getTitle();
     }
+
+    public String getUrlLink(){
+        return  driver.getCurrentUrl();
+    }
     public String getTextFromElement(WebElement element){
         return element.getText();
     }
