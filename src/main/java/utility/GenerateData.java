@@ -23,8 +23,5 @@ public class GenerateData {
         return faker.bothify("Lp!??##?$#?##?##??#");
 
     }
-    public static String company(){
-        return faker.company().name();
-    }
 
 }
