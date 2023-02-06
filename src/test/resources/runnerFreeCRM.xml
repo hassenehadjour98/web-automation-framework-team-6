@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/nabam/IdeaProjects/web-automation-framework-team-6/src/test/java/com/freecrmtest"><classes><class name="com.freecrmtest.TestAuthentication"><methods><include name="testValidLogin"/><include name="testInvalidLogin"/><include name="testLogout"/></methods></class><class name="com.freecrmtest.TestSetting"><methods><include name="testAddNewUser"/></methods></class></classes></test></suite>

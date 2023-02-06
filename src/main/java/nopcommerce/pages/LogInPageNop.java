@@ -37,6 +37,9 @@ public class LogInPageNop extends CommonAPI {
     public String getMessageLogInError (){
         return getTextFromElement(msgLogInError);
     }
+    public void forgotPassword (){
+        clickOn(lnkForgotPassword);
+    }
 
 
 

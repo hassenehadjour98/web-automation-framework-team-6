@@ -114,6 +114,9 @@ public class HomePage extends CommonAPI {
     public String welcomeMessage(){
         return getTextFromElement(msgWelcome);
     }
+    public void waitForLogInLinkVisibility (WebDriver driver, int waitTime){
+        waitForElementToBeVisible(driver,waitTime,lnkLogin);
+    }
 
 
 

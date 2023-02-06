@@ -22,6 +22,8 @@ public class SearchPage extends CommonAPI {
     WebElement btnAddToWishlist;
     @FindBy(css = ".button-2.product-box-add-to-cart-button")
     WebElement btnAddToCart;
+    @FindBy(css = ".no-result")
+    WebElement SearchMessageNoResult;
 
     public String getItemName(){
         log.info("get item name success");
@@ -42,5 +44,8 @@ public class SearchPage extends CommonAPI {
         public void addToCart(){
             clickOn(btnAddToCart);
             log.info("added item to cart successfully");
+    }
+    public String getTextNoResultSearch(){
+        return getTextFromElement(SearchMessageNoResult);
     }
 }

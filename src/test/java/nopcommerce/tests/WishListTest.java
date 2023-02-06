@@ -9,10 +9,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utility.ReadFromExcel;
 
 public class WishListTest extends CommonAPI {
     Logger log = LogManager.getLogger(WishListTest.class.getName());
-    String itemName ="HP Spectre XT Pro UltraBook";
+    ReadFromExcel readTitleFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","titles");
+    ReadFromExcel readTestDataFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","WishListTest");
+    String itemName = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","itemName");
     HomePage homePage;
     SearchPage searchPage;
     WishlistPage wishlistPage;
@@ -26,10 +29,9 @@ public class WishListTest extends CommonAPI {
     public void defaultWishlistQuantityTest() {
         log.info("***  WishList Test defaultWishlistQuantityTest Started ***");
         homePage = new HomePage(getDriver());
-        String actualWishlistQuantity = homePage.getWishlistQuantity();
-        String quantityNumber = actualWishlistQuantity.substring(actualWishlistQuantity.indexOf('(')+1,actualWishlistQuantity.indexOf(')'));
-        int actualWishlistQuantityNumber = Integer.parseInt(quantityNumber);
-        Assert.assertEquals(actualWishlistQuantityNumber,defaultWishlistQuantityNumber);
+        String quantity = homePage.getWishlistQuantity();
+        int number = extractNumberBetweenBrackets(quantity);
+        Assert.assertEquals(number,defaultWishlistQuantityNumber);
         log.info("default wishlist quantity number as expected");
         log.info("***  Wishlist Test defaultWishlistQuantityTest Ended ***");
     }
@@ -39,6 +41,10 @@ public class WishListTest extends CommonAPI {
         log.info("***  WishList Test updateOfWishlistQuantityNumberTest Started ***");
         homePage = new HomePage(getDriver());
         homePage.typeItemAndClickSearch(itemName);
+        String actualTitle = getCurrentTitle();
+        String expectedTitle = readTitleFromExcel.getCellValueForGivenHeaderAndKey("title","search page");
+        Assert.assertEquals(actualTitle, expectedTitle,"Did not land on search page");
+        log.info("Landed on search page successfully");
 
         searchPage = new SearchPage(getDriver());
         searchPage.clickOnItemName();
@@ -47,10 +53,9 @@ public class WishListTest extends CommonAPI {
         productPage.addToWishlist();
         productPage.clickOnCloseNotification();
 
-        String actualWishlistQuantity = homePage.getWishlistQuantity();
-        String quantityNumber = actualWishlistQuantity.substring(actualWishlistQuantity.indexOf('(')+1,actualWishlistQuantity.indexOf(')'));
-        int actualWishlistQuantityNumber = Integer.parseInt(quantityNumber);
-        Assert.assertEquals(actualWishlistQuantityNumber,updatedWishlistQuantityNumber);
+        String quantity = homePage.getWishlistQuantity();
+        int number = extractNumberBetweenBrackets(quantity);
+        Assert.assertEquals(number,updatedWishlistQuantityNumber);
         log.info("default wishlist quantity number as expected");
         log.info("***  Wishlist Test updateOfWishlistQuantityNumberTest Ended ***");
     }
@@ -63,7 +68,7 @@ public class WishListTest extends CommonAPI {
         homePage = new HomePage(getDriver());
         homePage.typeItemAndClickSearch(itemName);
         String actualTitle = getCurrentTitle();
-        String expectedTitle = "nopCommerce demo store. Search";
+        String expectedTitle = readTitleFromExcel.getCellValueForGivenHeaderAndKey("title","search page");
         Assert.assertEquals(actualTitle, expectedTitle,"Did not land on search page");
         log.info("Landed on search page successfully");
         //Validate Item Name

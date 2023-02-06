@@ -6,12 +6,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utility.ReadFromExcel;
 
-public class ShoppingCartTest extends CommonAPI {
-    Logger log = LogManager.getLogger(ShoppingCartPage.class.getName());
-    String itemName ="Lenovo IdeaCentre 600 All-in-One PC";
+public class ShoppingCartAsGuestTest extends CommonAPI {
+    Logger log = LogManager.getLogger(ShoppingCartAsGuestTest.class.getName());
+    ReadFromExcel readTitleFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","titles");
+    ReadFromExcel readTestDataFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","ShoppingCartAsGuestTest");
+
+    String itemName = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","itemName");
     int defaultShoppingCartQuantityNumber = 0;
-    int updatedShoppingCartQuantityNumber =2000;
+    int givenShoppingCartQuantityNumber = 2000;
     HomePage homePage;
     ProductPage productPage;
     SearchPage searchPage;
@@ -23,10 +27,9 @@ public class ShoppingCartTest extends CommonAPI {
     public void defaultShoppingCartQuantityTest() {
         log.info("***  Shopping cart Test defaultShoppingCartQuantityTest Started ***");
         homePage = new HomePage(getDriver());
-        String actualShoppingCartQuantity = homePage.getShoppingCartQuantity();
-        String quantityNumber = actualShoppingCartQuantity.substring(actualShoppingCartQuantity.indexOf('(')+1,actualShoppingCartQuantity.indexOf(')'));
-        int actualShoppingCartQuantityNumber = Integer.parseInt(quantityNumber);
-        Assert.assertEquals(actualShoppingCartQuantityNumber, defaultShoppingCartQuantityNumber);
+        String quantity = homePage.getShoppingCartQuantity();
+        int number = extractNumberBetweenBrackets(quantity);
+        Assert.assertEquals(number, defaultShoppingCartQuantityNumber);
         log.info("default Shopping cart quantity number as expected");
         log.info("***  Shopping cart Test defaultShoppingCartQuantityTest Ended ***");
     }
@@ -40,15 +43,14 @@ public class ShoppingCartTest extends CommonAPI {
         searchPage = new SearchPage(getDriver());
         searchPage.clickOnItemName();
         productPage = new ProductPage(getDriver());
-        productPage.enterNumberOfItems(updatedShoppingCartQuantityNumber);
+        productPage.enterNumberOfItems(givenShoppingCartQuantityNumber);
 
         productPage.addToCart();
         productPage.clickOnCloseNotification();
 
-        String actualShoppingCartQuantity = homePage.getShoppingCartQuantity();
-        String quantityNumber = actualShoppingCartQuantity.substring(actualShoppingCartQuantity.indexOf('(')+1,actualShoppingCartQuantity.indexOf(')'));
-        int actualShoppingCartQuantityNumber = Integer.parseInt(quantityNumber);
-        Assert.assertEquals(actualShoppingCartQuantityNumber,updatedShoppingCartQuantityNumber);
+        String quantity = homePage.getShoppingCartQuantity();
+        int number = extractNumberBetweenBrackets(quantity);
+        Assert.assertEquals(number,givenShoppingCartQuantityNumber);
         log.info("default Shopping cart quantity number as expected");
         log.info("***  Shopping cart Test updateOfWishlistQuantityNumberTest Ended ***");
     }
@@ -61,7 +63,7 @@ public class ShoppingCartTest extends CommonAPI {
         homePage = new HomePage(getDriver());
         homePage.typeItemAndClickSearch(itemName);
         String actualTitle = getCurrentTitle();
-        String expectedTitle = "nopCommerce demo store. Search";
+        String expectedTitle = readTitleFromExcel.getCellValueForGivenHeaderAndKey("title","search page");
         Assert.assertEquals(actualTitle, expectedTitle,"Did not land on search page");
         log.info("Landed on search page successfully");
         //Validate Item Name
@@ -81,5 +83,6 @@ public class ShoppingCartTest extends CommonAPI {
 
         log.info("***  Shopping cart Test searchAndAddToWishlistTest Ended ***");
     }
+
 
 }

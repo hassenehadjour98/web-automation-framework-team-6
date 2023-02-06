@@ -21,7 +21,11 @@ public class GenerateData {
     }
     public static String password() {
         return faker.bothify("Lp!??##?$#?##?##??#");
-
     }
+    public static String country() { return faker.address().country();}
+    public static String city() { return faker.address().cityName();}
+    public static String address()  { return faker.address().streetAddress();}
+    public static String  zipCode(){ return faker.address().zipCode();}
+    public static String phoneNumber() { return ""+faker.number()+"";}
 
 }
