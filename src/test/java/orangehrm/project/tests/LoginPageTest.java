@@ -2,7 +2,7 @@ package orangehrm.project.tests;
 
 import base.CommonAPI;
 import com.github.javafaker.Faker;
-import orangehrm.project.pages.LoginPage;
+import com.orangehrm.project.pages.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;

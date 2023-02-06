@@ -1,4 +1,4 @@
-package orangehrm.project.pages;
+package com.orangehrm.project.pages;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;

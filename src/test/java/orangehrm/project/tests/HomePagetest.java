@@ -1,8 +1,8 @@
 package orangehrm.project.tests;
 
 import base.CommonAPI;
-import orangehrm.project.pages.HomePage;
-import orangehrm.project.pages.LoginPage;
+import com.orangehrm.project.pages.HomePage;
+import com.orangehrm.project.pages.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;

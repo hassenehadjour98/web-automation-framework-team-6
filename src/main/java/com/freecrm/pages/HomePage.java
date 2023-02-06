@@ -1,4 +1,4 @@
-package com.freecrm;
+package com.freecrm.pages;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;

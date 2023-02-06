@@ -1,10 +1,10 @@
 package com.freecrmtest;
 
 import base.CommonAPI;
-import com.freecrm.AccountSettings;
-import com.freecrm.AddUserPage;
-import com.freecrm.HomePage;
-import com.freecrm.MyAccountPage;
+import com.freecrm.pages.AccountSettings;
+import com.freecrm.pages.AddUserPage;
+import com.freecrm.pages.HomePage;
+import com.freecrm.pages.MyAccountPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;

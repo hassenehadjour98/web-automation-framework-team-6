@@ -1,4 +1,4 @@
-package orangehrm.project.pages;
+package com.orangehrm.project.pages;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
@@ -9,9 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utility.Utility;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class LoginPage extends CommonAPI {
     Logger LOG = LogManager.getLogger(LoginPage.class.getName());

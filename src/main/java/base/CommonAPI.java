@@ -34,16 +34,19 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.*;
 
+import static utility.ConnectDB.getTableColumnDataFirstValue;
+
 public class CommonAPI {
     Logger LOG = LogManager.getLogger(CommonAPI.class.getName());
 
     String takeScreenshot = Utility.getProperties().getProperty("take.screenshot", "false");
     String maximizeBrowser = Utility.getProperties().getProperty("browser.maximize", "true");
     String implicitWait = Utility.getProperties().getProperty("implicit.wait", "10");
-    String username = Utility.decode(Utility.getProperties().getProperty("browserstack.username").trim());
-    String password = Utility.decode(Utility.getProperties().getProperty("browserstack.password").trim());
+    String username = Utility.decode(getTableColumnDataFirstValue("select UserName FROM CloudCredentials WHERE ID='2';","UserName"));
+    String accessKey = Utility.decode(getTableColumnDataFirstValue("select Password FROM CloudCredentials WHERE ID='2';","Password"));
     String headlessMode = Utility.getProperties().getProperty("headless.mode", "false");
-
+    //String username="";
+    //String accessKey="";
     public WebDriver driver;
 
     //report setup from line 37 to 94
@@ -137,7 +140,7 @@ public class CommonAPI {
                       @Optional("chrome") String browserName, @Optional("108") String browserVersion,
                       @Optional("https://www.google.com") String url) throws InterruptedException, MalformedURLException {
         if (useCloudEnv){
-            getCloudDriver(envName, os,osVersion,browserName,browserVersion, username, password);
+            getCloudDriver(envName, os,osVersion,browserName,browserVersion, username, accessKey);
         }else {
             getLocalDriver(browserName);
         }
@@ -147,10 +150,6 @@ public class CommonAPI {
         driver.manage().window().maximize();
         driver.get(url);
     }
-    //    @AfterMethod
-//    public void tearDown(){
-//        driver.close();
-//    }
     //generic methods
     public WebDriver getDriver() {
         return driver;

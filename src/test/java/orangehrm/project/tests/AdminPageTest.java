@@ -2,12 +2,13 @@ package orangehrm.project.tests;
 
 import base.CommonAPI;
 import com.github.javafaker.Faker;
-import orangehrm.project.pages.AdminPage;
-import orangehrm.project.pages.HomePage;
-import orangehrm.project.pages.LoginPage;
+import com.orangehrm.project.pages.AdminPage;
+import com.orangehrm.project.pages.HomePage;
+import com.orangehrm.project.pages.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static orangehrm.project.tests.LoginPageTest.ValidPasswordOH;
@@ -16,7 +17,11 @@ import static orangehrm.project.tests.LoginPageTest.ValidUsernameOH;
 public class AdminPageTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(AdminPageTest.class.getName());
     String Field="Admin";
-    Faker faker = new Faker();
+    static Faker faker = new Faker();
+    protected static String JobTitle= faker.job().title();
+    protected static String Jobdescription = faker.weather().description();
+    protected static String Note = faker.expression("This is Java faker");
+    
     @Test
     public void ChangePasswordCheckBox(){
         LoginPage loginpage = new LoginPage(getDriver());
@@ -35,10 +40,14 @@ public class AdminPageTest extends CommonAPI {
         Assert.assertTrue(adminpage.clickOnCheckBox());
         LOG.info("change password check box test finished");
     }
-    @Test
-    public void AddJobTitle() {
-        String JobTitle= faker.job().title();  String Jobdescription = faker.weather().description();  String Note = faker.expression("This is Java faker");
-
+    @DataProvider(name = "Add a job title")
+    public Object[][] getData(){
+        Object[][] data={
+                {JobTitle, Jobdescription, Note}
+        };return data;
+    }
+    @Test(dataProvider = "Add a job title")
+    public void AddJobTitle(String JobTitle, String Jobdescription, String Note) {
         LoginPage loginpage = new LoginPage(getDriver());
         loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
 

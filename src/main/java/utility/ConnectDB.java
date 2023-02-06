@@ -53,8 +53,33 @@ public class ConnectDB {
         return list;
     }
 
+    public static String getTableColumnDataFirstValue(String query, String columnName) {
+        String result = "";
+
+        try (Connection conn = connectToSqlDatabase()) {
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
+
+            if (rs.next()) {
+                result = rs.getString(columnName);
+            }
+
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        return result;
+    }
+
+
+
     public static void main(String[] args) throws SQLException {
-        List<String> emails = getTableColumnData("select * from cred;","email");
+        List<String> emails = getTableColumnData("select * from CloudCredentials;","ID");
         System.out.println(emails.get(0));
+        String usernameOH= getTableColumnDataFirstValue("select UserName FROM CloudCredentials WHERE ID='1';","UserName");
+        System.out.println(usernameOH);
+
+        String passwordOH= getTableColumnDataFirstValue("select Password FROM CloudCredentials WHERE ID='1';","Password");
+        System.out.println(passwordOH);
     }
 }

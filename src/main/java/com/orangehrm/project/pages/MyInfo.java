@@ -1,15 +1,11 @@
-package orangehrm.project.pages;
+package com.orangehrm.project.pages;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
-import javax.swing.*;
 
 public class MyInfo extends CommonAPI {
     Logger LOG = LogManager.getLogger(MyInfo.class.getName());

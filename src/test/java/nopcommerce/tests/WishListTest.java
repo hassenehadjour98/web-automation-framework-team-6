@@ -1,10 +1,10 @@
 package nopcommerce.tests;
 
 import base.CommonAPI;
-import nopcommerce.pages.HomePage;
-import nopcommerce.pages.ProductPage;
-import nopcommerce.pages.SearchPage;
-import nopcommerce.pages.WishlistPage;
+import com.nopcommerce.pages.HomePage;
+import com.nopcommerce.pages.ProductPage;
+import com.nopcommerce.pages.SearchPage;
+import com.nopcommerce.pages.WishlistPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;

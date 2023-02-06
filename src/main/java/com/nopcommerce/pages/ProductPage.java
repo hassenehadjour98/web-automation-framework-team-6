@@ -1,4 +1,4 @@
-package nopcommerce.pages;
+package com.nopcommerce.pages;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;

@@ -2,7 +2,7 @@ package nopcommerce.tests;
 
 import base.CommonAPI;
 import com.github.javafaker.Faker;
-import nopcommerce.pages.*;
+import com.nopcommerce.pages.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;

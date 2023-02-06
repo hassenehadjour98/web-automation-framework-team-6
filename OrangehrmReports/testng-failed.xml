@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="useCloudEnv" value="true"/>
+  <parameter name="os" value="windows"/>
+  <parameter name="osVersion" value="10"/>
+  <parameter name="envName" value="browserstack"/>
+  <parameter name="browserVersion" value="100"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+  <test thread-count="5" name="/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/test/java/orangehrm/project/tests(failed)">
+    <classes>
+      <class name="orangehrm.project.tests.HomePagetest">
+        <methods>
+          <include name="RecruitmentFromMenu"/>
+          <include name="setUp"/>
+          <include name="AdminFromMenu"/>
+          <include name="PerformanceFromMenu"/>
+          <include name="BuzzFromMenu"/>
+          <include name="afterEachTestMethod"/>
+          <include name="LeaveFromMenu"/>
+          <include name="TimeFromMenu"/>
+          <include name="extentSetup"/>
+          <include name="DirectoryFromMenu"/>
+          <include name="generateReport"/>
+          <include name="DashboardFromMenu"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- orangehrm.project.tests.HomePagetest -->
+      <class name="orangehrm.project.tests.LoginPageTest">
+        <methods>
+          <include name="YouTubeIconLink"/>
+          <include name="LoginTest"/>
+          <include name="setUp"/>
+          <include name="LinkedinIconLink"/>
+          <include name="FacebookIconLink"/>
+          <include name="afterEachTestMethod"/>
+          <include name="TweeterIconLink"/>
+          <include name="OrangeHrmIncLink"/>
+          <include name="extentSetup"/>
+          <include name="ResetPassword"/>
+          <include name="generateReport"/>
+          <include name="LoginTestWithInvalidCredentials"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- orangehrm.project.tests.LoginPageTest -->
+      <class name="orangehrm.project.tests.MyInfoTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="selectBloodType"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- orangehrm.project.tests.MyInfoTest -->
+      <class name="orangehrm.project.tests.AdminPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="AddJobTitle"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="ChangePasswordCheckBox"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- orangehrm.project.tests.AdminPageTest -->
+      <class name="orangehrm.project.tests.BuzzPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="addCommentToMostRecentPost"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- orangehrm.project.tests.BuzzPageTest -->
+    </classes>
+  </test> <!-- /Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/test/java/orangehrm/project/tests(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

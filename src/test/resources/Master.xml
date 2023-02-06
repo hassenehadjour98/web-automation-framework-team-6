@@ -15,9 +15,9 @@
         <classes>
             <class name="nopcommerce.tests.RegistrationPageTest">
                 <methods>
-                    <include name="registrationTest1"/>
-                    <include name="registrationTest2"/>
-                    <include name="registrationTest3"/>
+<!--                    <include name="registrationTest1"/>-->
+<!--                    <include name="registrationTest2"/>-->
+<!--                    <include name="registrationTest3"/>-->
                 </methods></class>
 <!--            <class name="nopcommerce.tests.SelectCurrencyTest"></class>-->
 

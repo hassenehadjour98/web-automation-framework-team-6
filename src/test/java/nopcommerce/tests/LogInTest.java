@@ -3,10 +3,10 @@ package nopcommerce.tests;
 
 import base.CommonAPI;
 import com.github.javafaker.Faker;
-import nopcommerce.pages.MyAccountPage;
-import nopcommerce.pages.HomePage;
-import nopcommerce.pages.LogInPageNop;
-import nopcommerce.pages.RegistrationPage;
+import com.nopcommerce.pages.MyAccountPage;
+import com.nopcommerce.pages.HomePage;
+import com.nopcommerce.pages.LogInPageNop;
+import com.nopcommerce.pages.RegistrationPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;

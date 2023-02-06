@@ -1,4 +1,4 @@
-package com.freecrm;
+package com.freecrm.pages;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
