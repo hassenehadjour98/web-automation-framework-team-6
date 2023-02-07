@@ -23,15 +23,15 @@ public class Utility {
         return new String(decodeBytes);
     }
 
-    public static void main(String[] args) {
-//        String toEncode = "nacerhadjsaid1";
+//    public static void main(String[] args) {
+//        String toEncode = "";
 //        String encoded = Base64.getEncoder().encodeToString(toEncode.getBytes());
 //        System.out.println(encoded);
 //
-//        System.out.println(decode("bmFjZXJoYWRqc2FpZDE="));
-
-        String sep = File.separator;
-        String path = System.getProperty("user.dir");
-        System.out.println(sep);
-    }
+//        System.out.println(decode(""));
+//
+//        String sep = File.separator;
+//        String path = System.getProperty("user.dir");
+//        System.out.println(sep);
+//    }
 }

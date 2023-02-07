@@ -135,7 +135,7 @@ public class CommonAPI {
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName,
                       @Optional("windows") String os, @Optional("11") String osVersion,
                       @Optional("chrome") String browserName, @Optional("108") String browserVersion,
-                      @Optional("https://www.google.com") String url) throws InterruptedException, MalformedURLException {
+                      @Optional("https://demo.nopcommerce.com/") String url) throws InterruptedException, MalformedURLException {
         if (useCloudEnv){
             getCloudDriver(envName, os,osVersion,browserName,browserVersion, username, password);
         }else {
@@ -238,6 +238,7 @@ public class CommonAPI {
     }
     public void acceptAlert(){
         driver.switchTo().alert().accept();
+        LOG.info("clicked on accept alert success");
     }
     public void dismissAlert(){
         driver.switchTo().alert().dismiss();
@@ -250,6 +251,17 @@ public class CommonAPI {
     }
     public void typeNumber(WebElement element, int number){
         element.sendKeys(""+number+"");
+    }
+    public void navigateBack (){
+        driver.navigate().back();
+    }
+    public void navigateForward(){
+        driver.navigate().forward();
+    }
+    public int extractNumberBetweenBrackets (String quantity){
+        String quantityNumber = quantity.substring(quantity.indexOf('(')+1,quantity.indexOf(')'));
+        int number = Integer.parseInt(quantityNumber);
+        return number;
     }
     public void switchToChildWindow(WebDriver driver, String Title){
         Set<String> allWindowHandles = driver.getWindowHandles();

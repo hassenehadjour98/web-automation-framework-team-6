@@ -9,20 +9,22 @@ import org.testng.annotations.Test;
 import utility.GenerateData;
 import utility.ReadFromExcel;
 
-public class checkoutTest extends CommonAPI {
-    Logger log = LogManager.getLogger(checkoutTest.class.getName());
+public class ShoppingCartAsUserTest extends CommonAPI {
+    Logger log = LogManager.getLogger(ShoppingCartAsUserTest.class.getName());
     ReadFromExcel readTitleFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","titles");
-    ReadFromExcel readTestDataFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","CheckoutTestData");
+    ReadFromExcel readTestDataFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","ShoppingCartAsUserTest");
+
+    String msgRegistrationSuccess = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","msgRegistrationSuccess");
+    String expectedShoppingCartMsg = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","expectedShoppingCartMsg");
     String itemName =readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","itemName");
-    String country = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","country");
-    String validEmail = GenerateData.email();
-    String validPassword = GenerateData.password();
+    String firstName = GenerateData.firstName(),lastName = GenerateData.lastName();
+    String validEmail = GenerateData.email(), validPassword = GenerateData.password();
     RegistrationPage registrationPage;
-    CheckoutPage checkoutPage;
     HomePage homePage;
     SearchPage searchPage;
     ShoppingCartPage shoppingCartPage;
     LogInPageNop logInPageNop;
+    MyAccountPage myAccountPage;
 
     //Demo website requires to create an account before testing.
     @Test
@@ -36,9 +38,7 @@ public class checkoutTest extends CommonAPI {
 
         //Entering Credentials
         registrationPage = new RegistrationPage(getDriver());
-        String firstName = GenerateData.firstName();
         registrationPage.setFirstName(firstName);
-        String lastName = GenerateData.lastName();
         registrationPage.setLastName(lastName);
         registrationPage.setEmail(validEmail);
         registrationPage.setPassword(validPassword);
@@ -47,16 +47,14 @@ public class checkoutTest extends CommonAPI {
         registrationPage.clkOnRegister();
 
         String returnedMessage = registrationPage.readReturnedMessage();
-        String msgRegistrationSuccess = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","msgRegistrationSuccess");
         Assert.assertEquals(returnedMessage, msgRegistrationSuccess);
         log.info("Registration success message returned");
     }
 
-
-    //log in, add an item to cart, and click on checkout, confirm landing on checkout page
+    //LogIn, search and add item to cart, log out, login again and go to cart, item should be saved
     @Test(priority = 0, dependsOnMethods = {"createAccount"})
-    public void CheckoutWithoutAgreeingToTermsOfServiceTest() {
-        log.info("***  Checkout Test CheckoutWithoutAgreeingToTermsOfServiceTest Started ***");
+    public void checkItemSavedInCartTest(){
+        log.info("***  LogIn Test checkItemSavedInCartTest Started ***");
         homePage = new HomePage(getDriver());
         homePage.clkOnLinkLogin();
         log.info("Landed on login page success");
@@ -72,36 +70,31 @@ public class checkoutTest extends CommonAPI {
         log.info("Item found successfully");
         //Add to cart
         searchPage.addToCart();
+        //log out
+        myAccountPage = new MyAccountPage(getDriver());
+        myAccountPage.logOut();
+        //login again
+        homePage.clkOnLinkLogin();
+        logInPageNop.logIn(validEmail,validPassword);
+
         //go to cart
         homePage.clkOnLinkShoppingCart();
         shoppingCartPage = new ShoppingCartPage(getDriver());
         //get product name in cart
         String actualShoppingCartProductName = shoppingCartPage.getCartProductName();
         Assert.assertEquals(actualShoppingCartProductName,itemName);
-        log.info("Item added to Shopping cart Successfully");
+        log.info("Item saved in Shopping cart Successfully");
 
-        shoppingCartPage.clickOnCheckout();
-        String actualTermsOfServiceMsg = shoppingCartPage.getTextTermsOfServiceBox();
-        String expectedTermsOfServiceMsg = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","expectedTermsOfServiceMsg");
-        Assert.assertEquals(actualTermsOfServiceMsg, expectedTermsOfServiceMsg);
-        String actualTitle = getCurrentTitle();
-
-        String expectedShoppingCartTitle = readTitleFromExcel.getCellValueForGivenHeaderAndKey("title","shopping cart page");
-        Assert.assertEquals(actualTitle, expectedShoppingCartTitle);
-        log.info("Stayed onShopping Cart page successfully");
-
-        log.info("***  Checkout Test CheckoutWithoutAgreeingToTermsOfServiceTest Ended ***");
+        log.info("***  LogIn Test checkItemSavedInCartTest Ended ***");
     }
 
-
-    //log in,  go to cart, click on checkout and fill checkout form, submit order
+    //LogIn, go to cart, confirm product name in cart, delete the item already saved in cart
     @Test(priority = 1, dependsOnMethods = {"createAccount"})
-    public void fillingCheckoutFromTest() {
-        log.info("***  Checkout Test fillingCheckoutFromTest Started ***");
+    public void deleteItemSavedInCartTest(){
+        log.info("***  LogIn Test deleteItemSavedInCartTest Started ***");
         homePage = new HomePage(getDriver());
         homePage.clkOnLinkLogin();
         log.info("Landed on login page success");
-
         logInPageNop = new LogInPageNop(getDriver());
         logInPageNop.logIn(validEmail,validPassword);
 
@@ -111,32 +104,14 @@ public class checkoutTest extends CommonAPI {
         //get product name in cart
         String actualShoppingCartProductName = shoppingCartPage.getCartProductName();
         Assert.assertEquals(actualShoppingCartProductName,itemName);
-        log.info("Item found in Shopping cart Successfully");
+        log.info("Item saved in Shopping cart Successfully");
 
-        shoppingCartPage.checkAgreeToTermsOfService();
-        shoppingCartPage.clickOnCheckout();
+        //remove product
+        shoppingCartPage.clickOnRemoveProduct();
+        String actualShoppingCartMsg = shoppingCartPage.getTextEmptyShoppingCart();
+        Assert.assertEquals(actualShoppingCartMsg,expectedShoppingCartMsg);
+        log.info("Shopping cart cleared successfully");
 
-        checkoutPage = new CheckoutPage(getDriver());
-        checkoutPage.SelectCountry(country);
-        String city = GenerateData.city();
-        checkoutPage.setCityName(city);
-        String address = GenerateData.address();
-        checkoutPage.setAddress1(address);
-        String zipCode = GenerateData.zipCode();
-        checkoutPage.setZipCode(zipCode);
-        String phoneNumber = GenerateData.phoneNumber();
-        checkoutPage.setPhoneNumber(phoneNumber);
-        checkoutPage.clickContinueButtonInBillingAddress();
-        checkoutPage.clickContinueShippingMethod();
-        checkoutPage.clickContinueInPaymentMethod();
-        checkoutPage.clickContinueInPaymentInformation();
-        checkoutPage.clickConfirm();
-
-        String actualConfirmationMessage = checkoutPage.getConfirmationSuccess();
-        String expectedConfirmationMessage = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","expectedConfirmationMessage");
-        Assert.assertEquals(actualConfirmationMessage,expectedConfirmationMessage);
-        log.info("Order has been placed successfully");
-
-        log.info("***  Checkout Test fillingCheckoutFromTest Ended ***");
+        log.info("***  LogIn Test deleteItemSavedInCartTest Ended ***");
     }
 }

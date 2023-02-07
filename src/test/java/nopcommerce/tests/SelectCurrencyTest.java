@@ -7,12 +7,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utility.ReadFromExcel;
 
 public class SelectCurrencyTest extends CommonAPI {
     Logger log = LogManager.getLogger(SelectCurrencyTest.class.getName());
-    String defaultCurrency = "US Dollar";
-    String currency2 = "Euro";
-    String itemName ="Nokia Lumia 1020";
+    ReadFromExcel readTitleFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","titles");
+    ReadFromExcel readTestDataFromExcel = new ReadFromExcel(System.getProperty("user.dir")+"\\Data\\nopcommerce\\nopCommerceData.xlsx","SelectCurrencyTest");
+
+    String currency2 = readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","currency2");
+    String itemName =readTestDataFromExcel.getCellValueForGivenHeaderAndKey("variable","itemName");
     HomePage homePage;
     SearchPage searchPage;
 
@@ -52,7 +55,7 @@ public class SelectCurrencyTest extends CommonAPI {
         homePage.selectCurrency(currency2);
         homePage.typeItemAndClickSearch(itemName);
         String actualTitle = getCurrentTitle();
-        String expectedTitle = "nopCommerce demo store. Search";
+        String expectedTitle = readTitleFromExcel.getCellValueForGivenHeaderAndKey("title","search page");
         Assert.assertEquals(actualTitle, expectedTitle,"Did not land on search page");
         log.info("Landed on search page successfully");
 
@@ -80,7 +83,7 @@ public class SelectCurrencyTest extends CommonAPI {
 
         homePage.typeItemAndClickSearch(itemName);
         String actualTitle = getCurrentTitle();
-        String expectedTitle = "nopCommerce demo store. Search";
+        String expectedTitle = readTitleFromExcel.getCellValueForGivenHeaderAndKey("title","search page");
         Assert.assertEquals(actualTitle, expectedTitle,"Did not land on search page");
         log.info("Landed on search page successfully");
 

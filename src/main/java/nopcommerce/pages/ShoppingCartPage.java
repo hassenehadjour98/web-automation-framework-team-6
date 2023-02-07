@@ -16,18 +16,37 @@ public class ShoppingCartPage extends CommonAPI {
     @FindBy(css = ".product-name")
     WebElement productName;
     @FindBy (xpath = "//div[@class='terms-of-service']/input")
-    WebElement cbAgreeToTermsOfService;
+    WebElement checkboxAgreeToTermsOfService;
     @FindBy(css = ".button-1.checkout-button")
     WebElement btnCheckout;
+    @FindBy(css = ".remove-btn")
+    WebElement btnRemoveProduct;
+    @FindBy(css = ".no-data")
+    WebElement msgShoppingCartEmpty;
+    @FindBy(css = "div#terms-of-service-warning-box")
+    WebElement msgTermsOfServiceBox;
+
 
     public String getCartProductName(){
         return getTextFromElement(productName);
     }
     public void checkAgreeToTermsOfService(){
-        clickOn(cbAgreeToTermsOfService);
+        clickOn(checkboxAgreeToTermsOfService);
+        log.info("Checked agree to terms of service Successfully");
     }
     public void clickOnCheckout(){
         clickOn(btnCheckout);
+        log.info("Clicked on checkout Successfully");
+    }
+    public void clickOnRemoveProduct(){
+        clickOn(btnRemoveProduct);
+        log.info("Clicked on remove product Successfully");
+    }
+    public String getTextEmptyShoppingCart(){
+        return getTextFromElement(msgShoppingCartEmpty);
+    }
+    public String getTextTermsOfServiceBox(){
+        return getTextFromElement(msgTermsOfServiceBox);
     }
 
 }
