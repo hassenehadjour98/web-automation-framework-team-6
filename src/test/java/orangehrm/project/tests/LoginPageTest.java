@@ -13,7 +13,7 @@ import utility.Utility;
 
 public class LoginPageTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(LoginPageTest.class.getName());
-    ReadFromExcel readfromexcel = new ReadFromExcel("/Users/hassenehadjour/Desktop/web-automation-framework-team-6/Data/orangehrm/OrangeHRM.xlsx","LoginPage");
+    ReadFromExcel readfromexcel = new ReadFromExcel(System.getProperty("user.dir")+"//Data//orangehrm//OrangeHRM.xlsx","LoginPage");
     Faker faker = new Faker();
 
     protected static String ValidUsernameOH = Utility.getProperties().getProperty("UsernameOH").trim();
