@@ -22,8 +22,8 @@
 <!--            <class name="nopcommerce.tests.SearchTest"></class>-->
 <!--            <class name="nopcommerce.tests.SelectCurrencyTest"></class>-->
 <!--            <class name="nopcommerce.tests.ShoppingCartAsGuestTest"></class>-->
-<!--            <class name="nopcommerce.tests.ShoppingCartAsUserTest"></class>-->
-            <class name="nopcommerce.tests.WishListTest"></class>
+            <class name="nopcommerce.tests.ShoppingCartAsUserTest"></class>
+<!--            <class name="nopcommerce.tests.WishListTest"></class>-->
 
         </classes>
     </test>
