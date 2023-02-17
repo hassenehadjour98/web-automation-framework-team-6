@@ -15,6 +15,10 @@
             <class name="saucedemotest.LoginTest"></class>
             <class name="saucedemotest.AddItemsToCartTest"></class>
             <class name="saucedemotest.CheckOutTest"></class>
+            <class name="saucedemotest.HoverOverTest"></class>
+            <class name="saucedemotest.IconsTest"></class>
+            <class name="saucedemotest.MenuBarTest"></class>
+            <class name="saucedemotest.SearchBarTest"></class>
         </classes>
     </test>
 </suite>
