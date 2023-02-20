@@ -1,4 +1,4 @@
-package orangehrm.project.tests;
+package com.orangehrm.project.tests;
 
 import base.CommonAPI;
 import com.orangehrm.project.pages.HomePage;
@@ -8,20 +8,19 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static orangehrm.project.tests.LoginPageTest.ValidPasswordOH;
-import static orangehrm.project.tests.LoginPageTest.ValidUsernameOH;
+import utility.ReadFromExcel;
 
 public class MyInfoTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(MyInfoTest.class.getName());
 
-    String Field = "My Info";
+    ReadFromExcel readfromexcel = new ReadFromExcel("./Data/orangehrm/OrangeHRM.xlsx","MyInfoPage");
+    String Field=readfromexcel.getDataFromCell(7,5);
 
     @Test
     public void selectBloodType(){
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -31,9 +30,10 @@ public class MyInfoTest extends CommonAPI {
         myinfo.selectBloodType();
 
         String ActualResult= myinfo.ToastMessage();
-        String ExpectedResult = "Success";
+        String ExpectedResult = readfromexcel.getDataFromCell(10,5);
 
         Assert.assertEquals(ActualResult,ExpectedResult);
+
         LOG.info("Test selectBloodType finished successfully");
     }
 

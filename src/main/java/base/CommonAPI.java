@@ -45,8 +45,6 @@ public class CommonAPI {
     String username = Utility.decode(getTableColumnDataFirstValue("select UserName FROM CloudCredentials WHERE ID='2';","UserName"));
     String accessKey = Utility.decode(getTableColumnDataFirstValue("select Password FROM CloudCredentials WHERE ID='2';","Password"));
     String headlessMode = Utility.getProperties().getProperty("headless.mode", "false");
-    //String username="";
-    //String accessKey="";
     public WebDriver driver;
 
     //report setup from line 37 to 94
@@ -250,13 +248,13 @@ public class CommonAPI {
     public void typeNumber(WebElement element, int number){
         element.sendKeys(""+number+"");
     }
-    public void switchToChildWindow(WebDriver driver, String Title){
+    public void switchToChildWindow(WebDriver driver, String PartialTitle){
         Set<String> allWindowHandles = driver.getWindowHandles();
         List<String> hList = new ArrayList<String>(allWindowHandles);
         for(String window : hList){
             String url = driver.switchTo().window(window).getCurrentUrl();
             String windowHandle=driver.switchTo().window(window).getWindowHandle();
-            if(url.contains(Title)){
+            if(url.contains(PartialTitle)){
                 driver.switchTo().window(windowHandle);
                 break;
             }

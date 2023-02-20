@@ -1,4 +1,4 @@
-package orangehrm.project.tests;
+package com.orangehrm.project.tests;
 
 import base.CommonAPI;
 import com.github.javafaker.Faker;
@@ -13,7 +13,8 @@ import utility.Utility;
 
 public class LoginPageTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(LoginPageTest.class.getName());
-    ReadFromExcel readfromexcel = new ReadFromExcel("/Users/hassenehadjour/Desktop/web-automation-framework-team-6/Data/orangehrm/OrangeHRM.xlsx","LoginPage");
+
+    ReadFromExcel readfromexcel = new ReadFromExcel("./Data/orangehrm/OrangeHRM.xlsx","LoginPage");
     Faker faker = new Faker();
 
     protected static String ValidUsernameOH = Utility.getProperties().getProperty("UsernameOH").trim();
@@ -65,12 +66,12 @@ public class LoginPageTest extends CommonAPI {
         String ExpectedResult = errorMsg;
 
         Assert.assertEquals(ActualResult, ExpectedResult);
-        LOG.info("Test LoginTestWithWrongCredentials successfully finished");
+        LOG.info("Test LoginTestWithIncorrectCredentials successfully finished");
     }
     @Test
     public void LinkedinIconLink(){
-        String SocialMedia ="Linkedin";
-        String ExpectedTitle="LinkedIn";
+        String SocialMedia =readfromexcel.getDataFromCell(21,5);
+        String ExpectedTitle=readfromexcel.getDataFromCell(22,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
         loginpage.clkOnSocialMediaLink(SocialMedia);
@@ -83,8 +84,8 @@ public class LoginPageTest extends CommonAPI {
     }
     @Test
     public void FacebookIconLink(){
-        String SocialMedia ="Facebook";
-        String ExpectedTitle="Most Popular Opensource HRIS";
+        String SocialMedia =readfromexcel.getDataFromCell(23,5);
+        String ExpectedTitle=readfromexcel.getDataFromCell(24,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
         loginpage.clkOnSocialMediaLink(SocialMedia);
@@ -98,8 +99,8 @@ public class LoginPageTest extends CommonAPI {
     }
     @Test
     public void TweeterIconLink(){
-        String SocialMedia ="Tweeter";
-        String ExpectedTitle="OrangeHRM";
+        String SocialMedia =readfromexcel.getDataFromCell(25,5);
+        String ExpectedTitle=readfromexcel.getDataFromCell(26,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
         loginpage.clkOnSocialMediaLink(SocialMedia);
@@ -112,8 +113,8 @@ public class LoginPageTest extends CommonAPI {
     }
     @Test
     public void YouTubeIconLink(){
-        String SocialMedia ="YouTube";
-        String ExpectedTitle="YouTube";
+        String SocialMedia =readfromexcel.getDataFromCell(27,5);
+        String ExpectedTitle=readfromexcel.getDataFromCell(28,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
         loginpage.clkOnSocialMediaLink(SocialMedia);
@@ -126,8 +127,8 @@ public class LoginPageTest extends CommonAPI {
     }
     @Test
     public void OrangeHrmIncLink(){
-        String SocialMedia ="http://www.orangehrm.com";
-        String ExpectedTitle="OrangeHRM HR Software | Free & Open Source HR Software | HRMS | HRIS | OrangeHRM";
+        String SocialMedia =readfromexcel.getDataFromCell(29,5);
+        String ExpectedTitle=readfromexcel.getDataFromCell(30,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
         loginpage.clkOnSocialMediaLink(SocialMedia);

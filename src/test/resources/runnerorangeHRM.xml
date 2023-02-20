@@ -12,47 +12,11 @@
     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
     <test verbose="5" preserve-order="true" name="/Users/hassenehadjour/Desktop/web-automation-framework-team-6/src/test/java/orangehrm/project/tests">
         <classes>
-            <class name="orangehrm.project.tests.AdminPageTest">
-                <methods>
-                    <include name="ChangePasswordCheckBox"/>
-                    <include name="AddJobTitle"/>
-                </methods>
-            </class>
-            <class name="orangehrm.project.tests.BuzzPageTest">
-                <methods>
-                    <include name="PostAnImage"/>
-                    <include name="addCommentToMostRecentPost"/>
-                </methods>
-            </class>
-            <class name="orangehrm.project.tests.HomePagetest">
-                <methods>
-                    <include name="AdminFromMenu"/>
-                    <include name="LeaveFromMenu"/>
-                    <include name="TimeFromMenu"/>
-                    <include name="RecruitmentFromMenu"/>
-                    <include name="PerformanceFromMenu"/>
-                    <include name="DashboardFromMenu"/>
-                    <include name="DirectoryFromMenu"/>
-                    <include name="BuzzFromMenu"/>
-                </methods>
-            </class>
-            <class name="orangehrm.project.tests.LoginPageTest">
-                <methods>
-                    <include name="LoginTest"/>
-                    <include name="ResetPassword"/>
-                    <include name="LoginTestWithInvalidCredentials"/>
-                    <include name="LinkedinIconLink"/>
-                    <include name="FacebookIconLink"/>
-                    <include name="TweeterIconLink"/>
-                    <include name="YouTubeIconLink"/>
-                    <include name="OrangeHrmIncLink"/>
-                </methods>
-            </class>
-            <class name="orangehrm.project.tests.MyInfoTest">
-                <methods>
-                    <include name="selectBloodType"/>
-                </methods>
-            </class>
+            <class name="com.orangehrm.project.tests.AdminPageTest"> </class>
+<!--            <class name="com.orangehrm.project.tests.BuzzPageTest"></class>-->
+<!--            <class name="com.orangehrm.project.tests.HomePagetest"></class>-->
+<!--            <class name="com.orangehrm.project.tests.LoginPageTest"></class>-->
+<!--            <class name="com.orangehrm.project.tests.MyInfoTest"> </class>-->
         </classes>
     </test>
 </suite>

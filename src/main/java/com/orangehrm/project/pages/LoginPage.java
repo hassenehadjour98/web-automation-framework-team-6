@@ -18,13 +18,12 @@ public class LoginPage extends CommonAPI {
     }
 
     protected String ValidUsernameOH = Utility.getProperties().getProperty("UsernameOH").trim();
-    protected String ValidPasswordOH = Utility.getProperties().getProperty("PasswordOH").trim();
 
-    @FindBy(xpath = "//input[@name=\"username\"]")
+    @FindBy(xpath = "//input[@name='username']")
     WebElement UserNametxt;
-    @FindBy(xpath = "//input[@name=\"password\"]")
+    @FindBy(xpath = "//input[@name='password']")
     WebElement passwordtxt;
-    @FindBy(xpath = "//button[@type=\"submit\"]")
+    @FindBy(xpath = "//button[@type='submit']")
     WebElement loginButton;
     @FindBy(xpath = "//h6[text() = 'Dashboard']")
     WebElement UserNameDisplayed;
@@ -32,7 +31,7 @@ public class LoginPage extends CommonAPI {
     WebElement forgotassord;
     @FindBy(xpath = "//input[@placeholder='Username']")
     WebElement resetpasswordusernametxt;
-    @FindBy(xpath = "//button[@type=\"submit\"]")
+    @FindBy(xpath = "//button[@type='submit']")
     WebElement ResetPasswordBtn;
     @FindBy(xpath = "//h6[text()='Reset Password link sent successfully']")
     WebElement messagedisplay;
@@ -82,13 +81,13 @@ public class LoginPage extends CommonAPI {
         LOG.info("Error message captured");
         return errorMsg;
     }
-    public void clkOnSocialMediaLink(String Platform){
+    public void clkOnSocialMediaLink(String WebPageTitle){
         List<WebElement> list = pageLinks;
         for (WebElement element : pageLinks){
             String links = getAttributeValue(element, "href");
-            if(links.toLowerCase().contains(Platform.toLowerCase())){
+            if(links.toLowerCase().contains(WebPageTitle.toLowerCase())){
                 element.click();
-                LOG.info("Social media "+Platform+" icon clicked successfully");
+                LOG.info("Social media "+WebPageTitle+" icon clicked successfully");
                 break;
 //            }else{
 //                System.out.println("Link does not exist on OrangeHRM LoginPage");

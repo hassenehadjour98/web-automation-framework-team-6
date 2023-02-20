@@ -1,4 +1,4 @@
-package orangehrm.project.tests;
+package com.orangehrm.project.tests;
 
 import base.CommonAPI;
 import com.orangehrm.project.pages.HomePage;
@@ -7,19 +7,20 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static orangehrm.project.tests.LoginPageTest.ValidPasswordOH;
-import static orangehrm.project.tests.LoginPageTest.ValidUsernameOH;
+import utility.ReadFromExcel;
 
 public class HomePagetest extends CommonAPI {
     Logger LOG = LogManager.getLogger(HomePage.class.getName());
 
+    ReadFromExcel readfromexcel = new ReadFromExcel("./Data/orangehrm/OrangeHRM.xlsx","HomePage");
+
+
     @Test(priority = 0, invocationCount = 1)
     public void AdminFromMenu(){
-        String Field = "admin";
+        String Field = readfromexcel.getDataFromCell(7,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -32,10 +33,10 @@ public class HomePagetest extends CommonAPI {
     }
     @Test(priority = 1, dependsOnMethods ={"AdminFromMenu"} )
     public void PIMFromMenu(){
-        String Field = "PIM";
+        String Field = readfromexcel.getDataFromCell(9,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -48,10 +49,10 @@ public class HomePagetest extends CommonAPI {
     }
     @Test(priority = 2)
     public void LeaveFromMenu(){
-        String Field = "Leave";
+        String Field = readfromexcel.getDataFromCell(11,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -64,10 +65,10 @@ public class HomePagetest extends CommonAPI {
     }
     @Test(priority = 3)
     public void TimeFromMenu() {
-        String Field = "Time";
+        String Field = readfromexcel.getDataFromCell(13,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -80,10 +81,10 @@ public class HomePagetest extends CommonAPI {
     }
     @Test(priority = 4)
     public void RecruitmentFromMenu() {
-        String Field = "Recruitment";
+        String Field = readfromexcel.getDataFromCell(15,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -96,10 +97,10 @@ public class HomePagetest extends CommonAPI {
     }
     @Test(priority = 6)
     public void PerformanceFromMenu() {
-        String Field = "Performance";
+        String Field = readfromexcel.getDataFromCell(17,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -112,10 +113,10 @@ public class HomePagetest extends CommonAPI {
     }
     @Test(priority = 7)
     public void DashboardFromMenu() {
-        String Field = "Dashboard";
+        String Field = readfromexcel.getDataFromCell(19,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -128,10 +129,10 @@ public class HomePagetest extends CommonAPI {
     }
     @Test(priority = 8)
     public void DirectoryFromMenu() {
-        String Field = "Directory";
+        String Field = readfromexcel.getDataFromCell(21,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -144,10 +145,10 @@ public class HomePagetest extends CommonAPI {
     }
     @Test(priority = 10)
     public void BuzzFromMenu() {
-        String Field = "Buzz";
+        String Field = readfromexcel.getDataFromCell(23,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);

@@ -1,4 +1,4 @@
-package orangehrm.project.tests;
+package com.orangehrm.project.tests;
 
 import base.CommonAPI;
 import com.orangehrm.project.pages.BuzzPage;
@@ -9,29 +9,31 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import static orangehrm.project.tests.LoginPageTest.ValidPasswordOH;
-import static orangehrm.project.tests.LoginPageTest.ValidUsernameOH;
+import utility.ReadFromExcel;
 
 public class BuzzPageTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(BuzzPageTest.class.getName());
     SoftAssert SoftAssert = new SoftAssert();
 
-    String Feild = "Buzz";
-    String filePath = "/Users/hassenehadjour/Desktop/web-automation-framework-team-6/Data/orangehrm/BuzzPageTest.png";
+    ReadFromExcel readfromexcel = new ReadFromExcel("./Data/orangehrm/OrangeHRM.xlsx","BuzzPage");
+    String Field = readfromexcel.getDataFromCell(6,5);
+
     String PostText="Enjoy The Beautiful Nature";
-    String ToastMessage = "Success";
+
+
     @Test(enabled = false)
     public void PostAnImage(){
+        String filePath = "./Data/orangehrm/BuzzPageTest.png";
+        String ToastMessage = readfromexcel.getDataFromCell(12,5);
 
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
-        homepage.clickOnMenuField(Feild);
+        homepage.clickOnMenuField(Field);
 
         String ActualMenuField =homepage.FieldConfirmation();
-        String ExpectedMenuField= Feild.toLowerCase();
+        String ExpectedMenuField= Field.toLowerCase();
 
         SoftAssert.assertEquals(ActualMenuField,ExpectedMenuField);
 
@@ -45,18 +47,19 @@ public class BuzzPageTest extends CommonAPI {
         String ExpectedMessage= ToastMessage;
 
         Assert.assertEquals(ActualMessage, ExpectedMessage);
+
         LOG.info("Test PostAnImage finished successfully");
     }
     @Test
     public void addCommentToMostRecentPost(){
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
-        homepage.clickOnMenuField(Feild);
+        homepage.clickOnMenuField(Field);
 
         String ActualMenuField =homepage.FieldConfirmation();
-        String ExpectedMenuField= Feild.toLowerCase();
+        String ExpectedMenuField= Field.toLowerCase();
 
         Assert.assertEquals(ActualMenuField, ExpectedMenuField);
 

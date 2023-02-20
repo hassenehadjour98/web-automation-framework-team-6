@@ -1,4 +1,4 @@
-package orangehrm.project.tests;
+package com.orangehrm.project.tests;
 
 import base.CommonAPI;
 import com.github.javafaker.Faker;
@@ -10,13 +10,14 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import static orangehrm.project.tests.LoginPageTest.ValidPasswordOH;
-import static orangehrm.project.tests.LoginPageTest.ValidUsernameOH;
+import utility.ReadFromExcel;
 
 public class AdminPageTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(AdminPageTest.class.getName());
-    String Field="Admin";
+
+    ReadFromExcel readfromexcel = new ReadFromExcel("./Data/orangehrm/OrangeHRM.xlsx","AdminPage");
+    String Field=readfromexcel.getDataFromCell(6,5);
+
     static Faker faker = new Faker();
     protected static String JobTitle= faker.job().title();
     protected static String Jobdescription = faker.weather().description();
@@ -25,7 +26,7 @@ public class AdminPageTest extends CommonAPI {
     @Test
     public void ChangePasswordCheckBox(){
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);
@@ -46,10 +47,10 @@ public class AdminPageTest extends CommonAPI {
                 {JobTitle, Jobdescription, Note}
         };return data;
     }
-    @Test(dataProvider = "Add a job title")
-    public void AddJobTitle(String JobTitle, String Jobdescription, String Note) {
+    @Test
+    public void AddJobTitle() {
         LoginPage loginpage = new LoginPage(getDriver());
-        loginpage.LoginAsAdmin(ValidUsernameOH, ValidPasswordOH);
+        loginpage.LoginAsAdmin(LoginPageTest.ValidUsernameOH, LoginPageTest.ValidPasswordOH);
 
         HomePage homepage = new HomePage(getDriver());
         homepage.clickOnMenuField(Field);

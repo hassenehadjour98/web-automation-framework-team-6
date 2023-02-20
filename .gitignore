@@ -8,6 +8,9 @@
 *target
 reports
 
+nopcommerce/
+freecrm/
+
 # Compiled class file
 *.class
 
